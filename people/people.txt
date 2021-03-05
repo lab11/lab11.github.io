@@ -27,8 +27,7 @@ nklugman    "Noah Klugman"   nklugman@berkeley.edu     http://noahklugman.com   
 rohitram    "Rohit Ramesh"   rkr@berkeley.edu     	   https://www.cs.umd.edu/~rohit/                        "Software Defined EVERYTHING"
 adkinsjd    "Josh Adkins"    adkins@berkeley.edu       https://joshuaadkins.com                              "Perfecting the art of the coffee bean"
 nealjack    "Neal Jackson"   neal.jackson@berkeley.edu https://nealsjackson.com                         		"Has a website now"
-jlwatson    "Jean-Luc Watson" jeanluc.watson@berkeley.edu https://doesnothaveaworkingwebsitebutwillsoon.com            "Making it so"
-romilb      "Romil Bhardwaj" romil.bhardwaj@berkeley.edu http://people.eecs.berkeley.edu/~romilb/            "Really likes khichdi"
+jlwatson    "Jean-Luc Watson" jeanluc.watson@berkeley.edu https://jeanluc.io "Making it so"
 shishirpatil	"Shishir Patil"	shishirpatil@berkeley.edu	http://people.eecs.berkeley.edu/~shishirpatil/	"Graduate Student"
 
 #"Visitors"

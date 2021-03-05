@@ -1,28 +1,33 @@
 Lab11 Website
 =============
 
-This is the website for our lab. It is in shed so anyone can add to it.
+This is the website for our lab.
 
-Setup
------
+Making Changes
+--------------
 
-Requires Python 3.
-Requires some python packages:
+Commits to `master` in this repo will automatically trigger a new website build
+and deploy. Easy!
 
-    pip3 install jinja2 sh pybtex markdown colorlog
+Local Setup
+-----------
+
+If you want to develop locally, you'll need Python 3 and some packages:
+
+    $ pip install -r requirements.txt
 
 Build the Website
 -----------------
 
-    ./website.py
+    $ ./website.py
 
 You can also rebuild only specific pages, see:
 
-    ./website.py --help
+    $ ./website.py --help
 
 While working, I recommend:
 
-    ./website.py -P && pushd html && python3 -m http.server 8000 ; popd
+    $ ./website.py -P && pushd html && python3 -m http.server 8000 ; popd
 
 FYI, ImageMagick has some weird permissions issue with PDFs these days. If you
 get an error try editing the policy.xml file to add "read|write" permissions to
@@ -31,8 +36,7 @@ PDF filetypes. See https://stackoverflow.com/a/52717932/4422122
 View the Website
 ----------------
 
-We use relative links to content, which means you have to run a web server.
-Fortunately, this is really easy:
+Now, run the server. Fortunately, this is really easy:
 
     $ cd html
     $ python3 -m http.server 8000
