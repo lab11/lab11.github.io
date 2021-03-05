@@ -1,0 +1,77 @@
+# LIST OF PEOPLE IN Lab11
+#
+#
+
+#
+# UNIQNAME  NAME             EMAIL                  WEBSITE                                              DESCRIPTION
+#
+
+Faculty
+
+prabal      "Prabal Dutta"   prabal@eecs.umich.edu  http://web.eecs.umich.edu/~prabal/                   "Not sure about this vegetarian nonsense."
+
+"Staff Researchers"
+podolsky    "Matt Podolsky"  podolsky@berkeley.edu  ?					                                 "Voice of reason (?)"
+
+
+#Post-Docs
+# None
+
+
+
+"Ph.D. Students"
+
+mclarkk     "Meghan Clark"   mclarkk@berkeley.edu      https://meghanclark.us                                "Currently under surveillance"
+tzachari    "Thomas Zachariah" tzachari@berkeley.edu   https://thomaszachariah.com                           "Obligatory Caption"
+nklugman    "Noah Klugman"   nklugman@berkeley.edu     http://noahklugman.com                               "Working on my #1 single"
+rohitram    "Rohit Ramesh"   rkr@berkeley.edu     	   https://www.cs.umd.edu/~rohit/                        "Software Defined EVERYTHING"
+adkinsjd    "Josh Adkins"    adkins@berkeley.edu       https://joshuaadkins.com                              "Perfecting the art of the coffee bean"
+nealjack    "Neal Jackson"   neal.jackson@berkeley.edu https://nealsjackson.com                         		"Has a website now"
+jlwatson    "Jean-Luc Watson" jeanluc.watson@berkeley.edu https://doesnothaveaworkingwebsitebutwillsoon.com            "Making it so"
+romilb      "Romil Bhardwaj" romil.bhardwaj@berkeley.edu http://people.eecs.berkeley.edu/~romilb/            "Really likes khichdi"
+shishirpatil	"Shishir Patil"	shishirpatil@berkeley.edu	http://people.eecs.berkeley.edu/~shishirpatil/	"Graduate Student"
+
+#"Visitors"
+# None
+
+"Masters Students"
+timbarat    "Tim Barat"       tbarat@berkeley.edu      http://hasthelargehadroncolliderdestroyedtheworldyet.com/                            "Vegetarian"
+
+#"Undergraduate Research Assistants"
+# None
+
+#"High School Research Assistants"
+# None
+
+Alumni
+
+tschmid     "Thomas Schmid"   thomas.schmid@utah.edu     http://www.ece.utah.edu/~schmid/                      "CEO of RF Ranging, Inc."
+aschulman   "Aaron Schulman"  aschulm@stanford.edu       http://www.stanford.edu/~aschulm/                     "Professor at UCSD"
+jbielaws    "Russ Bielawski"  jbielaws@umich.edu         ?                                                     "Now at UMTRI"
+sonalv      "Sonal Verma"     sonalv@umich.edu           http://sitemaker.umich.edu/sonal.verma/home           "Now at Intel"
+lohity      "Lohit Yerva"     lohity@umich.edu           ?                                                     "Now at Intel"
+mspivak     "Maya Spivak"     mspivak@umich.edu          http://www-personal.umich.edu/~mspivak/               "Now at Microsoft"
+androbin    "Andrew Robinson" andrew.robinson@gmail.com  https://github.com/ab500                              "Now at Microsoft"
+tgrunn      "Trey Grunnagle"  tgrunn@umich.edu           ?                                                     "Now at Microsoft"
+nashj       "Jeremy Nash"     nashj@umich.edu            http://www.umich.edu/~nashj                           "Now at JPL"
+why         "Hongyu Wang"     why@umich.edu              http://www.umich.edu/~why                             "Now at Apple"
+ncnuech     "Noah Nuechterlein" ncnuech@umich.edu        https://www.linkedin.com/in/noahnuechterlein          "Now at Epic"
+immerman    "Nathan Immerman" immerman@umich.edu         http://www.linkedin.com/pub/nathan-immerman/87/26/729 "Now at Fitbit"
+rthaneda    "Rohan Thanedar"  rthaneda@umich.edu         https://twitter.com/RollingThunda97                   "Now a student at UM"
+genevee     "Genevieve Flaspohler" genevee@umich.edu     https://www.linkedin.com/pub/genevieve-flaspohler/a3/b8b/939    "PhD student at MIT"
+azhen       "Alan Zhen"            azhen@umich.edu       https://www.linkedin.com/in/zhenalan                  "Now at Motorola"
+dnataraj    "Deepika Natarajan"    dnataraj@umich.edu    https://www.linkedin.com/in/deepika-natarajan-9923a170          "PhD student at Michigan"
+amitshah    "Amit Shah"       amitshah@umich.edu         https://www.linkedin.com/in/amit-shah-ba563364        "Master's student at Michigan"
+haoyifan    "Yifan Hao"       haoyifan@umich.edu         https://www.linkedin.com/in/yifan-hao-806128ba        "Master's student at UIUC"
+colehud     "Cole Hudson"     coleh@ohs.stanford.edu     http://www.colehudson.net                             "Undergraduate at Michigan"
+rohrer      "Sam Rohrer"      rohrer@umich.edu           https://srohrer32.github.io                           "Undergraduate at Michigan"
+bpkempke    "Ben Kempke"      bpkempke@umich.edu         http://www.eecs.umich.edu/~bpkempke                   "Now at a (secret! shh..) startup"
+bradjc      "Brad Campbell"   bradjc@umich.edu           http://bradcampbell.com                               "Professor at UVA"
+sdebruin    "Sam DeBruin"     sdebruin@umich.edu         http://www.umich.edu/~sdebruin/                       "Now at Endectra"
+samkuo      "Ye-Sheng Kuo"    samkuo@umich.edu           http://web.eecs.umich.edu/~samkuo/                    "Now at Samsara"
+abiri       "Andreas Biri"    abiri@student.ethz.ch      https://n.ethz.ch/~abiri/                             "PhD student at ETH Zurich"
+bernhard    "Bernhard Großwindhager"   grosswindhager@tugraz.at https://grosswindhager.com/                    "TU Graz Student"
+ppannuto    "Pat Pannuto"    ppannuto@berkeley.edu     https://patpannuto.com					            "Professor at UCSD"
+brghena     "Branden Ghena"  brghena@berkeley.edu      https://brandenghena.com                   			"Professor at Northwestern"
+wwhuang     "Will Huang"     wwhuang@berkeley.edu      http://wwhuang.com                                   "Now at Blue Iris Labs"
+

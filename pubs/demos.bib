@@ -1,0 +1,570 @@
+@inproceedings{adkins18signpostdemo,
+ author = {Adkins, Joshua and Campbell, Bradford and Ghena, Branden and Jackson, Neal and Pannuto, Pat and Rohrer, Samuel and Dutta, Prabal},
+ title = {Demo Abstract: Applications on the Signpost Platform for City-Scale Sensing},
+ booktitle = {Proceedings of the 17th ACM/IEEE International Conference on Information Processing in Sensor Networks},
+ series = {IPSN'18},
+ year = {2018},
+ month = {April},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ conference-url={\url{http://ipsn.acm.org/2018/}},
+ extra = {Best Demo Runner Up},
+ abstract = {
+City-scale sensing holds the promise of enabling deeper insight into how our
+urban environments function. Applications such as observing air quality and
+measuring traffic flows can have powerful impacts, allowing city
+planners and citizen scientists alike to understand and improve their world.
+However, the path from conceiving applications to implementing them is fraught with difficulty.
+A successful city-scale deployment requires physical installation, power
+management, and communications---all challenging tasks standing between a good
+idea and a realized one.
+
+The Signpost platform, presented at IPSN 2018, has been created 
+to address these challenges. Signpost
+enables easy deployment by relying on harvested, solar energy and wireless
+networking rather than their wired counterparts. To further lower the bar
+to deploying applications, the platform provides the key resources necessary
+to support its pluggable sensor modules in their distributed sensing tasks. 
+In this demo, we present the Signpost hardware and
+several applications running on a deployment of Signposts on UC Berkeley's campus,
+including distributed, energy-adaptive traffic monitoring and 
+fine grained weather reporting. Additionally we show the cloud infrastructure
+supporting the Signpost deployment, specifically the ability to push new
+applications and parameters down to existing sensors, with the goal of demonstrating that 
+the existing deployment can serve as a future testbed. 
+ },
+ acceptance-accepted=28,
+ acceptance-total=32,
+}
+
+
+@inproceedings{adkins17signpost-ts,
+  keywords={posterdemo},
+  author={Adkins, Joshua and Campbell, Bradford and Ghena, Branden and Jackson, Neal and Pannuto, Pat and Dutta, Prabal},
+  title={The Signpost Platform for City-Scale Sensing},
+  booktitle={TerraSwarm 2017 Annual Review},
+  series={TerraSwarm'17},
+  year={2017},
+  month={October},
+  location={Berkeley, CA, USA},
+  conference-url={\url{https://www.terraswarm.org/conferences/17/annual/}},
+  no-abstract = {},
+  extra = {David Wessel Best Demo Award},
+}
+
+@inproceedings{campbell16gateway-demo,
+  author={Campbell, Bradford and Ghena, Branden and Kuo, Ye-Sheng and Dutta, Prabal},
+  title={Demo Abstract: Swarm Gateway},
+  booktitle={Proceedings of the 3rd ACM International Conference on Systems for Energy-Efficient Built Environments},
+  series={BuildSys'16},
+  year={2016},
+  month={November},
+  location={Palo Alto, CA, USA},
+  conference-url={\url{http://buildsys.acm.org/2016/}},
+  abstract={
+The gateway is a key component for sensor network deployments and the Internet
+of Things. Sensor deployments often tend towards low-power communication
+protocols such as Bluetooth Low Energy or IEEE 802.15.4. Gateways are essential
+to connect these devices to the Internet at large. Over time though, gateways
+have gained additional responsibilities as well. Sensors expect gateways to
+handle device-specific data translation and local processing while also
+providing services, such as time synchronization, to the low-power device. As a
+centralized computing resource, the gateway is also an obvious location for
+running local applications which interact with sensor data and control nearby
+actuators. Today, vendors and researchers often create their own
+device-specific gateways to handle these responsibilities.
+
+We propose a generic gateway platform capable of supporting the needs of many
+devices. In our architecture, devices provide a pointer, such as a URL, to
+descriptions of their interfaces. The gateway can download the interface
+descriptions and use them to determine how to interact with the device,
+translating its data to a usable format and enabling local services to
+communicate with it. The translated data is provided to services including user
+applications, local logging, device status monitoring, and cloud applications.
+By simultaneously supporting communication with many sensors, our gateway
+architecture can simplify future sensor network deployments and enable
+intelligent building applications.
+  },
+}
+
+@inproceedings{adkins16signpost-demo,
+  author={Adkins, Joshua and Campbell, Bradford and Ghena, Branden and Jackson, Neal and Pannuto, Pat and Dutta, Prabal},
+  title={Demo Abstract: The Signpost Network},
+  booktitle={Proceedings of the 14th ACM Conference on Embedded Networked Sensor Systems},
+  series={SenSys'16},
+  year={2016},
+  month = {November},
+  location = {Stanford, CA, USA},
+  conference-url={\url{http://sensys.acm.org/2016/}},
+  abstract={
+The era of city-scale sensing is dawning. Supported by new sensing
+capabilities, the capability to detect and measure phenomena throughout a
+large area will allow deeper insight and understanding into how cities work.
+The challenge of city-scale sensing is not limited to developing new sensing
+applications, however. A sensor must be installed in a location. It must be
+provided power, storage, and communications. All these tasks stand aside from
+the desired sensing effort, but are necessary nevertheless.
+
+In this demo, we introduce an initial prototype for a modular, city-scale
+sensing platform---the signpost network. The platform, designed to be physically
+attached to sign posts throughout a city, reduces the burden for sensor and
+application developers by providing the necessary resources to modules attached
+to it. Power is provided by harvesting from solar panels with battery storage,
+with each module allocated a certain subset of the system energy. The signpost
+platform also provides data storage, long-range communication, data
+processing, module isolation, and an installation point for connected
+modules. The signpost acts as a modular base station for researchers, citizen
+scientists, and other interested parties to deploy custom sensors for
+applications such as pedestrian counting, air quality monitoring, and RF
+spectrum sensing at a city-wide scale.
+  },
+}
+
+@inproceedings{kempke16surepoint-demo,
+  author = {Kempke, Benjamin and Pannuto, Pat and Campbell, Bradford and Dutta, Prabal},
+  title={{SurePoint}: Exploiting Ultra Wideband Flooding and Diversity to Provide Robust, Scalable, High-Fidelity Indoor Localization},
+  booktitle = {Proceedings of the 14th ACM Conference on Embedded Networked Sensor Systems},
+  series = {SenSys'16},
+  year = {2016},
+  month = {November},
+  location = {Stanford, CA, USA},
+  conference-url={\url{http://sensys.acm.org/2016/}},
+  abstract = {
+We present SurePoint, a system for drop-in, high-fidelity indoor localization.
+SurePoint builds on recently available commercial ultra-wideband radio hardware.
+While ultra-wideband radios provide a pairwise range estimate natively, we
+show that with the addition of frequency and spatial diversity, we can achieve
+a 53\% decrease in median range error.
+Because this extra diversity requires many additional packets for each range
+estimate, we leverage an efficient broadcast ranging protocol for
+localization that ameliorates this overhead.
+In stationary and fast-moving environments SurePoint achieves up to
+0.08\,m median error and 0.53\,m 99th percentile error.
+As ranging requires the tag to have exclusive access to the channel, we
+employ a protocol to coordinate the localization of multiple tags in space.
+This protocol builds on recent work exploiting the constructive interference
+phenomenon, however SurePoint is the first to demonstrate constructive interface
+using the 802.15.4a ultra-wideband PHY.
+Finally, as the ranging protocol requires careful management of the
+ultra-wideband radio and tight timing, we utilize TriPoint, a dedicated
+``drop-in'' ranging module that provides a simple \iic interface. We show that
+this additional microcontroller demands only marginal energy overhead while
+facilitating interoperability by freeing the primary microcontroller to
+handle other tasks.
+
+This demo complements the paper ``SurePoint: Exploiting Ultra Wideband Flooding
+and Diversity to Provide Robust, Scalable, High-Fidelity Indoor Localization''
+to be presented at SenSys'16.
+  },
+}
+
+@inproceedings{adkins15iot-toolkit,
+  author = {Adkins, Joshua and Campbell, Bradford and DeBruin, Samuel and Ghena, Branden and Kempke, Benjamin and Klugman, Noah and Kuo, Ye-Sheng and Natarajan, Deepika and Pannuto, Pat and Zachariah, Thomas and Zhen, Alan and Dutta, Prabal},
+  title = {Demo: Michigan's {IoT} Toolkit},
+  booktitle = {Proceedings of the 13th ACM Conference on Embedded Networked Sensor Systems},
+  series = {SenSys'15},
+  year = {2015},
+  month = {November},
+  location = {Soeul, Republic of Korea},
+  abstract = {Building connected, pervasive, human-facing, and responsive applications
+that incorporate local sensors, smartphone interactions, device actuation, and
+cloud-based learning---the promised features of the Internet of
+Things (IoT)---requires a complete suite of tools spanning both hardware and software.
+We present a set of these pieces, including a gateway, four hardware building
+blocks, multiple sensor platforms, an indoor localization system, and software
+for connecting users and devices.
+Each piece plays an integral role towards
+enabling applications, from facilitating rapid development of wireless smart
+devices to composing data streams and services from a diverse set of components.
+By providing layered interoperable systems, our toolkit offers cohesive
+support for moving beyond single-device, cloud-centric applications---typical
+in today's IoT landscape---and towards richer applications that incorporate
+multiple data streams, human interaction, cloud processing, location awareness,
+multiple communication protocols, historical data, access control, and
+on-demand user interfaces.
+To show how the pieces in the toolkit cooperate, we demonstrate a location-based
+access control application where a user's smartphone can control a room's lighting,
+but only from within the room. Further, data streams from the phone and
+nearby sensors are used to provide a constant lighting service which attempts
+to maintain a user-set brightness under variable external lighting conditions.
+  },
+  conference-url = {\url{http://sensys.acm.org/2015/}},
+}
+
+@inproceedings{kempke15polypoint-demo,
+  author = {Kempke, Benjamin and Pannuto, Pat and Campbell, Bradford and Adkins, Joshua and Dutta, Prabal},
+  title = {Demo -- {PolyPoint}: High-Precision Indoor Localization with {UWB}},
+  booktitle = {Proceedings of the 13th ACM Conference on Embedded Networked Sensor Systems},
+  series = {SenSys'15},
+  year = {2015},
+  month = {November},
+  location = {Soeul, Republic of Korea},
+  abstract = {We demonstrate PolyPoint, a high-fidelity RF-based indoor localization system that
+		  achieves 28~cm accuracy indoors and tracks a fast-moving quadcopter with only
+		  56~cm average error.
+		  PolyPoint uses ultra-wideband signals to achieve high precision RF time-of-flight
+		  estimates between nodes. To further improve accuracy, PolyPoint exploits two forms
+		  of diversity: frequency diversity, which leverages several ultra-wideband
+		  channels to improve channel response, and antenna diversity, which adds three
+		  antennas at $120\degree$ offsets to mitigate the effects of antenna
+		  polarization and nulls. PolyPoint introduces an efficient, novel ranging protocol
+		  that maximizes these diversity sources with a minimal number of packets.
+
+		  Additionally, this work introduces a new hardware platform that provides
+		  ranging and localization as a service. The minimal \emph{TriPoint} module
+		  integrates an ultra-wideband transceiver and microcontroller with firmware
+		  that implements the PolyPoint protocol. The \emph{TriTag} carrier board adds
+		  Bluetooth and batteries to create a complete mobile tag, and the
+		  \emph{TriBase} anchor platform integrates a TriPoint with an Intel Edison to
+		  act as anchors for the system.
+  },
+  conference-url = {\url{http://sensys.acm.org/2015/}},
+}
+
+@inproceedings{kempke15loccomp,
+  author = {Campbell, Bradford and Dutta, Prabal and Kempke, Benjamin and Kuo, Ye-Sheng and Pannuto, Pat},
+  title = {DecaWave: Exploring State of the Art Commercial Localization},
+  booktitle = {Microsoft Indoor Localization Competition},
+  no-series = {1},
+  year = {2015},
+  month = {April},
+  location = {Seattle, Washington, USA},
+  abstract = {In developing technology for indoor localization, we have recently
+begun exploring commercially available state of the art localization technologies.
+The DecaWave DW1000 is a new ultra-wideband
+transceiver that advertises high-precision indoor pairwise ranging
+between modules with errors as low as 10 cm. We are currently exploring this
+technology to automate obtaining anchor ground-truth
+locations for other indoor localization systems. Anchor positioning
+is a constrained version of indoor localization, with minimal time
+constraints and static devices. However, as we intend to include the
+DW1000 hardware on our own localization system, this provides
+an opportunity for gathering performance data for a commercially-enabled
+localization system deployed by a third-party for comparison purposes.
+We do not claim the ranging hardware as our originalwork, but we do provide a
+hardware implementation, an infrastructure for converting pairwise measurements
+to locations, and the front-end for viewing the results.},
+  conference-url = {\url{http://research.microsoft.com/en-us/events/indoorloccompetition2015/}},
+  extra = {Third Place in Infrastructure-Based Systems}
+}
+
+@inproceedings{kuo15loccomp,
+  author = {Kuo, Ye-Sheng and Pannuto, Pat and Campbell, Bradford and Dutta, Prabal},
+  title = {Luxapose: Indoor Positioning with Mobile Phones and Visible Light},
+  booktitle = {Microsoft Indoor Localization Competition},
+  no-series = {1},
+  year = {2015},
+  month = {April},
+  location = {Seattle, Washington, USA},
+  abstract = {
+    Luxapose addresses the indoor localization problem
+with unmodified smartphones and software controlled LED luminaires.
+Each luminaire, while providing normal lighting for a space,
+transmits an identifier by switching the luminaire on-and-off at a particular
+frequency. The pulses are imperceptible to humans, but smartphone
+cameras can detect the switching by exploiting the rolling shutter effect
+of CMOS cameras. Once the camera captures an image, the image
+is processed to find the luminaires, determine their identifiers,
+construct a sufficiently constrained angle-of-arrival localization
+problem, and ultimately calculate the smartphone's position and
+orientation in space.
+
+Luxapose requires LED lighting infrastructure for localization, however,
+the LED lights can replace the current lighting in a building. Luxapose
+has virtually no cost to the end-users, requiring just an app on the
+smartphone they already carry. The system has demonstrated ninetieth percentile
+position error of 10~cm and orientation error of 10~degrees when the
+smartphone is held under the LED luminaires.
+  },
+  conference-url = {\url{http://research.microsoft.com/en-us/events/indoorloccompetition2015/}}
+}
+
+@INPROCEEDINGS{kuo14luxapose_mobicom_demo,
+	author={Kuo, Ye-Sheng and Pannuto, Pat and Dutta, Prabal},
+	booktitle={The 20th Annual International Conference on Mobile Computing and Networking},
+	title={Demo --- Luxapose: Indoor Positioning with Mobile Phones and Visible Light},
+	series={MobiCom'14},
+	year={2014},
+	month={September},
+	location={Maui, HI, USA},
+	conference-url={http://www.sigmobile.org/mobicom/2014/},
+	video-url={\url{https://www.youtube.com/watch?v=HSNY0XVXM1w}},
+	abstract = {We explore the indoor positioning problem with unmodified smartphones
+			and slightly-modified commercial LED luminaires.  The
+			luminaires---modified to allow rapid, on-off keying---transmit their
+			identifiers and/or locations encoded in human-imperceptible optical
+			pulses.  A camera-equipped smartphone, using just a single image frame
+			capture, can detect the presence of the luminaires in the image,
+			decode their transmitted identifiers and/or locations, and determine
+			the smartphone's location and orientation relative to the luminaires.
+			Continuous image capture and processing enables continuous position
+			updates.
+			The key insights underlying this work are (i) the driver circuits of
+			emerging LED lighting systems can be easily modified to transmit data
+			through on-off keying; (ii) the rolling shutter effect of CMOS imagers
+			can be leveraged to receive many bits of data encoded in the optical
+			transmissions with just a single frame capture, (iii) a camera is
+			intrinsically an angle-of-arrival sensor, so the projection of
+			multiple nearby light sources with known positions onto a camera's
+			image plane can be framed as an instance of a sufficiently-constrained
+			angle-of-arrival localization problem, and (iv) this problem can be
+			solved with optimization techniques.
+	},
+}
+
+@inproceedings{kuo14luxapose_vlcs_demo,
+  author = {Kuo, Ye-Sheng and Pannuto, Pat and Dutta, Prabal},
+  title = {Demo --- Luxapose: Indoor Positioning with Mobile Phones and Visible Light},
+  booktitle = {1st ACM Workshop on Visible Light Communication Systems},
+  series = {VLCS'14},
+  year = {2014},
+  month = {September},
+  location = {Maui, Hawaii, USA},
+  conference-url = {\url{http://www.networks.rice.edu/VLCS-2014/}},
+	video-url={\url{https://www.youtube.com/watch?v=HSNY0XVXM1w}},
+	abstract = {We explore the indoor positioning problem with unmodified smartphones
+			and slightly-modified commercial LED luminaires.  The
+			luminaires---modified to allow rapid, on-off keying---transmit their
+			identifiers and/or locations encoded in human-imperceptible optical
+			pulses.  A camera-equipped smartphone, using just a single image frame
+			capture, can detect the presence of the luminaires in the image,
+			decode their transmitted identifiers and/or locations, and determine
+			the smartphone's location and orientation relative to the luminaires.
+			Continuous image capture and processing enables continuous position
+			updates.
+			The key insights underlying this work are (i) the driver circuits of
+			emerging LED lighting systems can be easily modified to transmit data
+			through on-off keying; (ii) the rolling shutter effect of CMOS imagers
+			can be leveraged to receive many bits of data encoded in the optical
+			transmissions with just a single frame capture, (iii) a camera is
+			intrinsically an angle-of-arrival sensor, so the projection of
+			multiple nearby light sources with known positions onto a camera's
+			image plane can be framed as an instance of a sufficiently-constrained
+			angle-of-arrival localization problem, and (iv) this problem can be
+			solved with optimization techniques.
+	},
+}
+
+@inproceedings{campbell13disaggregation,
+ author = {Campbell, Bradford and DeBruin, Samuel and Clark, Meghan and Dutta, Prabal},
+ title = {Demo: Disaggregating End Loads with Energy-Harvesting Sensors and Cloud Analytics},
+ booktitle = {Proceedings of the 5th ACM Workshop on Embedded Systems For Energy-Efficient Buildings},
+ series = {BuildSys'13},
+ year = {2013},
+ month = {Nov},
+ isbn = {978-1-4503-2431-1},
+ location = {Roma, Italy},
+ pages = {40:1--40:2},
+ articleno = {40},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/2528282.2534160},
+ doi = {10.1145/2528282.2534160},
+ acmid = {2534160},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Data aggregation, Energy-harvesting, Power metering},
+ abstract = {Obtaining a detailed, whole-house breakdown of energy usage would
+	allow for homeowners to better understand their energy consumption and
+	indentify opportunities for energy savings. Current solutions are too
+	course-grained, too difficult to deploy, not networked, or offer poor
+	coverage of hard to meter items, such as ceiling lights.
+	To address these problems, we demonstrate a wirelessly networked,
+	energy-harvesting power metering system that draws zero standby power
+	and is power proportional to the load it is metering.  The system is
+	comprised of three different meters: one for plugged-in loads, one for
+	panel-level circuits, and one for hard-to-sense loads, such as ceiling
+	lights.  Each meter harvests energy proportionally to the load it is
+	measuring and powers a sensor node intermittently.
+	Together, these sensors create multiple data streams which are
+	aggregated by a receiver. When combined with a calibrated meter that
+	measures total household power, our system can iteratively determine
+	the contributions of each load to the total power usage, allowing
+	users to gain a broad yet detailed view of their energy consumption
+	and costs.},
+ conference-url = {\url{http://sensys.acm.org/2013/pandd.html}},
+}
+
+@inproceedings{pannuto13m3_demo,
+ author = {Pannuto, Pat and Lee, Yoonmyung and Foo, ZhiYoong and Blaauw, David and Dutta, Prabal},
+ title = {Demo: M3: A Mm-scale Wireless Energy Harvesting Sensor Platform},
+ booktitle = {Proceedings of the 1st International Workshop on Energy Neutral Sensing Systems},
+ series = {ENSSys'13},
+ year = {2013},
+ month = {Nov},
+ isbn = {978-1-4503-2432-8},
+ location = {Rome, Italy},
+ pages = {17:1--17:2},
+ articleno = {17},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/2534208.2534225},
+ doi = {10.1145/2534208.2534225},
+ acmid = {2534225},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {energy harvesting, smart dust, ultra-low power},
+ abstract = {In this demo, we explore the critical role that power plays in the development
+	of a mm-scale system. We argue that any practical deployment of a mm-scale
+	system must have a significant energy harvesting component. We demo the newest
+	M3 system, a self-contained, 1~mm$^3$, energy-harvesting computing platform
+	capable of short-range (order~cm) wireless transmission.
+	Finally, we present some of the M3's innovations that
+	enable its current basic operation and discuss some of the open problems that
+	remain before a smart dust network becomes operable.},
+ conference-url = {\url{http://www.enssys.org/2013/}},
+}
+
+
+@inproceedings{kuo13floodcasting,
+ author = {Kuo, Ye-Sheng and Pannuto, Pat and Dutta, Prabal},
+ title = {Demo: Floodcasting, a Data Dissemination Service Supporting Real-time Actuation and Control},
+ booktitle = {Proceeding of the 11th Annual International Conference on Mobile Systems, Applications, and Services},
+ series = {MobiSys'13},
+ year = {2013},
+ month = {June},
+ isbn = {978-1-4503-1672-9},
+ location = {Taipei, Taiwan},
+ pages = {489--490},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/2462456.2465697},
+ doi = {10.1145/2462456.2465697},
+ acmid = {2465697},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {IEEE 802.15.4, constructive interference, real-time, software-defined radio, wireless mac protocol},
+ abstract = {Packet collisions have gone from something to be avoided to
+	something that can be embraced. We build upon recent results that employ
+	intentional packet collisions for synchronized flooding to show how multi-hop
+	wireless networks can support real-time actuation and control.
+	First, we show how a network of nodes can synchronize their LED
+	transmissions to extend the range of a visual light communication (VLC) system.  Second, we show
+	how buffer-free, streaming audio is possible over a multi-hop wireless
+	mesh network.},
+ conference-url = {\url{http://www.sigmobile.org/mobisys/2013/demos.php}},
+}
+
+@inproceedings{pannuto12i2c,
+ author = {Pannuto, Pat and Lee, Yoonmyung and Kempke, Benjamin and Sylvester, Dennis and Blaauw, David and Dutta, Prabal},
+ title = {Demo: Ultra-constrained sensor platform interfacing},
+ booktitle = {Proceedings of the 11th international conference on Information Processing in Sensor Networks},
+ series = {IPSN'12},
+ year = {2012},
+ month = {apr},
+ isbn = {978-1-4503-1227-1},
+ location = {Beijing, China},
+ pages = {147--148},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/2185677.2185721},
+ doi = {10.1145/2185677.2185721},
+ acmid = {2185721},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {bus protocols, low power, smart dust},
+	abstract = {In this work we expose the challenges of interfacing both conventional and new
+		systems with an extremely resource constrained platform. We find that even when
+			attempts are made to utilize an industry standard protocol (I2C), necessary
+			protocol modifications for ultra-low power design means that interfacing remains
+			non-trivial.
+
+			We present a functional 0.4mm~x~0.8mm ARM Cortex~M0 with 3KB of RAM, 24~GPIOs,
+			and an ultra-low power I2C interface. This chip is part of the Michigan Micro
+			Mote (M3) project, which is designed to build a complete software and hardware
+			platform for general purpose sensing at the millimeter scale. We demo an I2C
+			interface circuit allowing commercial hardware to program and interact with the
+			chip and present the beginning of the millimeter scale sensing revolution.
+	},
+	conference-url = {\url{http://ipsn.acm.org/2012/poster.html}},
+}
+
+@inproceedings{kuo10hijack-demo,
+ author = {Kuo, Ye-Sheng and Schmid, Thomas and Dutta, Prabal},
+ title = {Demo: Hijacking Power and Bandwidth from the Mobile Phone's Audio Interface},
+ booktitle = {Proceedings of the 8th ACM Conference on Embedded Networked Sensor Systems},
+ series = {SenSys'10},
+ year = {2010},
+ month = {nov},
+ isbn = {978-1-4503-0344-6},
+ location = {Zürich, Switzerland},
+ pages = {389--390},
+ numpages = {2},
+ url = {http://doi.acm.org/10.1145/1869983.1870037},
+ doi = {10.1145/1869983.1870037},
+ acmid = {1870037},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ conference-url = {\url{http://sensys.acm.org/2010/}},
+ no-abstract = {},
+}
+
+@inproceedings{debruin15powerblade-demo,
+    author = {DeBruin, Samuel and Ghena, Branden and Kuo, Ye-Sheng and Dutta, Prabal},
+    title = {Demo: PowerBlade A Low-Profile, True-Power, Plug-Through Energy Meter},
+    booktitle = {Proceedings of the 13th ACM Conference on Embedded Networked Sensor Systems},
+    series = {SenSys'15},
+    year = {2015},
+    mon = {Nov},
+    isbn = {987-1-4503-3631-4},
+    doi = {10.1145/2809695.2817855},
+    url = {http://doi.acm.org/10.1145/2809695.2817855},
+    location = {Seoul, Republic of Korea},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    conference-url = {http://sensys.acm.org/2015/demos/},
+    abstract = { We present PowerBlade, the smallest and lowest power AC plug-load
+        meter that measures real, reactive and apparent power, and reports this
+        data, along with cumulative energy consumption, over an
+        industry-standard Bluetooth Low Energy radio. Achieving this design
+        point requires revisiting every aspect of conventional power meters: a
+        new method of acquiring voltage; a non-invasive, planar method of
+        current measurement; an efficient and accurate method of computing
+        power from the voltage and current channels; a radio interface that
+        leverages nearby smart phones to display data and report it to the
+        cloud; and a retro power supply reimagined with vastly lower current
+        draw, allowing extreme miniaturization. PowerBlade occupies a mere 1" by 1"
+        footprint, offers a 1/16" profile, draws 176~mW continuously,
+        offers 1.13\% error on unity power factor loads in the 2-1200~W range
+        and slightly worse for non-linear and reactive loads, and costs \$11 in
+        modest quantities of about 1000 units. This new design point enables
+        affordable large-scale studies of plug-load energy usage---an area of
+        growing national importance.
+    },
+}
+
+@inproceedings{zachariah15iot-ui-demo,
+    author = {Zachariah, Thomas and Adkins, Joshua and Dutta, Prabal},
+    title = {Demo: Browsing the Web of Things with Summon},
+    booktitle = {Proceedings of the 13th ACM Conference on Embedded Networked Sensor Systems},
+    series = {SenSys'15},
+    year = {2015},
+    mon = {Nov},
+    isbn = {978-1-4503-3631-4},
+    location = {Seoul, South Korea},
+    pages = {481--482},
+    numpages = {2},
+    url = {http://doi.acm.org/10.1145/2809695.2817864},
+    doi = {10.1145/2809695.2817864},
+    acmid = {2817864},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    conference-url = {http://sensys.acm.org/2015/demos/},
+    abstract = { We are becoming increasingly surrounded by smart and connected devices,
+        popularly known as the Internet of Things. The emerging user interface
+        paradigm for many such things eschews physical buttons, knobs, and displays in
+        favor of virtual interfaces that are downloaded from the web and rendered on
+        remote platforms---like smartphones. However, such smartphone app-based
+        interfaces often require tedious discovery and installation, as well as device
+        discovery, pairing, and configuration before a user can interact with a nearby
+        device. Requiring an explicit app install for each new device type scales
+        poorly with device growth, and particularly hinders casual interactions with
+        ambient devices. Instead of the high-friction, walled-garden approach now
+        taking root, we propose name, a physical web browser that provides a seamless,
+        scalable approach to browsing and interacting with nearby things. name
+        leverages multiple network patterns and modern web technologies to provide
+        users with rich device interfaces, even for devices under network or power
+        constraints. We argue that this approach scales better and that it provides
+        more intuitive and natural functionality for both users and developers. This
+        demo presents the basic concept, allows others to experience our preliminary
+        implementation, and raises several open research questions.
+    },
+}
+
+

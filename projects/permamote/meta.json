@@ -1,0 +1,10 @@
+{
+	"sort-date": "2018-1-1",
+	"start-date": "2017-6-1",
+	"people": ["nealjack","adkinsjd"],
+	"pubs": ["jackson19capacity","jackson18reconsidering"],
+	"tags": [],
+	"images": [""],
+	"brief": "Exploring Reliable, Energy-Harvesting Motes",
+	"github": ["https://github.com/lab11/permamote"]
+}

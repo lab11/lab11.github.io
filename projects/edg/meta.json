@@ -1,0 +1,11 @@
+{
+    "name":"EDG",
+	"sort-date": "2017-1-1",
+	"start-date": "2016-1-1",
+	"people": ["rohitram"],
+	"pubs": ["ramesh17edg","lin19beyond_schematic_capture","lin20polymorphic"],
+	"tags": [],
+	"images": [""],
+	"brief": "Generate hardware designs from software",
+	"github": ["https://github.com/lab11/edg-sat-prototype"]
+}

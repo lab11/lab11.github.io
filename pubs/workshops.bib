@@ -1,0 +1,858 @@
+@inproceedings{dutta10sdr,
+ author = {Dutta, Prabal and Kuo, Ye-Sheng and Ledeczi, Akos and Schmid, Thomas and Volgyesi, Peter},
+ title = {Putting the Software Radio on a Low-calorie Diet},
+ booktitle = {Proceedings of the 9th ACM SIGCOMM Workshop on Hot Topics in Networks},
+ series = {Hotnets-IX},
+ year = {2010},
+ mon = {oct},
+ isbn = {978-1-4503-0409-2},
+ location = {Monterey, California},
+ pages = {20:1--20:6},
+ articleno = {20},
+ numpages = {6},
+ url = {http://doi.acm.org/10.1145/1868447.1868467},
+ doi = {10.1145/1868447.1868467},
+ acmid = {1868467},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {energy-efficiency, low-power communications, software defined radios, wireless sensor networks},
+ conference-url = {\url{http://conferences.sigcomm.org/hotnets/2010/}},
+ abstract = {Modern software-defined radios are large, expensive, and power-hungry
+		 devices and this, we argue, hampers their more widespread
+		 deployment and use, particularly in low-power,
+		 size-constrained application settings like mobile phones and sensor
+		 networks. To rectify this problem, we propose to put the
+		 software-defined radio on a diet by redesigning it around just
+		 two core chips -- an integrated RF transceiver and a
+		 Flash-based, mixed-signal FPGA. Modern transceivers integrate
+		 almost all RF front-end functions while emerging FPGAs
+		 integrate nearly all of required signal conditioning and
+		 processing functions. And, unlike conventional FPGAs,
+		 Flash-based FPGAs offer sleep mode power draws measured in the
+		 microamps and startup times measured in the microseconds,
+		 both of which are critical for low-power operation. If our platform
+		 architecture vision is realized, it will be possible to hold
+		 a software-defined radio in the palm of one’s hand, build it
+		 for \$100, and power it for days using the energy in a
+		 typical mobile phone battery. This will make software radios
+		 deployable in high densities and broadly accessible for
+		 research and education.
+ },
+}
+
+@inproceedings{pannuto11plc,
+	author={Pannuto, Pat and Dutta, Prabal},
+	title={Exploring Powerline Networking for the Smart Building},
+	booktitle = {Extending the Internet to Low power and Lossy Networks},
+	series = {IP+SN'11},
+	year = {2011},
+	month = {April},
+	location = {Chicago, Illinois, USA},
+	conference-url = {\url{http://hinrg.cs.jhu.edu/ip+sn2011/}},
+	abstract = {
+		The SmartGrid is ushering in an era of new IP endpoints that already
+		reside on the power grid today, but lack network connectivity.  Many
+		of these endpoints -- refrigerators, air conditioners, and power
+		strips -- will be networked wirelessly.  However, since they already
+		exist on the power grid, a natural question is whether they might be
+		networked over the same wires that supply their power.  Such an
+		approach would allow SmartGrid sensors to vacate increasingly
+		congested spectrum and allow information to flow along the same path
+		as power, perhaps simplifying deployment in the short term and deep
+		demand response in the long term.
+		In this paper we explore the current state of Powerline Communications
+		(PLC) and explore the efficacy of PLC as a sensor network backbone in
+		a modern building.  We evaluate several different PLC modems in both
+		end-to-end and multi-hop configurations.  We further analyze building
+		blueprints to identify and correlate several PLC ``disruptors'' --
+		building facets that inhibit PLC.  Our preliminary results show that
+		PLC is a promising technology for networking sensors in the Smart
+		Building.  However, a number of anomalies suggest a more in-depth
+		study is warranted.
+	},
+}
+
+@inproceedings{huang13interactions,
+	author = {Huang, William and Dutta, Prabal},
+	title = {Opo: Characterizing Human Interactions To Model Disease Transmission},
+	booktitle = {The First International Workshop on the Swarm at the Edge of the Cloud},
+	series = {SEC'13},
+	year = {2013},
+	mon = {Sep},
+	day = {29},
+	location = {Montreal, Quebec, Canada},
+	conference-url = {\url{http://www.terraswarm.org/conferences/13/swarm/}},
+	abstract = {Capturing the spatial and temporal aspects of human interactions allows for better
+			informed disease transmission models. Various smart badge type solutions have been
+			devised to capture these parameters, but their real world deployability is
+			minimal. The key problem stems from the unpredictability of mobile neighbors,
+			which makes synchronization and neighbor discovery difficult, resulting in
+			either bulky, high powered nodes or infrastructure heavy systems. In this paper,
+			we present Opo, a small, ultrasonic wakeup circuit that draws 16~\uA when no
+			neighbors are present, allowing nodes to remain asleep most of the time and be
+			asynchronously awoken when other nodes are present. This solves the
+			synchronization problem without requiring large batteries or infrastructure
+			nodes, enabling easily deployable systems to characterize the spatial and
+			temporal aspects of human interactions.
+	},
+}
+
+@inproceedings{pannuto13gatd,
+	author = {Pannuto, Pat and Campbell, Bradford and Dutta, Prabal},
+	title = {{GATD}: A Robust, Extensible, Versatile Swarm Dataplane},
+	booktitle = {The First International Workshop on the Swarm at the Edge of the Cloud},
+	series = {SEC'13},
+	year = {2013},
+	mon = {Sep},
+	day = {29},
+	location = {Montreal, Quebec, Canada},
+	conference-url = {\url{http://www.terraswarm.org/conferences/13/swarm/}},
+	abstract = { We propose Get All The Data (GATD), a data collection and dissemination
+			system for the Swarm. GATD offers a flexible architecture to connect arbitrary
+			producers of data and consumers of events. Too many sensor networks are
+			fragile, vertical silos, with a series of one-off handlers written to shuttle
+			data, manipulate it, process it, and present it. Instead of being mired
+			in details and rigid schemas, we argue that sensor network deployment should
+			be simple. The key in GATD's design is the
+			observation that there are common patterns to how disparate sensor network
+			applications handle and process their generated data.
+
+			To take advantage of these
+			similarities we present a system comprised of common modules that
+			different applications can leverage.
+			To join GATD, new sensors simply send raw data. GATD will buffer this raw
+			data indefinitely until an application specific {\em formatter} is written to
+			map the raw data to key-value pairs. These streams can be combined, processed,
+			graphed, stored, or otherwise manipulated by a standard set of transforms or
+			new custom drivers. With this architecture, we argue that GATD provides a
+			robust, extensible, and versatile Swarm dataplane.
+	},
+}
+
+@inproceedings{campbell13ipv6cloud,
+	author = {Campbell, Bradford and Durumeric, Zakir and Dutta, Prabal},
+	title = {Networking the Cloud: Extending {IPv6} to City-Wide Sensor Networks},
+	booktitle = {The First International Workshop on the Swarm at the Edge of the Cloud},
+	series = {SEC'13},
+	year = {2013},
+	mon = {Sep},
+	day = {29},
+	location = {Montreal, Quebec, Canada},
+	conference-url = {\url{http://www.terraswarm.org/conferences/13/swarm/}},
+	abstract = {When looking at the new devices and operating modes that will emerge to comprise
+			the ``swarm'' of sensors, we must consider the networking layer that will
+			connect them to the cloud and the Internet at large. IPv6 and 6LoWPAN have been
+			proposed and studied for wireless sensor networks, but new sensor types, such as
+			energy-harvesting, millimeter-scale, and transmit only nodes, as well as new
+			deployment strategies for city-wide scale may require rethinking, or at least
+			tweaking, this approach. We believe that IPv6 is still viable, and in fact quite
+			useful, for this application. However, how to fully integrate these new devices
+			raises some challenges for future deployments.
+	},
+}
+
+
+@inproceedings{klugman14gridwatch,
+ author = {Klugman, Noah and Rosa, Javier and Pannuto, Pat and Podolsky, Matthew and Huang, William and Dutta, Prabal},
+ title = {{Grid Watch}: Mapping Blackouts with Smart Phones},
+ booktitle = {Proceedings of the 15th Workshop on Mobile Computing Systems and Applications},
+ series = {HotMobile'14},
+ year = {2014},
+ month = {feb},
+ location = {Santa Barbara, California},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ abstract = {The power grid is one of humanity's most significant engineering
+	 undertakings and it is essential in developed and developing nations
+		 alike.  Currently, transparency into the power grid relies on
+		 utility companies and more fine-grained insight is provided by
+		 costly smart meter deployments. We claim that greater
+		 visibility into power grid conditions can be provided in an
+		 inexpensive and crowd-sourced manner independent of utility
+		 companies by leveraging existing smartphones.  Our key insight
+		 is that an unmodified smartphone can detect power outages by
+		 monitoring changes to its own power state, locally verifying
+		 these outages using a variety of sensors that reduce the
+		 likelihood of false power outage reports, and corroborating
+		 actual reports with other phones through data aggregation in
+		 the cloud.  The proposed approach enables a decentralized
+		 system that can scale, potentially providing researchers and
+		 concerned citizens with a powerful new tool to analyze the
+		 power grid and hold utility companies accountable for poor
+		 power quality.  This paper demonstrates the viability of the
+		 basic idea, identifies a number of challenges that are
+		 specific to this application as well as ones that are common
+		 to many crowd-sourced applications, and highlights some
+		 improvements to smartphone operating systems that could better
+		 support such applications in the future.},
+	conference-url = {\url{http://www.hotmobile.org/2014/}},
+	acceptance-accepted = 22,
+	acceptance-total = 72,
+}
+
+@inproceedings{kempke14harmonia,
+  author = {Kempke, Benjamin and Pannuto, Pat and Dutta, Prabal},
+  title = {Harmonia: Wideband Spreading for Accurate Indoor {RF} Localization},
+  booktitle = {2014 ACM Workshop on Hot Topics in Wireless},
+  series = {HotWireless'14},
+  year = {2014},
+  month = {September},
+  location = {Maui, Hawaii, USA},
+  abstract = {We introduce {\em Harmonia}, a new RF-based localization scheme
+		that provides the simplicity, cost, and power advantages of
+		  traditional narrowband radios with the decimeter-scale
+		  accuracy of ultra wideband localization techniques. Harmonia is
+		  an asymmetric {\em tag} and {\em anchor} system, requiring
+		  minimal modifications to existing low-power wireless devices
+		  to support high-fidelity localization with comparatively
+		  modest infrastructure costs.  A prototype Harmonia design offers
+		  location estimates with an average-case error of 53.4~cm in
+		  complex, heavy-multipath, indoor environments and captures
+		  location estimates at 56~Hz while requiring only 1.7~mA
+		  additional power draw for each tag and complying with all
+		  US~UWB regulations.  We believe this architecture's
+		  combination of accuracy, update rate, power draw, and system
+		  complexity will lead to a new point in the design space.
+  },
+  conference-url = {\url{http://hotwireless.cs.umass.edu/}},
+}
+
+@inproceedings{kuo14vlc_arch,
+  author = {Kuo, Ye-Sheng and Pannuto, Pat and Dutta, Prabal},
+  title = {System Architecture Directions for a Software-Defined Lighting Infrastructure},
+  booktitle = {1st ACM Workshop on Visible Light Communication Systems},
+  series = {VLCS'14},
+  year = {2014},
+  month = {September},
+  location = {Maui, Hawaii, USA},
+  abstract = {After years of development, cost-effective, energy-efficient, and
+  long-lasting solid-state lighting technology is finally a viable alternative
+  to incandescent and fluorescent lights.  Unfortunately, the remarkable march
+  of semiconductor technology into the lighting industry is almost entirely in
+  the form of a substitute good---one kind of lighting technology that replaces
+  another---but this, we argue, squanders a unique opportunity for lighting to
+  enable a bevy of new applications.  In this paper, we discuss applications in
+  health, energy efficiency, entertainment, communications, indoor positioning,
+  device configuration, and time synchronization.  We then prototype several of
+  the indoor applications to explore a {\em software-defined lighting} (SDL)
+  architecture that could support them.
+
+  Using our prototyped applications, we next take a primitive stab at
+  demonstrating application coexistence, multiplexing multiple applications on
+  a single lighting network.  A major question raised by this effort is how to
+  multiplex these various applications in a more principled manner on a shared
+  lighting infrastructure whose primary role is illumination (implying that any
+  human-perceptible flicker or flashing will be unacceptable).
+  Looking ahead, we draw inspiration from software-defined networking's
+  approach to sharing the network, and software-defined radios' approach to
+  processing waveforms, to sketch the beginnings of an SDL architecture and its
+  application programming interfaces.
+  },
+  conference-url = {\url{http://www.networks.rice.edu/VLCS-2014/}},
+}
+
+@inproceedings{ghena14green_lights,
+    author = {Branden Ghena and William Beyer and Allen Hillaker and Jonathan Pevarnek and J. Alex Halderman},
+    title = {Green Lights Forever: Analyzing the Security of Traffic Infrastructure},
+    booktitle = {Proceedings of the 8th USENIX Workshop on Offensive Technologies},
+    series = {WOOT'14},
+    year = {2014},
+    month = Aug,
+    location = {San Diego, CA},
+    publisher = {USENIX Association},
+    abstract = {The safety critical nature of traffic infrastructure requires that it
+    be secure against computer-based attacks, but this is not always the case.
+    We investigate a networked traffic signal system currently deployed in the
+    United States and discover a number of security flaws that exist due to
+    systemic failures by the designers. We leverage these flaws to create attacks
+    which gain control of the system, and we successfully demonstrate them on the
+    deployment in coordination with authorities. Our attacks show that an
+    adversary can control traffic infrastructure to cause disruption, degrade
+    safety, or gain an unfair advantage. We make recommendations on how to improve
+    existing systems and discuss the lessons learned for embedded systems security
+    in general.},
+    conference-url = {https://www.usenix.org/conference/woot14/workshop-program},
+    acceptance-accepted = {17},
+    acceptance-total = {35},
+}
+
+@inproceedings{campbell14thermes,
+    author = {Campbell, Bradford and Ghena, Branden and Dutta, Prabal},
+    title = {Energy-Harvesting Thermoelectric Sensing for Unobtrusive Water and Appliance Metering},
+    booktitle = {Proceedings of the 2nd International Workshop on Energy Neutral Sensing Systems},
+    series = {ENSsys'14},
+    year = {2014},
+    month = Nov,
+    location = {Memphis, TN},
+    publisher = {ACM},
+    abstract = {Fine-grained energy metering in homes and buildings provides a promising
+    technique for addressing the unmaintainable energy consumption levels of
+    worldwide buildings. Metering electricity, lighting, natural gas, HVAC,
+    occupancy, and water on a per appliance or room basis can provide invaluable insight
+    when trying to reduce a building's energy footprint. A myriad of sensor designs
+    and systems collect data on particular building aspects, but are often hampered
+    by installation difficulty or ongoing maintenance needs (like battery
+    replacement). We address these common pitfalls for water and heat metering by
+    developing a small, energy-harvesting sensor that meters using the same
+    thermoelectric generator with which it powers itself. In short, the rate at which
+    the harvester captures energy is proportional to the heat production of the
+    monitored appliance or pipe and this relationship allows us to estimate energy use
+    simply based on the sensor's ability to harvest. We prototype our sensor in a
+    bracelet shaped form-factor that can attach to a shower head pipe, faucet, or
+    appliance to provide local hot water or heat metering.},
+    conference-url = {http://www.enssys.org/2014/programme.php},
+    acceptance-accepted = {9},
+    acceptance-total = {11},
+}
+
+@inproceedings{zachariah15gateway,
+ author = {Zachariah, Thomas and Klugman, Noah and Campbell, Bradford and Adkins, Joshua and Jackson, Neal and Dutta, Prabal},
+ title = {The Internet of Things Has a Gateway Problem},
+ booktitle = {Proceedings of the 16th Workshop on Mobile Computing Systems and Applications},
+ series = {HotMobile'15},
+ year = {2015},
+ month = {feb},
+ location = {Santa Fe, New Mexico},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ abstract = {The vision of an Internet of Things (IoT) has captured the imagination
+	of the world and raised billions of dollars, all before we stopped to deeply
+	consider how all these Things should connect to the	Internet. The current
+	state-of-the-art requires application-layer gateways both in software and
+	hardware that provide application-specific connectivity to IoT devices. In much
+	the same way that it would be difficult to imagine requiring a new web browser
+	for	each website, it is hard to imagine our current approach to IoT
+	connectivity scaling to support the IoT vision.	The IoT gateway problem exists
+	in part because today's gateways conflate network connectivity, in-network
+	processing, and user interface functions. We believe that disentangling these
+	functions would improve the connectivity potential for IoT devices.	To realize
+	the broader vision,	we propose an architecture that leverages the increasingly
+	ubiquitous presence of Bluetooth Low Energy radios to connect IoT peripherals
+	to the Internet. In much the same way that WiFi access points revolutionized
+	laptop utility, we envision that a worldwide deployment	of IoT gateways could
+	revolutionize application-agnostic connectivity, thus breaking free from the
+	stove-piped architectures now taking hold. In this paper, we present our
+	proposed architecture, show example	applications enabled by it, and explore
+	research challenges	in its implementation and deployment.},
+	conference-url = {\url{http://www.hotmobile.org/2015/}},
+	acceptance-accepted = 23,
+	acceptance-total = 80,
+}
+
+@inproceedings{campbell15interfacing,
+	author = {Campbell, Bradford and Pannuto, Pat and Dutta, Prabal},
+	title = {Interfacing the Internet of a Trillion Things},
+	booktitle = {The Second International Workshop on the Swarm at the Edge of the Cloud},
+	series = {SEC'15},
+	year = {2015},
+	mon = {Apr},
+	location = {Seattle, Washington, USA},
+	abstract = {Meaningful, reusable applications built on top of ubiquitous and networked
+			devices will be slow to materialize as long as device APIs vary widely, communication
+			protocols are not standardized, and programming support is limited and
+			inconsistent. When even feature-identical devices present different APIs
+			and application creators are burdened with managing the variability,
+			the promise of the swarm of devices will go unrealized. We start addressing
+			this issue by providing a model for devices, based on input and output ports, that allows for a set of common
+			interfaces to represent a range of devices. Further, we provide a solution
+			to the bootstrapping problem, providing a general means to
+			bridge the adoption gap for a new API for the Internet of Things.
+			We borrow both the name, \emph{accessor}, and several key design concepts from
+			a recent proposal by Latronico~et.\,al, for our interface layer that wraps
+			currently non-conforming devices with the standard interface. We show how
+			a small, straightforward to write (and read) JavaScript file can convert
+			diverse devices into common interfaces that are conducive for creating applications.
+
+			We realize our system with three environments that can execute accessors,
+			Python, Java, and Node.js, a range of accessors for both IoT and legacy devices,
+			and a browser-based application for interacting with devices using our proposed
+			interfaces. We show how the same accessor mechanism can form synthetic devices
+			with higher-level interfaces and we outline how our system can be extended
+			to support authentication, accessor control, and cloud storage support.
+	},
+	conference-url = {\url{https://www.terraswarm.org/swec15/}},
+	acceptance-accepted = 7,
+}
+
+@inproceedings{pannuto15makingM3,
+	author = {Pannuto, Pat and Lee, Yoonmyung and Foo, ZhiYoong and Kim, Gyouho and Blaauw, David and Dutta, Prabal},
+	title = {Lessons from Five Years of Making {Michigan Micro Motes}},
+	booktitle = {6th Workshop of Architectural Research Prototyping},
+	series = {WARP'15},
+	year = {2015},
+	mon = {June},
+	location = {Portland, Oregon, USA},
+	abstract = { It has now been over fifteen years since Kris Pister's
+			call for ``smart dust''. Today, we are capable of
+			building general purpose computing systems, including
+			computation, storage, sensing, and communication, that
+			fit in a cubic millimeter.  In this work, we discuss
+			the lessons learned in the design, manufacture,
+			debugging, and preliminary deployment of
+			millimeter-scale systems.
+	},
+	conference-url = {\url{http://www.csl.cornell.edu/warp2015/}},
+	acceptance-accepted = 11,
+	acceptance-total = 20,
+}
+
+@inproceedings{kempke15polypoint,
+  author = {Kempke, Benjamin and Pannuto, Pat and Dutta, Prabal},
+  title = {PolyPoint: Guiding Indoor Quadrotors with Ultra-Wideband Localization},
+  booktitle = {2015 ACM Workshop on Hot Topics in Wireless},
+  series = {HotWireless'15},
+  year = {2015},
+  month = {September},
+  location = {Paris, France},
+  talk={\url{http://eecs.umich.edu/~bpkempke/talks/hotwireless15_polypoint_talk.pptx}},
+  abstract = {We introduce PolyPoint, the first RF localization system which enables the
+	  real-time tracking and navigating of quadrotors through complex indoor
+	  environments.  PolyPoint leverages the new ScenSor transceiver from DecaWave
+	  to acquire the timestamps necessary for accurate time-based location
+	  estimation and leverages the benefits of antenna and frequency diversity to
+	  iteratively refine a tag's position.
+	  PolyPoint produces quadrotor position estimates at a rate of 20\,Hz with
+	  median error below 40\,cm and average error of 56\,cm in line-of-sight
+	  conditions.  PolyPoint approaches the localization accuracy necessary to safely
+	  navigate quadrotors indoors, a feat currently achieved by costly and
+	  delicate optical motion capture systems.
+  },
+  conference-url = {\url{http://web.cse.ohio-state.edu/~chebo/HotWireless/}},
+  extra = {Potential for Test of Time 2025 Award},
+}
+
+
+@inproceedings{adkins15ving,
+  author = {Adkins, Joshua and Flaspohler, Genevieve and Dutta, Prabal},
+  title = {Ving: Bootstrapping the Desktop Area Network with a Vibratory Ping},
+  booktitle = {2015 ACM Workshop on Hot Topics in Wireless},
+  series = {HotWireless'15},
+  year = {2015},
+  month = {September},
+  location = {Paris, France},
+  abstract = {The emergence of the Internet of Things will cause the density
+  of wirelessly networked devices to increase significantly.  As the industry
+  and density continue to grow, enabling and managing networks of these devices
+  in a scalable manner without constant user interaction becomes essential.
+  Noting that information about physical context can guide interactions between
+  devices, we introduce the desktop area network and Ving, a vibratory
+  ping architecture that enables it. Ving is based on the wireless vibratory
+  communications channel between a vibratory motor on one device and an
+  accelerometer on another.  Because vibratory communications is a
+  physically-coupled, surface-constrained communications domain, Ving allows
+  devices to bootstrap networks within their physical context, creating a
+  literal desktop area network.  Such context establishment and network
+  creation enables a new class of applications for smartphones and embedded
+  devices.  We present several of these applications, discuss our preliminary
+  implementation of Ving, compare Ving to alternate methods of context
+  establishment, and suggest potential research challenges stemming from the
+  widespread use of Ving.},
+  conference-url = {\url{http://web.cse.ohio-state.edu/~chebo/HotWireless/}},
+  acceptance-accepted=9,
+  acceptance-total=16
+}
+
+@inproceedings{levy15ownership,
+    author = {Levy, Amit and Andersen, Michael P and Campbell, Bradford and Culler, David and Dutta, Prabal and Ghena, Branden and Levis, Philip and Pannuto, Pat},
+    title = {Ownership is Theft: Experiences Building an Embedded {OS} in {R}ust},
+    booktitle = {Proceedings of the 8th Workshop on Programming Languages and Operating Systems},
+    series = {PLOS 2015},
+    year = {2015},
+    month = {Oct},
+    isbn = {978-1-4503-3942-1},
+    doi = {10.1145/2818302.2818306},
+    url = {http://dx.doi.org/10.1145/2818302.2818306},
+    location = {Monterey, CA},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    conference-url = {http://plosworkshop.org/2015/},
+    abstract = { Rust, a new systems programming language, provides
+        compile-time memory safety checks to help eliminate runtime bugs that
+        manifest from improper memory management. This feature is advantageous
+        for operating system development, and especially for embedded OS
+        development, where recovery and debugging are particularly challenging.
+        However, embedded platforms are highly event-based, and Rust's memory
+        safety mechanisms largely presume threads. In our experience developing
+        an operating system for embedded systems in Rust, we have found that
+        Rust's {\em ownership} model prevents otherwise safe resource sharing
+        common in the embedded domain, conflicts with the reality of hardware
+        resources, and hinders using closures for programming asynchronously.
+        We describe these experiences and how they relate to memory safety as
+        well as illustrate our workarounds that preserve the safety guarantees
+        to the largest extent possible. In addition, we draw from our
+        experience to propose a new language extension to Rust that would
+        enable it to provide better memory safety tools for event-driven
+        platforms.
+    },
+    acceptance-accepted=7,
+    acceptance-total=16,
+}
+
+@inproceedings{clark2015haunted,
+  title={The Haunted House: Networking Smart Homes to Enable Casual Long-distance Social Interactions},
+  author={Clark, Meghan and Dutta, Prabal},
+  booktitle={Proceedings of the 2015 International Workshop on Internet of Things towards Applications},
+  no-series={1},
+  pages={23--28},
+  year={2015},
+  month = {November},
+  location = {Seoul, South Korea},
+  publisher={ACM},
+  conference-url = {http://ceca.pku.edu.cn/IoT-App15/},
+  abstract = {Despite the dominance of social networking and communications in
+		  nearly every aspect of our digital lives, little work has been
+		  done to examine the unique contributions that networked smart
+		  homes can make in the space of technologically-mediated human
+		  interaction. In this work, we introduce an application called
+		  "ghosting" that turns a smart and connected home into a
+		  socially-connected home. We show that unlike direct
+		  teleconferencing, the Internet of Things supports more
+		  subtle, ambient, and incidental exchanges that can make an
+		  environment feel co-inhabited by a person who may be many
+		  miles away. Ghosting synchronizes audio and lighting between
+		  two homes on a room-by-room basis. Microphones in each room
+		  transmit audio to the corresponding room in the other home,
+		  unifying the ambient sound domains of the two homes. For example,
+		  a user cooking in their kitchen transmits sounds out of
+		  speakers in the other user's own kitchen. The lighting
+		  context in corresponding rooms is also synchronized. A light
+		  toggled in one house toggles the lights in the other house in
+		  real time. We claim that this system allows for casual
+		  interactions that feel natural and intimate because they
+		  share context and require less social effort than a
+		  teleconference or phone call. We describe the design points
+		  of the system and explore the successes and limitations of
+		  the ghosting user experience by implementing and deploying a
+		  ghosting application in two different settings.
+  },
+}
+
+@inproceedings{campbell2016cinamin,
+  title={Cinamin: A Perpetual and Nearly Invisible BLE Beacon},
+  author={Campbell, Bradford and Adkins, Joshua and Dutta, Prabal},
+  booktitle={Proceedings of the 2016 International Conference on Embedded Wireless Systems and Networks},
+  series={EWSN'16},
+  year={2016},
+  month = {February},
+  location = {Graz, Austria},
+  conference-url = {http://www.iti.tugraz.at/EWSN2016/cms/index.php?id=11},
+  abstract = {Bluetooth Low Energy beacons have immense potential
+  to provide rich contextual information to smartphone applications and people by bridging the physical and digital
+  worlds. Beacons perform the simple operation of periodically chirping URLs, locations, and other pointers, however,
+  today’s beacons use relatively large and battery powered implementations. To truly make these beacons pervasive, they
+  will need to be smaller, self-powered, and, ideally, invisible. To facilitate this, we propose the Cinamin beacon design
+  that exploits the powerful but simple primitive of periodic
+  packet broadcast to replace the volume-defining battery with
+  an energy-harvesting power supply and achieve a beacon in
+  under 100 mm 3 . This design, however, raises new issues
+  relevant to energy-harvesting and challenges with pursuing
+  miniaturization.
+  },
+}
+
+@inproceedings{levy17rustkernel,
+ author = {Levy, Amit and Campbell, Bradford and Ghena, Branden and Pannuto, Pat and Dutta, Prabal and Levis, Philip},
+ title = {The Case for Writing a Kernel in Rust},
+ booktitle = {Proceedings of the 8th Asia-Pacific Workshop on Systems},
+ series = {APSys'17},
+ year = {2017},
+ month = {September},
+ isbn = {978-1-4503-5197-3},
+ location = {Mumbai, India},
+ pages = {1:1--1:7},
+ articleno = {1},
+ numpages = {7},
+ url = {http://doi.acm.org/10.1145/3124680.3124717},
+ doi = {10.1145/3124680.3124717},
+ acmid = {3124717},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ conference-url = {https://www.cse.iitb.ac.in/~apsys2017/},
+ abstract = {Decades of research has attempted to add safety mechanisms to
+   operating system kernels, but this effort has failed in most practical
+     systems. In particular, solutions that sacrifice performance have been
+     generally avoided. However, isolation techniques in modern languages can
+     provide safety while avoiding performance issues. Moreover, utilizing a
+     type-safe language with no garbage collector or other runtime services
+     avoids what would otherwise be some of the largest sections of trusted
+     code base. We report on our experiences in writing a resource efficient
+     embedded kernel in Rust, finding that only a small set of unsafe
+     abstractions are necessary in order to form common kernel building blocks.
+     Further, we argue that Rust's choice to avoid runtime memory management by
+     using a linear type system will enable the next generation of safe
+     operating systems.
+ },
+}
+
+@inproceedings{clark16weaving,
+ author = {Clark, Meghan and Dutta, Prabal},
+ title = {Weaving Social Fabric with a Home-to-Home Network},
+ booktitle = {CHI 2016 Future of Human-Building Interaction},
+ year = {2016},
+ month = {May},
+ abstract = {
+     We believe that the future of human-building interaction lies
+     in the mediation of human-human interactions. In this work
+     we introduce a smart home application called Ghosting,
+     which is a two-way telepresence system that synchronizes
+     the audio and lighting state of two homes at a room level.
+     This allows users to converse as they normally would while
+     sharing a home, such as by talking while in the same room
+     or by shouting across the house. Users can additionally experience
+     in real time the casual yet intimate interactions of
+     daily shared living, like hearing the remote occupant walking
+     from room to room, coughing and shuffling papers just
+     around the corner, and seeing the lights turn on and off.
+     Due to its broad appeal, shared virtual living could lead to
+     the widespread deployment of space synchronization infrastructure,
+     forming a global home-to-home network. We
+     explore the new applications and economies that could
+     emerge from such a network, given the capabilities of the
+     Ghosting infrastructure.
+ },
+}
+
+@inproceedings{adkins17energy,
+ author = {Adkins, Joshua and Campbell, Bradford and Ghena, Branden and Jackson, Neal and Pannuto, Pat and Dutta, Prabal},
+ title = {Energy Isolation Required for Multi-tenant Energy Harvesting Platforms},
+ booktitle = {Proceedings of the Fifth ACM International Workshop on Energy Harvesting and Energy-Neutral Sensing Systems},
+ series = {ENSsys'17},
+ year = {2017},
+ month = {November},
+ isbn = {978-1-4503-5477-6},
+ location = {Delft, Netherlands},
+ pages = {27--30},
+ numpages = {4},
+ url = {http://doi.acm.org/10.1145/3142992.3142995},
+ doi = {10.1145/3142992.3142995},
+ acmid = {3142995},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Energy Harvesting, Energy Isolation, Multi-tenancy},
+ conference-url = {\url{http://www.enssys.org/2017/}},
+ abstract = {
+   Embedded systems have long been synonymous with special purpose, single
+   stakeholder computing. However, as these systems have become more capable and
+   the demands placed on them have become more varied and variable, embedded
+   software is beginning to embrace multi-tenancy.
+   While the general problem of supporting multiple users and processes on a
+   computing platform has been well explored in computer science, the
+   challenges of supporting multiple users with competing desires on a highly
+   energy-variable system remain unexplored.
+   On an energy-harvesting platform, incoming energy needs to be distributed
+   between stakeholders, and users accessing shared platform resources should
+   be charged for the energy use of those resources.
+   Furthermore, with system designers and application creators being
+   increasingly removed from each other, the software environments of
+   energy-harvesting platforms must provide primitives that enable applications
+   to adapt to system variability.
+   We explore several initial techniques for solving these problems and
+   demonstrate them using Signpost---a modular, energy-harvesting platform for
+   city-scale sensing.
+ },
+ acceptance-accepted = 6,
+ acceptance-total = 18,
+}
+% 15 full, 5 accepted; 3 position, 1 accepted; 1 poster/demo -> 4 (rej papers -> P/D)
+
+@inproceedings{pannuto18uwbdata,
+  author = {Pannuto, Pat and Kempke, Benjamin and Campbell, Bradford and Dutta, Prabal},
+  title = {Indoor Ultra Wideband Ranging Samples from the {DecaWave} {DW1000} Including Frequency and Polarization Diversity},
+  booktitle = {Data Acquisition To Analysis},
+  series = {DATA'18},
+  year = {2018},
+  month = {November},
+  conference-url={\url{https://workshopdata.github.io/DATA2018/}},
+  abstract = {
+When performing RF ranging in a complex indoor environment, the error of a
+single channel estimate can vary widely. A key insight of the PolyPoint and
+SurePoint ranging protocols is that individual nodes can efficiently capture
+multiple independent samples of the RF channel. For each point in space, nodes
+capture twenty seven independent samples by varying the spectrum sampled and
+the polarization of antennas. This dataset includes all of the measurements
+reported in the PolyPoint and SurePoint papers, which comprises several
+thousand points in a complex indoor environment. Precise 3D coordinates of
+nodes were captured using an optical motion capture system calibrated to
+millimeter accuracy. Several tracking studies are included, with continuous
+samples over time as a node moves through the environment.
+  },
+  acceptance-accepted = 14,
+  acceptance-total = 15,
+}
+
+@inproceedings{zachariah18bledata,
+  author = {Zachariah, Thomas and Clark, Meghan and Dutta, Prabal},
+  title = {Bluetooth Low Energy in the Wild Dataset},
+  booktitle = {Proceedings of the First Workshop on Data Acquisition To Analysis},
+  series = {DATA'18},
+  year = {2018},
+  month = {November},
+  isbn = {978-1-4503-6049-4},
+  location = {Shenzhen, China},
+  pages = {27--28},
+  numpages = {2},
+  url = {http://doi.acm.org/10.1145/3277868.3277882},
+  doi = {10.1145/3277868.3277882},
+  acmid = {3277882},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {bluetooth low energy, characteristics, internet of things, services},
+  conference-url={\url{https://workshopdata.github.io/DATA2018/}},
+  abstract = {
+In 2015, we performed a study to learn which Bluetooth Low Energy peripheral
+devices were most prevalent among consumers, as well as which services these
+devices provided and utilized in practice. Additionally, we sought to
+investigate the real-world usage of standard Bluetooth services versus custom
+protocols among developers. The study involved a continuous month-long scan
+taken on two floors of an academic building. The resulting dataset consists of
+scan results from approximately 3000 unique devices.
+  },
+  acceptance-accepted = 14,
+  acceptance-total = 15,
+}
+
+@inproceedings{adkins19freeloader,
+    author = {Adkins, Joshua and Ghena, Branden and Dutta, Prabal},
+    title = {Freeloader's Guide Through the Google Galaxy},
+    booktitle = {Proceedings of the 20th International Workshop on Mobile Computing Systems and Applications},
+    series = {HotMobile'19},
+    year = {2019},
+    month = {February},
+    conference-url = {http://www.hotmobile.org/2019},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    abstract = {
+One of the largest impediments to pervasive sensing is ensuring equally
+pervasive network access. While we can create wireless sensors that last for
+years without human intervention, the network infrastructure to support their
+deployment requires planning, power, and maintenance. The potential for a
+crowd-based solution to this problem is ripe—ever pervasive smart phones have
+the hardware and connectivity to serve as ubiquitous mobile gateways—however
+the fragmentation of low power wireless protocols combined with the lack of
+incentive for users to sacrifice their own resources transporting others’
+data has made this approach untenable.
+
+Through an “off label” use of Google’s Physical Web and Nearby Notifications,
+it was possible to ignore these problems and exploit nearly the entire global
+population of Android phones to slowly transport sensor data to an arbitrary
+web server. This mechanism was enabled by default and transparent to the
+phone’s user. On one hand, it served as an exciting opportunity to explore
+infrastructure-free wireless networking. In a one week deployment of five
+devices transmitting at 1 Hz, we were able to successfully transport 326 kB
+of data with an average data rate of 0.1–2.6 bps. This is slow, but
+sufficient for many applications such as environmental monitoring and sensor
+status reporting. On the other hand, a mobile operating system probably
+should not have enabled exfiltration of arbitrary data without a user’s
+knowledge or consent. While Nearby Notifications has now been decommissioned,
+we examine security policy requirements for future systems that interact with
+nearby devices, and we envision a similar, intentional mechanism to allow
+data hitchhiking for the Internet of Things.
+    },
+    acceptance-accepted = 26,
+    acceptance-total = 57,
+}
+
+@inproceedings{zachariah19browsing,
+    author = {Zachariah, Thomas and Dutta, Prabal},
+    title = {Browsing the Web of Things in Mobile Augmented Reality},
+    booktitle = {Proceedings of the 20th International Workshop on Mobile Computing Systems and Applications},
+    series = {HotMobile'19},
+    year = {2019},
+    month = {February},
+    isbn = {978-1-4503-6273-3},
+    location = {Santa Cruz, CA, USA},
+    pages = {129--134},
+    numpages = {6},
+    url = {http://doi.acm.org/10.1145/3301293.3302359},
+    doi = {10.1145/3301293.3302359},
+    acmid = {3302359},
+    publisher = {ACM},
+    address = {New York, NY, USA},
+    keywords = {augmented reality, device discovery, internet of things, mobile, user interfaces, web browsing},
+    conference-url = {http://www.hotmobile.org/2019},
+    abstract = {
+With the current augmented reality and low-power radio technology present on
+mobile platforms, we can imagine a standard and physically tangible browsing
+mechanism for objects in the Web of Things. We explore a model for user
+interaction with IoT devices that makes use of mobile augmented reality to allow
+users to identify new devices or easily access regularly-used devices in their
+environment, enables immediate interaction with quickly-obtainable user
+interfaces from the web, and provides developers a convenient platform to
+display custom interfaces for their devices. This model represents a step
+towards software-based interaction that might, one day, feel as intuitive,
+accessible, and familiar as the physical interfaces we commonly encounter in our
+daily lives.
+    },
+    acceptance-accepted = 26,
+    acceptance-total = 57,
+}
+
+@inproceedings{jackson18reconsidering,
+  author = {Jackson, Neal and Adkins, Joshua and Dutta, Prabal},
+  title = {Reconsidering Batteries in Energy Harvesting Sensing},
+  booktitle = {Proceedings of the 6th International Workshop on Energy Harvesting \& Energy-Neutral Sensing Systems},
+  series = {ENSsys'18},
+  year = {2018},
+  month = {November},
+  isbn = {978-1-4503-6047-0},
+  location = {Shenzhen, China},
+  pages = {14--18},
+  numpages = {5},
+  url = {http://doi.acm.org/10.1145/3279755.3279757},
+  doi = {10.1145/3279755.3279757},
+  acmid = {3279757},
+  publisher = {ACM},
+  address = {New York, NY, USA},
+  keywords = {battery, capacity, energy harvesting, sensor},
+  conference-url={\url{http://www.enssys.org/2018/}},
+  abstract = {
+  For the past decade, the status-quo for energy harvesting sensors has been to
+  buffer small amounts of energy in capacitors to in- termittently work through
+  a sensing task. While using capacitors for storage offers these systems
+  indefinite lifetime, it comes at a cost – they must tolerate the decreased
+  availability, lower en- ergy utilization, and more complex programming models
+  inherent to a volatile, intermittent design. We argue that many of these
+  problems stem from insufficient energy storage and could be elimi- nated with
+  the use of batteries. Recent advances in rechargeable battery technology
+  weaken the historical arguments against their use. We believe that using
+  batteries in energy harvesting sensors will push us closer to a class of
+  reliable, general purpose devices that can better serve human-centric sensing
+  applications than their capacitor-based counterparts at the cost of having a
+  finite, but long, lifetime.},
+  acceptance-accepted = 7,
+  acceptance-total = 11,
+}
+
+@inproceedings{ghena19distributed,
+  author = {Ghena, Branden and Watson, Jean-Luc and Dutta, Prabal},
+  title = {Embedded OSes Must Embrace Distributed Computing},
+  booktitle = {Proceedings of the 1st International Workshop on Next-Generation Operating Systems for Cyber-Physical Systems},
+  series = {NGOSCPS'19},
+  year = {2019},
+  month = {April},
+  location = {Montreal, Canada},
+  numpages = {3},
+  conference-url={\url{https://www.cse.wustl.edu/~cdgill/ngoscps2019/}},
+  abstract = {
+    Long the case in automotive, aeronautics, and industrial settings, embedded
+    systems in myriad other areas are becoming distributed systems in all but
+    name. Driven by increasingly complex applications with wide-ranging
+    hardware requirements, developers are turning to modular designs that
+    integrate multiple processors onto a single board. Unfortunately,
+    problems already familiar to distributed systems—coordinated execution,
+    portable applications, and unified system-wide administration—have no
+    corresponding embedded support and must be re-implemented in an ad hoc
+    fashion for each application. We argue that future embedded operating
+    system development should explicitly support these multi-microcontroller
+    systems, and can leverage distributed techniques to do so. We also
+    believe that the low-level nature of embedded sensing indicates that OSes
+    should not attempt to completely abstract the presence of separate
+    hardware components and capabilities. Instead, they should provide useful
+    interfaces that support resource-constrained execution and modular
+    application interactions. To that end, we identify existing embedded OS
+    efforts and distributed systems concepts that can inform next-generation
+    OS development.
+  },
+  acceptance-accepted = 14,
+}
+

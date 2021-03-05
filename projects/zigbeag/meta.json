@@ -1,0 +1,11 @@
+{
+    "name":"GAP",
+	"sort-date": "2014-07-25",
+	"start-date": "2014-05-01",
+	"pcbs": ["bbb-cc2520"],
+	"github": ["https://github.com/lab11/beaglebone-cc2520"],
+	"people": ["nealjack"],
+	"grants": ["marco-terraswarm"],
+	"images": ["zigbeag.png"],
+	"brief": "A 802.15.4/BLE cape for the Beaglebone Black.."
+}

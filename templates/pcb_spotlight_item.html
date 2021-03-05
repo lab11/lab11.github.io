@@ -1,0 +1,9 @@
+<a href="/pcb.html#{{ pcb['name'] }}" class="list-group-item">
+	<span class="badge">Rev {{ pcb['revision']|capitalize() }}</span>
+	<h4 class="list-group-item-heading">{{ pcb['name'] }}</h4>
+	<p class="list-group-item-text">
+		<img src="/{{ paths['image'] }}" class="pull-left" style="padding: 5px;" width="50px" />
+		<small style="line-height:70%;">{{ pcb['description_short'] }}</small>
+	</p>
+	<div class="clearfix"></div>
+</a>

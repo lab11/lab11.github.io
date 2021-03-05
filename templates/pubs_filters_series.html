@@ -1,0 +1,31 @@
+<select class="selectpicker" id="pub_filter_venue">
+	<optgroup label="Default">
+		<option value="all" selected="selected">All Venues</option>
+	</optgroup>
+	<optgroup label="Conferences">
+		{% for s in series['conferences'] %}
+		<option value="{{ s[1] }}">{{ s[0] }}</option>
+		{% endfor %}
+	</optgroup>
+	<optgroup label="Journals">
+		{% for s in series['journals'] %}
+		<option value="{{ s[1] }}">{{ s[0] }}</option>
+		{% endfor %}
+	</optgroup>
+	<optgroup label="Workshops">
+		{% for s in series['workshops'] %}
+		<option value="{{ s[1] }}">{{ s[0] }}</option>
+		{% endfor %}
+	</optgroup>
+	<optgroup label="Demos">
+		{% for s in series['demos'] %}
+		<option value="{{ s[1] }}">{{ s[0] }}</option>
+		{% endfor %}
+	</optgroup>
+	<optgroup label="Posters">
+		{% for s in series['posters'] %}
+		<option value="{{ s[1] }}">{{ s[0] }}</option>
+		{% endfor %}
+	</optgroup>
+</select>
+

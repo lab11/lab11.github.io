@@ -1,0 +1,11 @@
+{
+	"sort-date": "2013-12-15",
+	"start-date": "2012-11-01",
+	"people": ["wwhuang", "samkuo", "ppannuto", "prabal"],
+	"pubs": ["huang14opo"],
+	"posters": ["techcon14opo"],
+	"tags": ["devel", "supported"],
+	"images": [""],
+	"brief": "Small wearable badge for realtime human interaction tracking.",
+	"github": ["https://github.com/lab11/opo"]
+}

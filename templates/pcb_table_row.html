@@ -1,0 +1,43 @@
+<tr class="row_{{ meta['rev_class'] }}_{{ meta['index'] }}"  {% if meta['rev_hidden'] %} style="display:none;" {% endif %}>
+	<td {% if 'notes' in pcb %} rowspan="2" {%endif %} style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev {{ pcb['revision']|capitalize() }}</span>
+	</td>
+	<td {% if 'notes' in pcb %} rowspan="2" {%endif %} style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		{% if 'cam_image' in paths %}
+		<div style="text-align: center;">
+			<a href="{{ paths['cam_image'] }}" rel="shadowbox">
+				<img src="{{ paths['cam_image'] }}" width="150px" />
+			</a>
+		</div>
+		{% endif %}
+	</td>
+	<td {% if 'notes' in pcb %} rowspan="2" {%endif %} style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		{% if 'brd_image' in paths %}
+		<div style="text-align: center;">
+			<a href="{{ paths['brd_image'] }}" rel="shadowbox">
+				<img src="{{ paths['brd_image'] }}" width="150px" />
+			</a>
+		</div>
+		{% endif %}
+	</td>
+	<td><!--AUTHOR-->
+		{{ pcb['author'] }}
+	</td>
+	<td><!--DATE-->
+	    {{ pcb['date'] }}
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="{{ paths['pdf'] }}">pdf</a> |
+		<a href="{{ paths['zip'] }}">zip</a>
+		{% if 'github' in pcb %}
+		| <a href="{{ pcb['github'] }}">github</a>
+		{% endif %}
+	</td>
+</tr>
+{% if 'notes' in pcb %}
+<tr class="row_{{ meta['rev_class'] }}_{{ meta['index'] }}"  {% if meta['rev_hidden'] %} style="display:none;" {% endif %}>
+	<td colspan="3">
+		<b>Notes:</b> {{ pcb['notes'] }}
+	</td>
+</tr>
+ {%endif %}

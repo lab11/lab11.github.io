@@ -1,0 +1,10 @@
+{
+	"sort-date": "2017-1-1",
+	"start-date": "2016-2-15",
+	"people": ["ppannuto","bpkempke"],
+	"pubs": ["pannuto18slocalization"],
+	"tags": [],
+	"images": [""],
+	"brief": "Low-power, backscatter indoor localization",
+	"github": ["https://github.com/lab11/slocalization"]
+}

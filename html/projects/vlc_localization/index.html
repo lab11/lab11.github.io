@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon-cal.ico" />
+	
+	<!--<link rel="stylesheet" href="css/table.css" />-->
+	<link rel="stylesheet" href="/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/css/bootstrap-select.min.css" />
+	<link rel="stylesheet" href="/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/css/timeline.css" />
+	<link rel="stylesheet" href="/css/lab11.css" />
+
+	<script src="/js/jquery-1.10.2.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/bootstrap-select.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/css/shadowbox.css">
+	<script type="text/javascript" src="/js/shadowbox.js"></script>
+	<script type="text/javascript">
+	Shadowbox.init({
+		animate: false,
+		animateFade: false,
+		animSequence: false,
+		overlayOpacity: 0.0,
+		displayNav: false,
+	});
+	</script>
+
+	<title> vlc_localization  | Lab11</title>
+	
+</head>
+<body>
+
+	<div id="wrap">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="visible-xs" style="margin:8px 20px 0 20px;">
+			<img src="/images/cal.png" height="35px" />
+		</div>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li ><a href="/index.html">Home</a></li>
+			<li ><a href="/publications.html">Publications</a></li>
+			<li class="active"><a href="/projects.html">Projects</a></li>
+			<li ><a href="/people.html">People</a></li>
+			<li ><a href="/pcb.html">PCBs</a></li>
+			<li ><a href="/grants.html">Grants</a></li>
+            <!--<li><a href="http://gatd.eecs.umich.edu/" target="_blank">Demos <i class="fa fa-external-link"></i></a></li>-->
+		</ul>
+		<div class="navbar-right hidden-sm hidden-xs" style="margin:8px 0 0 20px;">
+			<a href="https://www.eecs.berkeley.edu/" target="_blank">
+				<img src="/images/cal.png" height="35px" />
+			</a>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="https://github.com/lab11" target="_blank" class="github hidden-sm">Github <i class="fa fa-external-link"></i></a></li>
+			<li><a href="https://github.com/lab11" target="_blank" class="github hidden-lg hidden-md hidden-xs"><i class="fa fa-external-link"></i></a></li>
+			<li><a href="https://lab11.eecs.berkeley.edu/wiki" target="_blank">Wiki <i class="fa fa-external-link"></i></a></li>
+		</ul>
+
+	</div>
+</div>
+</nav>
+
+		
+
+		<div id="content" class="container">
+			
+
+<div class="row row-offcanvas row-offcanvas-right">
+
+	<div class="col-xs-12 col-sm-8">
+		<div class="page-header"><h1>VLC Localization. <span class="small">Positioning with LED lights and smartphones.</span></h1>
+</div><p>Consumer GPS changed the world. Knowing one's location and the ability to
+locate objects enabled whole fields of technologies. Yet there is no effective
+system for accurate indoor localization.</p>
+<p>Most state-of-the-art indoor localization systems provide <em>semantic
+localization</em>, answering "Where Am I?" by telling the user what room or area of
+a room they are in. We aim to provide true localization, in practice this
+amounts to <em>order 1&nbsp;decimeter accuracy in 3D-space</em>.</p>
+<p>To achieve this, we exploit the
+<a href="http://www.red.com/learn/red-101/global-rolling-shutter"
+target="_blank" title="Rolling Shutter Explanation by RED Digital Cinema">
+rolling shutter <i class="fa fa-external-link"></i></a> of the CMOS imager in
+modern smartphones. By modulating (blinking) LED lights at high frequency
+(1-7&nbsp;kHz) each light appears solidly on to any people in the room while
+communicating data to any smartphone in the room.</p>
+	</div>
+
+	<div class="col-xs-6 col-sm-4 sidebar-offcanvas" id="sidebar" style="margin-top:10px;">
+		<div class="well">
+			
+			
+			<h4>PCBs</h4>
+			<div class="list-group">
+			<a href="/pcb.html#T66_controller" class="list-group-item">
+	<span class="badge">Rev A</span>
+	<h4 class="list-group-item-heading">T66_controller</h4>
+	<p class="list-group-item-text">
+		<img src="/content/pcb/T66_controller/a/T66_controller.jpg" class="pull-left" style="padding: 5px;" width="50px" />
+		<small style="line-height:70%;">LED bulb controller. On board oscillator generates pure tone frequency,...</small>
+	</p>
+	<div class="clearfix"></div>
+</a><a href="/pcb.html#T67_controller" class="list-group-item">
+	<span class="badge">Rev A</span>
+	<h4 class="list-group-item-heading">T67_controller</h4>
+	<p class="list-group-item-text">
+		<img src="/content/pcb/T67_controller/a/T67_controller.jpg" class="pull-left" style="padding: 5px;" width="50px" />
+		<small style="line-height:70%;">LED bulb controller. On board oscillator generates pure tone frequency,...</small>
+	</p>
+	<div class="clearfix"></div>
+</a>
+			</div>
+			
+			
+			<h4>Publications</h4>
+			<div class="list-group">
+				<a href="/publications.html#kuo14luxapose" class="list-group-item">
+	<h4 class="list-group-item-heading">Luxapose: Indoor Positioning with Mobile Phones and Visible Light</h4>
+	<p class="list-group-item-text">
+		
+		<span class="conference">The 20th Annual International Conference on Mobile Computing and Networking (<span class="venue venue-mobicom">MobiCom&rsquo;14</span>)</span>
+		
+	</p>
+</a><a href="/publications.html#kuo14vlc_arch" class="list-group-item">
+	<h4 class="list-group-item-heading">System Architecture Directions for a Software-Defined Lighting Infrastructure</h4>
+	<p class="list-group-item-text">
+		
+		<span class="conference">1st ACM Workshop on Visible Light Communication Systems (<span class="venue venue-vlcs">VLCS&rsquo;14</span>)</span>
+		
+	</p>
+</a>
+			</div>
+			
+			
+			
+			<h4>Github</h4>
+			<div class="list-group">
+				<a href="https://github.com/lab11/vlc-localization" id="lab11||vlc-localization||github" class="list-group-item github-repo">
+	<h4 class="list-group-item-heading">lab11/vlc-localization</h4>
+</a>
+			</div>
+			
+			
+			<h4>People</h4>
+			<div class="list-group">
+				<a href="/people.html#samkuo" class="list-group-item" style="vertical-align:middle;">
+	<table>
+		<tr>
+			<td style="width:20%">
+				<img src="/content/people/images/samkuo.jpg" class="img-thumbnail" style="padding: 5px;" width="50px" />
+			</td>
+			<td style="width:80%">
+				<h4 class="list-group-item-heading">Ye-Sheng Kuo</h4>
+			<td>
+		</tr>
+	</table>
+</a><a href="/people.html#ppannuto" class="list-group-item" style="vertical-align:middle;">
+	<table>
+		<tr>
+			<td style="width:20%">
+				<img src="/content/people/images/ppannuto.jpg" class="img-thumbnail" style="padding: 5px;" width="50px" />
+			</td>
+			<td style="width:80%">
+				<h4 class="list-group-item-heading">Pat Pannuto</h4>
+			<td>
+		</tr>
+	</table>
+</a><a href="/people.html#ncnuech" class="list-group-item" style="vertical-align:middle;">
+	<table>
+		<tr>
+			<td style="width:20%">
+				<img src="/content/people/images/ncnuech.png" class="img-thumbnail" style="padding: 5px;" width="50px" />
+			</td>
+			<td style="width:80%">
+				<h4 class="list-group-item-heading">Noah Nuechterlein</h4>
+			<td>
+		</tr>
+	</table>
+</a><a href="/people.html#prabal" class="list-group-item" style="vertical-align:middle;">
+	<table>
+		<tr>
+			<td style="width:20%">
+				<img src="/content/people/images/prabal.jpg" class="img-thumbnail" style="padding: 5px;" width="50px" />
+			</td>
+			<td style="width:80%">
+				<h4 class="list-group-item-heading">Prabal Dutta</h4>
+			<td>
+		</tr>
+	</table>
+</a>
+			</div>
+			
+			
+			<h4>Grants</h4>
+			<div class="list-group">
+				<a href="/grants.html#marco-terraswarm" class="list-group-item" style="vertical-align:middle;">
+	<h4 class="list-group-item-heading">The TerraSwarm Research Center</h4>
+	<p class="list-group-item-text">
+		<span>MARCO</span>
+	</p>
+</a><a href="/grants.html#ndseg-ppannuto" class="list-group-item" style="vertical-align:middle;">
+	<h4 class="list-group-item-heading">National Defense Science & Engineering Graduate Fellowship (NDSEG): Pat Pannuto</h4>
+	<p class="list-group-item-text">
+		<span>Department of Defense (DoD), Air Force Office of Scientific Research, and NDSEG</span>
+	</p>
+</a><a href="/grants.html#intel-2012" class="list-group-item" style="vertical-align:middle;">
+	<h4 class="list-group-item-heading">Unrestricted Gift: Intel Early Career Faculty Award</h4>
+	<p class="list-group-item-text">
+		<span>Intel</span>
+	</p>
+</a><a href="/grants.html#qinf-bradjc-ppannuto" class="list-group-item" style="vertical-align:middle;">
+	<h4 class="list-group-item-heading">Qualcomm Innovation Fellowship (QInF): Brad Campbell and Pat Pannuto</h4>
+	<p class="list-group-item-text">
+		<span>Qualcomm</span>
+	</p>
+</a><a href="/grants.html#ti-2013" class="list-group-item" style="vertical-align:middle;">
+	<h4 class="list-group-item-heading">Unrestricted Research Gift</h4>
+	<p class="list-group-item-text">
+		<span>Texas Instruments</span>
+	</p>
+</a>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+		</div>
+
+		
+<div id="footer" style="margin-top:20px">
+	<div class="container">
+		<h3>Support</h3>
+	</div>
+	<div class="container">
+		<table class="table">
+			<tbody>
+				<tr>
+					<td class="hidden-xs">
+						<img src="/images/nsf.jpg" class="img-thumbnail" width="150px" />
+					</td>
+					<td>
+						This material is based upon work supported by the National Science Foundation under grant #0964120 (&ldquo;CNS-NeTS&rdquo;), #1059372 (&ldquo;CI-ADDO-NEW&rdquo;), and #1111541 (&ldquo;CNS-CSR&rdquo;). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the sponsoring organizations.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container well well-sm">&copy; Copyright 2013-2021 Lab11.</div>
+</div>
+
+	</div>
+
+	<script src="/js/onload.js"></script>
+	<script>
+	  /* Google Analytics */
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-54289873-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>

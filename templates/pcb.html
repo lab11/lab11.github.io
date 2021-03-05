@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% set active_page = 'pcb' %}
+{% block title %}PCBs{% endblock %}
+
+
+{% block content %}
+
+<div class="page-header">
+  <h1>PCBs Created by Lab11 <small>Eagle, Altium, etc.</small></h1>
+</div>
+
+
+<p class="lead">
+	Quite often we spin boards for various projects. Here is a
+	rundown of the boards we have created with links to download the board
+	files and gerbers.
+</p>
+
+{{ pcb_table }}
+
+{% endblock %}
+
+
+{% block footer %}
+{{ footer }}
+{% endblock %}

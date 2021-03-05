@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% set active_page = 'grants' %}
+{% block title %} Grants {% endblock %}
+
+
+{% block content %}
+
+<div class="page-header">
+	<h1>Grants <small>Current and past funding.</small></h1>
+</div>
+
+<div class="col-sm-12">
+	{{ grants }}
+</div>
+
+
+{% endblock %}

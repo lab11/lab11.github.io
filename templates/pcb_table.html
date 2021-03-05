@@ -1,0 +1,16 @@
+<div class="table-responsive">
+	<table id="pcbs" class="table">
+	{{ table_contents }}
+	</table>
+</div>
+
+<script>
+$( "button" ).click(function() {
+		var button_id = $(this).attr("id");
+		var board_class = button_id.replace(/show$/,"old")
+		console.log(button_id)
+		console.log(board_class)
+		$( "#" + button_id + "_row" ).hide();
+		$( "." + board_class ).show( "slow" );
+		});
+</script>

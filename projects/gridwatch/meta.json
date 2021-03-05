@@ -1,0 +1,11 @@
+{
+	"name": "GridWatch",
+	"sort-date": "2014-02-02",
+	"start-date": "2013-11-01",
+	"people": ["nklugman", "ppannuto", "prabal"],
+	"pubs": ["klugman14gridwatch"],
+	"grants": ["usaid-dil", "marco-terraswarm", "nsf-mobilab"],
+	"images": [""],
+	"brief": "Croudsourcing power grid monitoring with smartphones.",
+	"github": ["https://github.com/lab11/grid-watch", "https://github.com/lab11/sim-gridy"]
+}

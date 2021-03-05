@@ -1,0 +1,20 @@
+{% macro side_pic() -%}
+    <div class="col-md-5">
+		<img class="featurette-image img-responsive" src="{{ paths['image'] }}" width="400px" height="400px">
+	</div>
+{%- endmacro %}
+
+<hr class="featurette-divider">
+
+<div id="{{ project['id'] }}" class="row featurette">
+	{% if right == False %}
+	{{ side_pic() }}
+	{% endif %}
+	<div class="col-md-7">
+		{{ project['content'] }}
+		<a class="btn btn-default" href="projects/{{ project['id'] }}" role="button">View project page</a>
+	</div>
+	{% if right == True %}
+	{{ side_pic() }}
+	{% endif %}
+</div>

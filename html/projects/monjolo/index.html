@@ -1,0 +1,331 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon-cal.ico" />
+	
+	<!--<link rel="stylesheet" href="css/table.css" />-->
+	<link rel="stylesheet" href="/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/css/bootstrap-select.min.css" />
+	<link rel="stylesheet" href="/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/css/timeline.css" />
+	<link rel="stylesheet" href="/css/lab11.css" />
+
+	<script src="/js/jquery-1.10.2.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/bootstrap-select.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/css/shadowbox.css">
+	<script type="text/javascript" src="/js/shadowbox.js"></script>
+	<script type="text/javascript">
+	Shadowbox.init({
+		animate: false,
+		animateFade: false,
+		animSequence: false,
+		overlayOpacity: 0.0,
+		displayNav: false,
+	});
+	</script>
+
+	<title> monjolo  | Lab11</title>
+	
+</head>
+<body>
+
+	<div id="wrap">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="visible-xs" style="margin:8px 20px 0 20px;">
+			<img src="/images/cal.png" height="35px" />
+		</div>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li ><a href="/index.html">Home</a></li>
+			<li ><a href="/publications.html">Publications</a></li>
+			<li class="active"><a href="/projects.html">Projects</a></li>
+			<li ><a href="/people.html">People</a></li>
+			<li ><a href="/pcb.html">PCBs</a></li>
+			<li ><a href="/grants.html">Grants</a></li>
+            <!--<li><a href="http://gatd.eecs.umich.edu/" target="_blank">Demos <i class="fa fa-external-link"></i></a></li>-->
+		</ul>
+		<div class="navbar-right hidden-sm hidden-xs" style="margin:8px 0 0 20px;">
+			<a href="https://www.eecs.berkeley.edu/" target="_blank">
+				<img src="/images/cal.png" height="35px" />
+			</a>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="https://github.com/lab11" target="_blank" class="github hidden-sm">Github <i class="fa fa-external-link"></i></a></li>
+			<li><a href="https://github.com/lab11" target="_blank" class="github hidden-lg hidden-md hidden-xs"><i class="fa fa-external-link"></i></a></li>
+			<li><a href="https://lab11.eecs.berkeley.edu/wiki" target="_blank">Wiki <i class="fa fa-external-link"></i></a></li>
+		</ul>
+
+	</div>
+</div>
+</nav>
+
+		
+
+		<div id="content" class="container">
+			
+
+<div class="row row-offcanvas row-offcanvas-right">
+
+	<div class="col-xs-12 col-sm-8">
+		<div class="page-header"><h1>Monjolo. <span class="small">Energy-harvesting energy meters.</span></h1>
+</div><p>Conventional AC power meters perform at least two distinct functions:
+power conversion, to supply the meter itself, and energy metering, to
+measure the load consumption.  This paper presents Monjolo, a new
+energy-metering architecture that combines these two functions to
+yield a new design point in the metering space.</p>
+<p>The key insight
+underlying this work is that the output of a current transformer --
+nominally used to measure a load current -- can be harvested and used
+to <em>intermittently</em> power a wireless sensor node.  The hypothesis
+is that the node's activation frequency increases monotonically with
+the primary load's draw, making it possible to estimate load power
+from the interval between activations, assuming the node consumes a
+fixed energy quanta during each activation.  This paper explores this
+thesis by designing, implementing, and evaluating the Monjolo
+metering architecture.</p>
+<p>The results demonstrate that it is possible to
+build a meter that draws zero-power under zero-load conditions, offers
+high accuracy for near-unity power factor loads, works with non-unity
+power factor loads in combination with a whole-house meter, wirelessly
+reports readings to a data aggregator, is resilient to communication
+failures, and is parsimonious with the radio channel, even under heavy
+loads.  Monjolo eliminates the high-voltage AC-DC power supply and AC
+metering circuitry present in earlier designs, enabling a smaller,
+simpler, safer, and lower-cost design point that supports novel
+deployment scenarios like non-intrusive circuit-level metering.</p>
+	</div>
+
+	<div class="col-xs-6 col-sm-4 sidebar-offcanvas" id="sidebar" style="margin-top:10px;">
+		<div class="well">
+			
+			
+			<h4>PCBs</h4>
+			<div class="list-group">
+			<a href="/pcb.html#coilcube" class="list-group-item">
+	<span class="badge">Rev C</span>
+	<h4 class="list-group-item-heading">coilcube</h4>
+	<p class="list-group-item-text">
+		<img src="/content/pcb/coilcube/c/coilcube.jpg" class="pull-left" style="padding: 5px;" width="50px" />
+		<small style="line-height:70%;">Energy-meter for plug-loads based on the Monjolo principle. Uses epic...</small>
+	</p>
+	<div class="clearfix"></div>
+</a><a href="/pcb.html#impulse" class="list-group-item">
+	<span class="badge">Rev C</span>
+	<h4 class="list-group-item-heading">impulse</h4>
+	<p class="list-group-item-text">
+		<img src="/content/pcb/impulse/c/impulse.jpg" class="pull-left" style="padding: 5px;" width="50px" />
+		<small style="line-height:70%;">Microcontroller board for Monjolo nodes. Designed to transmit a packet...</small>
+	</p>
+	<div class="clearfix"></div>
+</a><a href="/pcb.html#gecko_power_supply" class="list-group-item">
+	<span class="badge">Rev E</span>
+	<h4 class="list-group-item-heading">gecko_power_supply</h4>
+	<p class="list-group-item-text">
+		<img src="/content/pcb/gecko_power_supply/E/monjolo.jpg" class="pull-left" style="padding: 5px;" width="50px" />
+		<small style="line-height:70%;">Solar powered energy-harvester. Charges a bank of capacitors until a...</small>
+	</p>
+	<div class="clearfix"></div>
+</a><a href="/pcb.html#cc_power_supply" class="list-group-item">
+	<span class="badge">Rev A</span>
+	<h4 class="list-group-item-heading">cc_power_supply</h4>
+	<p class="list-group-item-text">
+		<img src="/content/pcb/cc_power_supply/a/cc_power_supply.jpg" class="pull-left" style="padding: 5px;" width="50px" />
+		<small style="line-height:70%;">Power supply for the coilcube board. Rectifies an AC signal from a...</small>
+	</p>
+	<div class="clearfix"></div>
+</a>
+			</div>
+			
+			
+			<h4>Publications</h4>
+			<div class="list-group">
+				<a href="/publications.html#debruin13monjolo" class="list-group-item">
+	<h4 class="list-group-item-heading">Monjolo: An Energy-harvesting Energy Meter Architecture</h4>
+	<p class="list-group-item-text">
+		
+		<span class="conference">Proceedings of the 11th ACM Conference on Embedded Networked Sensor Systems (<span class="venue venue-sensys">SenSys&rsquo;13</span>)</span>
+		
+	</p>
+</a><a href="/publications.html#clark14deltaflow" class="list-group-item">
+	<h4 class="list-group-item-heading">Deltaflow: Submetering by Synthesizing Uncalibrated Pulse Sensor Streams</h4>
+	<p class="list-group-item-text">
+		
+		<span class="conference">Proceedings of the 5th International Conference on Future Energy Systems (<span class="venue venue-e-energy">e-Energy&rsquo;14</span>)</span>
+		
+	</p>
+</a><a href="/publications.html#campbell14thermes" class="list-group-item">
+	<h4 class="list-group-item-heading">Energy-Harvesting Thermoelectric Sensing for Unobtrusive Water and Appliance Metering</h4>
+	<p class="list-group-item-text">
+		
+		<span class="conference">Proceedings of the 2nd International Workshop on Energy Neutral Sensing Systems (<span class="venue venue-enssys">ENSsys&rsquo;14</span>)</span>
+		
+	</p>
+</a>
+			</div>
+			
+			
+			
+			<h4>Github</h4>
+			<div class="list-group">
+				<a href="https://github.com/lab11/monjolo" id="lab11||monjolo||github" class="list-group-item github-repo">
+	<h4 class="list-group-item-heading">lab11/monjolo</h4>
+</a>
+			</div>
+			
+			
+			<h4>People</h4>
+			<div class="list-group">
+				<a href="/people.html#bradjc" class="list-group-item" style="vertical-align:middle;">
+	<table>
+		<tr>
+			<td style="width:20%">
+				<img src="/content/people/images/bradjc.png" class="img-thumbnail" style="padding: 5px;" width="50px" />
+			</td>
+			<td style="width:80%">
+				<h4 class="list-group-item-heading">Brad Campbell</h4>
+			<td>
+		</tr>
+	</table>
+</a><a href="/people.html#sdebruin" class="list-group-item" style="vertical-align:middle;">
+	<table>
+		<tr>
+			<td style="width:20%">
+				<img src="/content/people/images/sdebruin.png" class="img-thumbnail" style="padding: 5px;" width="50px" />
+			</td>
+			<td style="width:80%">
+				<h4 class="list-group-item-heading">Sam DeBruin</h4>
+			<td>
+		</tr>
+	</table>
+</a><a href="/people.html#mclarkk" class="list-group-item" style="vertical-align:middle;">
+	<table>
+		<tr>
+			<td style="width:20%">
+				<img src="/content/people/images/mclarkk.jpg" class="img-thumbnail" style="padding: 5px;" width="50px" />
+			</td>
+			<td style="width:80%">
+				<h4 class="list-group-item-heading">Meghan Clark</h4>
+			<td>
+		</tr>
+	</table>
+</a><a href="/people.html#brghena" class="list-group-item" style="vertical-align:middle;">
+	<table>
+		<tr>
+			<td style="width:20%">
+				<img src="/content/people/images/brghena.jpg" class="img-thumbnail" style="padding: 5px;" width="50px" />
+			</td>
+			<td style="width:80%">
+				<h4 class="list-group-item-heading">Branden Ghena</h4>
+			<td>
+		</tr>
+	</table>
+</a><a href="/people.html#prabal" class="list-group-item" style="vertical-align:middle;">
+	<table>
+		<tr>
+			<td style="width:20%">
+				<img src="/content/people/images/prabal.jpg" class="img-thumbnail" style="padding: 5px;" width="50px" />
+			</td>
+			<td style="width:80%">
+				<h4 class="list-group-item-heading">Prabal Dutta</h4>
+			<td>
+		</tr>
+	</table>
+</a>
+			</div>
+			
+			
+			<h4>Grants</h4>
+			<div class="list-group">
+				<a href="/grants.html#marco-terraswarm" class="list-group-item" style="vertical-align:middle;">
+	<h4 class="list-group-item-heading">The TerraSwarm Research Center</h4>
+	<p class="list-group-item-text">
+		<span>MARCO</span>
+	</p>
+</a><a href="/grants.html#usaid-dil" class="list-group-item" style="vertical-align:middle;">
+	<h4 class="list-group-item-heading">University of California -- Berkeley (Prime Sponsor: United States Agency for International Development), "Development Innovation Lab (DIL)"</h4>
+	<p class="list-group-item-text">
+		<span>United States Agency for International Development (USAID)</span>
+	</p>
+</a><a href="/grants.html#nsf-grfp-debruin" class="list-group-item" style="vertical-align:middle;">
+	<h4 class="list-group-item-heading">National Science Foundation Graduate Research Fellowship Program (NSF GRFP): Samuel Debruin</h4>
+	<p class="list-group-item-text">
+		<span>National Science Foundation (NSF)</span>
+	</p>
+</a><a href="/grants.html#intel-2012" class="list-group-item" style="vertical-align:middle;">
+	<h4 class="list-group-item-heading">Unrestricted Gift: Intel Early Career Faculty Award</h4>
+	<p class="list-group-item-text">
+		<span>Intel</span>
+	</p>
+</a><a href="/grants.html#qinf-bradjc-ppannuto" class="list-group-item" style="vertical-align:middle;">
+	<h4 class="list-group-item-heading">Qualcomm Innovation Fellowship (QInF): Brad Campbell and Pat Pannuto</h4>
+	<p class="list-group-item-text">
+		<span>Qualcomm</span>
+	</p>
+</a><a href="/grants.html#ti-2013" class="list-group-item" style="vertical-align:middle;">
+	<h4 class="list-group-item-heading">Unrestricted Research Gift</h4>
+	<p class="list-group-item-text">
+		<span>Texas Instruments</span>
+	</p>
+</a>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+		</div>
+
+		
+<div id="footer" style="margin-top:20px">
+	<div class="container">
+		<h3>Support</h3>
+	</div>
+	<div class="container">
+		<table class="table">
+			<tbody>
+				<tr>
+					<td class="hidden-xs">
+						<img src="/images/nsf.jpg" class="img-thumbnail" width="150px" />
+					</td>
+					<td>
+						This material is based upon work supported by the National Science Foundation under grant #0964120 (&ldquo;CNS-NeTS&rdquo;), #1059372 (&ldquo;CI-ADDO-NEW&rdquo;), and #1111541 (&ldquo;CNS-CSR&rdquo;). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the sponsoring organizations.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container well well-sm">&copy; Copyright 2013-2021 Lab11.</div>
+</div>
+
+	</div>
+
+	<script src="/js/onload.js"></script>
+	<script>
+	  /* Google Analytics */
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-54289873-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>

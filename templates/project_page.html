@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% set active_page = 'projects' %}
+{% set relative = '../' %}
+{% block title %} {{ project_name }} {% endblock %}
+
+
+{% block content %}
+
+<div class="row row-offcanvas row-offcanvas-right">
+
+	<div class="col-xs-12 col-sm-8">
+		{{ project }}
+	</div>
+
+	<div class="col-xs-6 col-sm-4 sidebar-offcanvas" id="sidebar" style="margin-top:10px;">
+		<div class="well">
+			{% if 'demos' in sidebar %}
+			<h4>Demos</h4>
+			<div class="list-group">
+			{{ sidebar['demos'] }}
+			</div>
+			{% endif %}
+			{% if 'pcb' in sidebar %}
+			<h4>PCBs</h4>
+			<div class="list-group">
+			{{ sidebar['pcb'] }}
+			</div>
+			{% endif %}
+			{% if 'pubs' in sidebar %}
+			<h4>Publications</h4>
+			<div class="list-group">
+				{{ sidebar['pubs'] }}
+			</div>
+			{% endif %}
+			{% if 'posters' in sidebar %}
+			<h4>Posters</h4>
+			<div class="list-group">
+				{{ sidebar['posters'] }}
+			</div>
+			{% endif %}
+			{% if 'github' in sidebar %}
+			<h4>Github</h4>
+			<div class="list-group">
+				{{ sidebar['github'] }}
+			</div>
+			{% endif %}
+			{% if 'people' in sidebar %}
+			<h4>People</h4>
+			<div class="list-group">
+				{{ sidebar['people'] }}
+			</div>
+			{% endif %}
+			{% if 'grants' in sidebar %}
+			<h4>Grants</h4>
+			<div class="list-group">
+				{{ sidebar['grants'] }}
+			</div>
+			{% endif %}
+		</div>
+	</div>
+</div>
+
+{% endblock %}
+
+
+{% block footer %}
+{{ footer }}
+{% endblock %}

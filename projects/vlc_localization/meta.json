@@ -1,0 +1,12 @@
+{
+	"name": "VLC Localization",
+	"sort-date": "2014-04-01",
+	"start-date": "2014-01-20",
+	"pubs": ["kuo14luxapose", "kuo14vlc_arch"],
+	"pcbs": ["T66_controller", "T67_controller"],
+	"github": ["https://github.com/lab11/vlc-localization"],
+	"people": ["samkuo", "ppannuto", "ncnuech", "prabal"],
+	"grants": ["marco-terraswarm", "ndseg-ppannuto", "intel-2012", "qinf-bradjc-ppannuto", "ti-2013"],
+	"_images": [""],
+	"brief": "Accurate indoor positioning using visible light and smartphone."
+}

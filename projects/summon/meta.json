@@ -1,0 +1,10 @@
+{
+	"sort-date": "2016-1-1",
+	"start-date": "2015-6-1",
+	"people": ["tzachari"],
+	"pubs": ["zachariah20summon","zachariah19browsing","zachariah15iot-ui-demo"],
+	"tags": [],
+	"images": [""],
+	"brief": "Casually browsing the web of things",
+	"github": ["https://github.com/lab11/summon","https://github.com/lab11/ar-browser"]
+}

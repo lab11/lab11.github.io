@@ -1,0 +1,10 @@
+{
+	"sort-date": "2014-4-1",
+	"start-date": "2014-1-10",
+	"people": ["bpkempke", "bradjc", "ppannuto", "adkinsjd"],
+	"pubs": ["kempke15polypoint", "kempke15polypoint-demo", "kempke15loccomp"],
+	"tags": [],
+	"images": [""],
+	"brief": "Accurate UWB based indoor localization.",
+	"github": ["https://github.com/lab11/polypoint"]
+}

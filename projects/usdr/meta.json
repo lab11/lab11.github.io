@@ -1,0 +1,11 @@
+{
+	"name": "μSDR",
+	"sort-date": "2012-11-15",
+	"start-date": "2010-01-01",
+	"pcbs": ["sdr", "sdr_power", "sdr_rf"],
+	"pubs": ["kuo12sdr", "dutta10sdr"],
+	"people": ["samkuo", "ppannuto", "tschmid", "prabal"],
+	"grants": ["nsf-nets", "nsf-mobilab", "nsf-csr-cubicmm", "nsf-grafting"],
+	"images": [""],
+	"brief": "A low power, low cost, and portable software-defined radio."
+}

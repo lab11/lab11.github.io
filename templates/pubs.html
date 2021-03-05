@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% set active_page = 'publications' %}
+{% block title %}Publications{% endblock %}
+
+
+{% block content %}
+
+<div class="page-header">
+  <h1>Publications from Lab11 <small>Plus demos and posters.</small></h1>
+</div>
+
+{#
+<p class="lead">
+	We publish
+</p>
+#}
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		Filters
+	</div>
+	<div class="panel-body">
+		<div class="form-horizontal">
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Publication Type</label>
+				<div class="col-sm-10">
+					{{ filters['type'] }}
+				</div>
+				<label class="col-sm-2 control-label">Author</label>
+				<div class="col-sm-10">
+					{{ filters['author'] }}
+				</div>
+				<label class="col-sm-2 control-label">Venue</label>
+				<div class="col-sm-10">
+					{{ filters['venue'] }}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{{ pubs }}
+
+{% endblock %}
+
+
+{% block footer %}
+{{ footer }}
+{% endblock %}

@@ -1,0 +1,3904 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon-cal.ico" />
+	
+	<!--<link rel="stylesheet" href="css/table.css" />-->
+	<link rel="stylesheet" href="/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/css/bootstrap-select.min.css" />
+	<link rel="stylesheet" href="/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/css/timeline.css" />
+	<link rel="stylesheet" href="/css/lab11.css" />
+
+	<script src="/js/jquery-1.10.2.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/bootstrap-select.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/css/shadowbox.css">
+	<script type="text/javascript" src="/js/shadowbox.js"></script>
+	<script type="text/javascript">
+	Shadowbox.init({
+		animate: false,
+		animateFade: false,
+		animSequence: false,
+		overlayOpacity: 0.0,
+		displayNav: false,
+	});
+	</script>
+
+	<title>PCBs | Lab11</title>
+	
+</head>
+<body>
+
+	<div id="wrap">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="visible-xs" style="margin:8px 20px 0 20px;">
+			<img src="/images/cal.png" height="35px" />
+		</div>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li ><a href="/index.html">Home</a></li>
+			<li ><a href="/publications.html">Publications</a></li>
+			<li ><a href="/projects.html">Projects</a></li>
+			<li ><a href="/people.html">People</a></li>
+			<li class="active"><a href="/pcb.html">PCBs</a></li>
+			<li ><a href="/grants.html">Grants</a></li>
+            <!--<li><a href="http://gatd.eecs.umich.edu/" target="_blank">Demos <i class="fa fa-external-link"></i></a></li>-->
+		</ul>
+		<div class="navbar-right hidden-sm hidden-xs" style="margin:8px 0 0 20px;">
+			<a href="https://www.eecs.berkeley.edu/" target="_blank">
+				<img src="/images/cal.png" height="35px" />
+			</a>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="https://github.com/lab11" target="_blank" class="github hidden-sm">Github <i class="fa fa-external-link"></i></a></li>
+			<li><a href="https://github.com/lab11" target="_blank" class="github hidden-lg hidden-md hidden-xs"><i class="fa fa-external-link"></i></a></li>
+			<li><a href="https://lab11.eecs.berkeley.edu/wiki" target="_blank">Wiki <i class="fa fa-external-link"></i></a></li>
+		</ul>
+
+	</div>
+</div>
+</nav>
+
+		
+
+		<div id="content" class="container">
+			
+
+<div class="page-header">
+  <h1>PCBs Created by Lab11 <small>Eagle, Altium, etc.</small></h1>
+</div>
+
+
+<p class="lead">
+	Quite often we spin boards for various projects. Here is a
+	rundown of the boards we have created with links to download the board
+	files and gerbers.
+</p>
+
+<div class="table-responsive">
+	<table id="pcbs" class="table">
+	<tr id="jlink_to_tag" class="active">
+	<th colspan="6">
+	jlink_to_tag
+
+	<div id="pcb_rev_dropdown_0" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Adapter board that converts the 20 pin ARM JTAG header to a Tag Connect pogo pin connector. Also includes a switch to select how the board is powered and a config option for the nRF51* chips.</p>
+	</td>
+</tr><tr class="row_new_0"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev C</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/jlink_to_tag/c/jlink_to_tag_pcb.png" rel="shadowbox">
+				<img src="content/pcb/jlink_to_tag/c/jlink_to_tag_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Noah Klugman / Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2015-10-26
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/jlink_to_tag/c/jlink_to_tag.pdf">pdf</a> |
+		<a href="content/pcb/jlink_to_tag/c/jlink_to_tag_c_2015-10-26.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_0"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/jlink_to_tag/b/jlink_to_tag_pcb.png" rel="shadowbox">
+				<img src="content/pcb/jlink_to_tag/b/jlink_to_tag_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Noah Klugman / Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2015-06-11
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/jlink_to_tag/b/jlink_to_tag.pdf">pdf</a> |
+		<a href="content/pcb/jlink_to_tag/b/jlink_to_tag_b_2015-06-11.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_0"   style="display:none;" >
+	<td  rowspan="2"  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/jlink_to_tag/a/segger_adaptor_v1_pcb.png" rel="shadowbox">
+				<img src="content/pcb/jlink_to_tag/a/segger_adaptor_v1_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Noah Klugman
+	</td>
+	<td><!--DATE-->
+	    2014-09-08
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/jlink_to_tag/a/segger_adaptor_v1.pdf">pdf</a> |
+		<a href="content/pcb/jlink_to_tag/a/jlink_to_tag_a_2014-09-08.zip">zip</a>
+		
+	</td>
+</tr>
+
+<tr class="row_old_0"   style="display:none;" >
+	<td colspan="3">
+		<b>Notes:</b> Board has not yet been assembled and tested.
+	</td>
+</tr>
+ <tr id="tridev" class="active">
+	<th colspan="6">
+	tridev
+
+	<div id="pcb_rev_dropdown_1" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Breakout board for the TriPoint module.</p>
+	</td>
+</tr><tr class="row_new_1"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/tridev/a/tridev_pcb.png" rel="shadowbox">
+				<img src="content/pcb/tridev/a/tridev_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2015-10-19
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/tridev/a/tridev.pdf">pdf</a> |
+		<a href="content/pcb/tridev/a/tridev_a_2015-10-19.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="powerblade" class="active">
+	<th colspan="6">
+	powerblade
+
+	<div id="pcb_rev_dropdown_2" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>1 inch square AC power meter.</p>
+	</td>
+</tr><tr class="row_new_2"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev E</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/powerblade/e/powerblade_3v3_pcb.png" rel="shadowbox">
+				<img src="content/pcb/powerblade/e/powerblade_3v3_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Sam DeBruin
+	</td>
+	<td><!--DATE-->
+	    2015-10-13
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/powerblade/e/powerblade_3v3.pdf">pdf</a> |
+		<a href="content/pcb/powerblade/e/powerblade_e_2015-10-13.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="tritag" class="active">
+	<th colspan="6">
+	tritag
+
+	<div id="pcb_rev_dropdown_3" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Localization tag for the TriPoint module. Provides a BLE interface.</p>
+	</td>
+</tr><tr class="row_new_3"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/tritag/b/tritag_pcb.png" rel="shadowbox">
+				<img src="content/pcb/tritag/b/tritag_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2015-08-16
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/tritag/b/tritag.pdf">pdf</a> |
+		<a href="content/pcb/tritag/b/tritag_b_2015-08-16.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_3"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/tritag/a/polytag_pcb.png" rel="shadowbox">
+				<img src="content/pcb/tritag/a/polytag_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2015-07-15
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/tritag/a/polytag.pdf">pdf</a> |
+		<a href="content/pcb/tritag/a/tritag_a_2015-07-15.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="observer" class="active">
+	<th colspan="6">
+	observer
+
+	<div id="pcb_rev_dropdown_4" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Indoor sensing board based on Atum. Designed to be used with a BeagleBone Black.</p>
+	</td>
+</tr><tr class="row_new_4"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev C</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/observer/c/observer_pcb.png" rel="shadowbox">
+				<img src="content/pcb/observer/c/observer_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		B. Campbell, N. Jackson, C. Kreng, A. Zhen
+	</td>
+	<td><!--DATE-->
+	    2015-06-29
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/observer/c/observer.pdf">pdf</a> |
+		<a href="content/pcb/observer/c/observer_c_2015-06-29.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="blees" class="active">
+	<th colspan="6">
+	blees
+
+	<div id="pcb_rev_dropdown_5" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Indoor sensing shield for Squall.</p>
+	</td>
+</tr><tr class="row_new_5"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev C</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/blees/c/squall-blees-board_pcb.png" rel="shadowbox">
+				<img src="content/pcb/blees/c/squall-blees-board_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		BLEES Dev Team
+	</td>
+	<td><!--DATE-->
+	    2015-06-12
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/blees/c/squall-blees-board.pdf">pdf</a> |
+		<a href="content/pcb/blees/c/blees_c_2015-06-12.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="squall-breakout" class="active">
+	<th colspan="6">
+	squall-breakout
+
+	<div id="pcb_rev_dropdown_6" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Breakout board with included programming header for Squall.</p>
+	</td>
+</tr><tr class="row_new_6"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/squall-breakout/b/squall-breakout_pcb.png" rel="shadowbox">
+				<img src="content/pcb/squall-breakout/b/squall-breakout_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2015-06-11
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/squall-breakout/b/squall-breakout.pdf">pdf</a> |
+		<a href="content/pcb/squall-breakout/b/squall-breakout_b_2015-06-11.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_6"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/squall-breakout/a/squall-breakout_pcb.png" rel="shadowbox">
+				<img src="content/pcb/squall-breakout/a/squall-breakout_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2015-03-16
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/squall-breakout/a/squall-breakout.pdf">pdf</a> |
+		<a href="content/pcb/squall-breakout/a/squall-breakout_a_2015-03-16.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="nucleum" class="active">
+	<th colspan="6">
+	nucleum
+
+	<div id="pcb_rev_dropdown_7" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Nucleum is a ½ inch² drop-in sensor node module designed to enable rapid prototyping of Bluetooth Low Energy embedded devices. The core of Nucleum is an NRF51822 SoC with an Arm Cortex M0. Nucleum also includes an antenna, 512 bytes of non-volatile FRAM memory, an RTC, and a tri-color LED. Nucleum is based off of <a href="http://lab11.eecs.umich.edu/pcb.html#atum">Atum</a></p>
+	</td>
+</tr><tr class="row_new_7"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/nucleum/a/nucleum.png" rel="shadowbox">
+				<img src="content/pcb/nucleum/a/nucleum.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/nucleum/a/nucleum_pcb.png" rel="shadowbox">
+				<img src="content/pcb/nucleum/a/nucleum_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Joshua Adkins
+	</td>
+	<td><!--DATE-->
+	    2015-04-21
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/nucleum/a/nucleum.pdf">pdf</a> |
+		<a href="content/pcb/nucleum/a/nucleum_a_2015-04-21.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="bbb-cc2520" class="active">
+	<th colspan="6">
+	bbb-cc2520
+
+	<div id="pcb_rev_dropdown_8" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Radio cape for the BeagleBone Black.</p>
+	</td>
+</tr><tr class="row_new_8"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev D</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/bbb-cc2520/d/bbb-cc2520_pcb.png" rel="shadowbox">
+				<img src="content/pcb/bbb-cc2520/d/bbb-cc2520_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Neal Jackson
+	</td>
+	<td><!--DATE-->
+	    2015-04-03
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/bbb-cc2520/d/bbb-cc2520.pdf">pdf</a> |
+		<a href="content/pcb/bbb-cc2520/d/bbb-cc2520_d_2015-04-03.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_8"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev C</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/bbb-cc2520/c/bbb-cc2520_pcb.png" rel="shadowbox">
+				<img src="content/pcb/bbb-cc2520/c/bbb-cc2520_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Neal Jackson
+	</td>
+	<td><!--DATE-->
+	    2014-11-20
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/bbb-cc2520/c/bbb-cc2520.pdf">pdf</a> |
+		<a href="content/pcb/bbb-cc2520/c/bbb-cc2520_c_2014-11-20.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_8"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/bbb-cc2520/a/zigbeag.png" rel="shadowbox">
+				<img src="content/pcb/bbb-cc2520/a/zigbeag.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/bbb-cc2520/a/bbb-cc2520_a_pcb.png" rel="shadowbox">
+				<img src="content/pcb/bbb-cc2520/a/bbb-cc2520_a_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Neal Jackson
+	</td>
+	<td><!--DATE-->
+	    2014-07-25
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/bbb-cc2520/a/bbb-cc2520_a.pdf">pdf</a> |
+		<a href="content/pcb/bbb-cc2520/a/bbb-cc2520_a_2014-07-25.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="squall" class="active">
+	<th colspan="6">
+	squall
+
+	<div id="pcb_rev_dropdown_9" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>1" BLE sensor tag. Designed to be an inexpensive sensor tag or a platform for experimenting with wearable sensors.</p>
+	</td>
+</tr><tr class="row_new_9"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/squall/a/squall_pcb.png" rel="shadowbox">
+				<img src="content/pcb/squall/a/squall_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2014-10-08
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/squall/a/squall.pdf">pdf</a> |
+		<a href="content/pcb/squall/a/squall_a_2014-10-08.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="hotspring" class="active">
+	<th colspan="6">
+	hotspring
+
+	<div id="pcb_rev_dropdown_10" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Energy harvesting platform for shower monitoring.</p>
+	</td>
+</tr><tr class="row_new_10"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/hotspring/b/hot_spring_pcb.png" rel="shadowbox">
+				<img src="content/pcb/hotspring/b/hot_spring_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell, Branden Ghena
+	</td>
+	<td><!--DATE-->
+	    2014-08-05
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/hotspring/b/hot_spring.pdf">pdf</a> |
+		<a href="content/pcb/hotspring/b/hotspring_b_2014-08-05.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_10"   style="display:none;" >
+	<td  rowspan="2"  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/hotspring/a/hotspring.jpg" rel="shadowbox">
+				<img src="content/pcb/hotspring/a/hotspring.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/hotspring/a/hot_spring_pcb.png" rel="shadowbox">
+				<img src="content/pcb/hotspring/a/hot_spring_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2014-07-30
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/hotspring/a/hot_spring.pdf">pdf</a> |
+		<a href="content/pcb/hotspring/a/hotspring_a_2014-07-30.zip">zip</a>
+		
+	</td>
+</tr>
+
+<tr class="row_old_10"   style="display:none;" >
+	<td colspan="3">
+		<b>Notes:</b> PFET is incorrect on the schematic. The drain and source are switched.
+	</td>
+</tr>
+ <tr id="atum-breakout" class="active">
+	<th colspan="6">
+	atum-breakout
+
+	<div id="pcb_rev_dropdown_11" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>This is a breakout board for the Atum module. It can also double as a USB powered sensorboard node for quick prototyping of sensors.</p>
+	</td>
+</tr><tr class="row_new_11"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/atum-breakout/a/atum-breakout.jpg" rel="shadowbox">
+				<img src="content/pcb/atum-breakout/a/atum-breakout.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/atum-breakout/a/atum-breakout_pcb.png" rel="shadowbox">
+				<img src="content/pcb/atum-breakout/a/atum-breakout_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2014-06-04
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/atum-breakout/a/atum-breakout.pdf">pdf</a> |
+		<a href="content/pcb/atum-breakout/a/atum-breakout_a_2014-06-04.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="breeze" class="active">
+	<th colspan="6">
+	breeze
+
+	<div id="pcb_rev_dropdown_12" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Breeze is designed to go on the impulse stack to periodically measure airflow.</p>
+	</td>
+</tr><tr class="row_new_12"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/breeze/a/breeze.jpg" rel="shadowbox">
+				<img src="content/pcb/breeze/a/breeze.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/breeze/a/breeze_pcb.png" rel="shadowbox">
+				<img src="content/pcb/breeze/a/breeze_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2014-04-28
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/breeze/a/breeze.pdf">pdf</a> |
+		<a href="content/pcb/breeze/a/breeze_a_2014-04-28.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="atum" class="active">
+	<th colspan="6">
+	atum
+
+	<div id="pcb_rev_dropdown_13" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Atum is a ½ inch² drop-in sensor node module designed to enable rapid prototyping of wireless embedded devices. The core of Atum is a CC2538 SoC with an Arm Cortex M3 and 802.15.4 radio. Atum also includes an antenna, 512 bytes of non-volatile FRAM memory, an RTC, and a tri-color LED.</p>
+	</td>
+</tr><tr class="row_new_13"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/atum/a/atum.jpg" rel="shadowbox">
+				<img src="content/pcb/atum/a/atum.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/atum/a/atum_pcb.png" rel="shadowbox">
+				<img src="content/pcb/atum/a/atum_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2014-04-28
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/atum/a/atum.pdf">pdf</a> |
+		<a href="content/pcb/atum/a/atum_a_2014-04-28.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="T66_controller" class="active">
+	<th colspan="6">
+	T66_controller
+
+	<div id="pcb_rev_dropdown_14" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>LED bulb controller. On board oscillator generates pure tone frequency, which can be programmed using on board dip switch. This controller works for LED supply voltage less than 35 V DC.</p>
+	</td>
+</tr><tr class="row_new_14"  >
+	<td  rowspan="2"  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/T66_controller/a/T66_controller.jpg" rel="shadowbox">
+				<img src="content/pcb/T66_controller/a/T66_controller.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/T66_controller/a/T66_controller_pcb.png" rel="shadowbox">
+				<img src="content/pcb/T66_controller/a/T66_controller_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Ye-Sheng Kuo
+	</td>
+	<td><!--DATE-->
+	    2014-04-17
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/T66_controller/a/T66_controller.pdf">pdf</a> |
+		<a href="content/pcb/T66_controller/a/T66_controller_a_2014-04-17.zip">zip</a>
+		
+	</td>
+</tr>
+
+<tr class="row_new_14"  >
+	<td colspan="3">
+		<b>Notes:</b> NFET needs to be chosen so that the breakdown voltage is greater than LED supply.
+	</td>
+</tr>
+ <tr id="T67_controller" class="active">
+	<th colspan="6">
+	T67_controller
+
+	<div id="pcb_rev_dropdown_15" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>LED bulb controller. On board oscillator generates pure tone frequency, which can be programmed using on board dip switch. This controller works for LED supply voltage around 350 VDC. This board requires an isolated supply.</p>
+	</td>
+</tr><tr class="row_new_15"  >
+	<td  rowspan="2"  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/T67_controller/a/T67_controller.jpg" rel="shadowbox">
+				<img src="content/pcb/T67_controller/a/T67_controller.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/T67_controller/a/T67_controller_pcb.png" rel="shadowbox">
+				<img src="content/pcb/T67_controller/a/T67_controller_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Ye-Sheng Kuo
+	</td>
+	<td><!--DATE-->
+	    2014-03-26
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/T67_controller/a/T67_controller.pdf">pdf</a> |
+		<a href="content/pcb/T67_controller/a/T67_controller_a_2014-03-26.zip">zip</a>
+		
+	</td>
+</tr>
+
+<tr class="row_new_15"  >
+	<td colspan="3">
+		<b>Notes:</b> NFET needs to be chosen so that the breakdown voltage is greater than LED supply.
+	</td>
+</tr>
+ <tr id="bigben" class="active">
+	<th colspan="6">
+	bigben
+
+	<div id="pcb_rev_dropdown_16" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Time keeping and storage for the Impulse board stack.</p>
+	</td>
+</tr><tr class="row_new_16"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/bigben/a/bigben.jpg" rel="shadowbox">
+				<img src="content/pcb/bigben/a/bigben.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/bigben/a/bigben_pcb.png" rel="shadowbox">
+				<img src="content/pcb/bigben/a/bigben_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2014-03-25
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/bigben/a/bigben.pdf">pdf</a> |
+		<a href="content/pcb/bigben/a/bigben_a_2014-03-25.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="ACme++" class="active">
+	<th colspan="6">
+	ACme++
+
+	<div id="pcb_rev_dropdown_17" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>AC power MEter for plug loads based on the <a href="http://acme.cs.berkeley.edu/">ACme</a> design. Uses a CC2538 instead of epic for wireless communication and remote control. Includes a solid state relay and an AC-DC power supply optimized for size.</p>
+	</td>
+</tr><tr class="row_new_17"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/ACme++/a/ACme++.jpg" rel="shadowbox">
+				<img src="content/pcb/ACme++/a/ACme++.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/ACme++/a/ACme++_pcb.png" rel="shadowbox">
+				<img src="content/pcb/ACme++/a/ACme++_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2014-01-08
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/ACme++/a/ACme++.pdf">pdf</a> |
+		<a href="content/pcb/ACme++/a/ACme++_a_2014-01-08.zip">zip</a>
+		
+		| <a href="http://github.com/lab11/powercube">github</a>
+		
+	</td>
+</tr>
+<tr id="impulse" class="active">
+	<th colspan="6">
+	impulse
+
+	<div id="pcb_rev_dropdown_18" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Microcontroller board for Monjolo nodes. Designed to transmit a packet with minimal energy. Also includes FRAM for persistent storage and a capacitor for reducing the frequency of wakeups.</p>
+	</td>
+</tr><tr class="row_new_18"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev C</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/impulse/c/impulse.jpg" rel="shadowbox">
+				<img src="content/pcb/impulse/c/impulse.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/impulse/c/impulse_pcb.png" rel="shadowbox">
+				<img src="content/pcb/impulse/c/impulse_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2013-12-13
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/impulse/c/impulse.pdf">pdf</a> |
+		<a href="content/pcb/impulse/c/impulse_c_2013-12-13.zip">zip</a>
+		
+		| <a href="http://github.com/lab11/monjolo">github</a>
+		
+	</td>
+</tr>
+<tr class="row_old_18"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/impulse/b/impulse.jpg" rel="shadowbox">
+				<img src="content/pcb/impulse/b/impulse.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/impulse/b/impulse_pcb.png" rel="shadowbox">
+				<img src="content/pcb/impulse/b/impulse_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2013-10-07
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/impulse/b/impulse.pdf">pdf</a> |
+		<a href="content/pcb/impulse/b/impulse_b_2013-10-07.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_18"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/impulse/a/impulse.jpg" rel="shadowbox">
+				<img src="content/pcb/impulse/a/impulse.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/impulse/a/impulse_pcb.png" rel="shadowbox">
+				<img src="content/pcb/impulse/a/impulse_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2013-09-19
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/impulse/a/impulse.pdf">pdf</a> |
+		<a href="content/pcb/impulse/a/impulse_a_2013-09-19.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="senseye-insight" class="active">
+	<th colspan="6">
+	senseye-insight
+
+	<div id="pcb_rev_dropdown_19" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>PCB for sensye project. Designed for the stoneyman camera to be wirebonded directly to the pcb and includes an ADC for reading the camera.</p>
+	</td>
+</tr><tr class="row_new_19"  >
+	<td  rowspan="2"  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/senseye-insight/a/imager-adc.jpg" rel="shadowbox">
+				<img src="content/pcb/senseye-insight/a/imager-adc.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/senseye-insight/a/imager-adc_pcb.png" rel="shadowbox">
+				<img src="content/pcb/senseye-insight/a/imager-adc_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Russ Bielawski
+	</td>
+	<td><!--DATE-->
+	    2013-10-31
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/senseye-insight/a/imager-adc.pdf">pdf</a> |
+		<a href="content/pcb/senseye-insight/a/senseye-insight_a_2013-10-31.zip">zip</a>
+		
+	</td>
+</tr>
+
+<tr class="row_new_19"  >
+	<td colspan="3">
+		<b>Notes:</b> May be an issue with the pin mapping to the 10 pin header.
+	</td>
+</tr>
+ <tr id="60_hz_rx" class="active">
+	<th colspan="6">
+	60_hz_rx
+
+	<div id="pcb_rev_dropdown_20" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>60 Hz receiver. It recovers ambient 60 Hz signal, which can be used to calibrate/synchronize clock on sensor nodes. The circuit draws 7 uA @ 3V and locks within 50 ms.</p>
+	</td>
+</tr><tr class="row_new_20"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/60_hz_rx/a/60_hz_rx.png" rel="shadowbox">
+				<img src="content/pcb/60_hz_rx/a/60_hz_rx.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/60_hz_rx/a/60_hz_rx_pcb.png" rel="shadowbox">
+				<img src="content/pcb/60_hz_rx/a/60_hz_rx_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Ye-Sheng Kuo
+	</td>
+	<td><!--DATE-->
+	    2013-10-22
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/60_hz_rx/a/60_hz_rx.pdf">pdf</a> |
+		<a href="content/pcb/60_hz_rx/a/60_hz_rx_a_2013-10-22.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="impulse-buzz" class="active">
+	<th colspan="6">
+	impulse-buzz
+
+	<div id="pcb_rev_dropdown_21" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Impulse trigger frontend that uses a pizeo-electric harvester to drive the trigger line.</p>
+	</td>
+</tr><tr class="row_new_21"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/impulse-buzz/a/buzz_a.jpg" rel="shadowbox">
+				<img src="content/pcb/impulse-buzz/a/buzz_a.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/impulse-buzz/a/buzz_pcb.png" rel="shadowbox">
+				<img src="content/pcb/impulse-buzz/a/buzz_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2013-10-15
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/impulse-buzz/a/buzz.pdf">pdf</a> |
+		<a href="content/pcb/impulse-buzz/a/impulse-buzz_a_2013-10-15.zip">zip</a>
+		
+		| <a href="http://github.com/lab11/activator">github</a>
+		
+	</td>
+</tr>
+<tr id="impulse-bump" class="active">
+	<th colspan="6">
+	impulse-bump
+
+	<div id="pcb_rev_dropdown_22" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Impulse trigger frontend that uses a SQ-SEN-200 vibration sensor to drive the trigger line.</p>
+	</td>
+</tr><tr class="row_new_22"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/impulse-bump/a/bump_pcb.png" rel="shadowbox">
+				<img src="content/pcb/impulse-bump/a/bump_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Pat Pannuto
+	</td>
+	<td><!--DATE-->
+	    2013-10-15
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/impulse-bump/a/bump.pdf">pdf</a> |
+		<a href="content/pcb/impulse-bump/a/impulse-bump_a_2013-10-15.zip">zip</a>
+		
+		| <a href="http://github.com/lab11/activator">github</a>
+		
+	</td>
+</tr>
+<tr id="impulse-breakout" class="active">
+	<th colspan="6">
+	impulse-breakout
+
+	<div id="pcb_rev_dropdown_23" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>A breakout board to add quick-connects to the impulse board. It also contains room for banks of extra capacitors.</p>
+	</td>
+</tr><tr class="row_new_23"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/impulse-breakout/a/breakout-revA_418x500.jpg" rel="shadowbox">
+				<img src="content/pcb/impulse-breakout/a/breakout-revA_418x500.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/impulse-breakout/a/breakout_pcb.png" rel="shadowbox">
+				<img src="content/pcb/impulse-breakout/a/breakout_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Pat Pannuto
+	</td>
+	<td><!--DATE-->
+	    2013-10-15
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/impulse-breakout/a/breakout.pdf">pdf</a> |
+		<a href="content/pcb/impulse-breakout/a/impulse-breakout_a_2013-10-15.zip">zip</a>
+		
+		| <a href="http://github.com/lab11/activator">github</a>
+		
+	</td>
+</tr>
+<tr id="gecko_power_supply" class="active">
+	<th colspan="6">
+	gecko_power_supply
+
+	<div id="pcb_rev_dropdown_24" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Solar powered energy-harvester. Charges a bank of capacitors until a voltage is met and then enables a voltage regulator.</p>
+	</td>
+</tr><tr class="row_new_24"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev E</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/gecko_power_supply/E/monjolo.jpg" rel="shadowbox">
+				<img src="content/pcb/gecko_power_supply/E/monjolo.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/gecko_power_supply/E/monjolo_pcb.png" rel="shadowbox">
+				<img src="content/pcb/gecko_power_supply/E/monjolo_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Lohit Yerva, Prabal Dutta, Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2013-10-05
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/gecko_power_supply/E/monjolo.pdf">pdf</a> |
+		<a href="content/pcb/gecko_power_supply/E/gecko_power_supply_e_2013-10-05.zip">zip</a>
+		
+		| <a href="http://github.com/lab11/monjolo">github</a>
+		
+	</td>
+</tr>
+<tr class="row_old_24"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev D</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/gecko_power_supply/d/monjolo_d.jpg" rel="shadowbox">
+				<img src="content/pcb/gecko_power_supply/d/monjolo_d.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/gecko_power_supply/d/monjolo_d_pcb.png" rel="shadowbox">
+				<img src="content/pcb/gecko_power_supply/d/monjolo_d_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Lohit Yerva, Prabal Dutta
+	</td>
+	<td><!--DATE-->
+	    2013-04-10
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/gecko_power_supply/d/monjolo_d.pdf">pdf</a> |
+		<a href="content/pcb/gecko_power_supply/d/gecko_power_supply_d_2013-04-10.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_24"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev C</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/gecko_power_supply/c/monjolo_c_pcb.png" rel="shadowbox">
+				<img src="content/pcb/gecko_power_supply/c/monjolo_c_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Lohit Yerva, Prabal Dutta
+	</td>
+	<td><!--DATE-->
+	    2012-10-26
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/gecko_power_supply/c/monjolo_c.pdf">pdf</a> |
+		<a href="content/pcb/gecko_power_supply/c/gecko_power_supply_c_2012-10-26.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_24"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/gecko_power_supply/b/monjolo_b_top.jpg" rel="shadowbox">
+				<img src="content/pcb/gecko_power_supply/b/monjolo_b_top.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/gecko_power_supply/b/monjolo_b_pcb.png" rel="shadowbox">
+				<img src="content/pcb/gecko_power_supply/b/monjolo_b_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Lohit Yerva, Prabal Dutta
+	</td>
+	<td><!--DATE-->
+	    2012-05-14
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/gecko_power_supply/b/monjolo_b.pdf">pdf</a> |
+		<a href="content/pcb/gecko_power_supply/b/gecko_power_supply_b_2012-05-14.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_24"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/gecko_power_supply/a/monjolo_a_pcb.png" rel="shadowbox">
+				<img src="content/pcb/gecko_power_supply/a/monjolo_a_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Lohit Yerva, Prabal Dutta
+	</td>
+	<td><!--DATE-->
+	    2012-03-31
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/gecko_power_supply/a/monjolo_a.pdf">pdf</a> |
+		<a href="content/pcb/gecko_power_supply/a/gecko_power_supply_a_2012-03-31.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="coilcube" class="active">
+	<th colspan="6">
+	coilcube
+
+	<div id="pcb_rev_dropdown_25" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Energy-meter for plug-loads based on the Monjolo principle. Uses epic for the microcontroller and radio and is designed to fit in a particular case.</p>
+	</td>
+</tr><tr class="row_new_25"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev C</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/coilcube/c/coilcube.jpg" rel="shadowbox">
+				<img src="content/pcb/coilcube/c/coilcube.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/coilcube/c/coilcube_pcb.png" rel="shadowbox">
+				<img src="content/pcb/coilcube/c/coilcube_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Sam DeBruin, Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2013-10-05
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/coilcube/c/coilcube.pdf">pdf</a> |
+		<a href="content/pcb/coilcube/c/coilcube_c_2013-10-05.zip">zip</a>
+		
+		| <a href="http://github.com/lab11/monjolo">github</a>
+		
+	</td>
+</tr>
+<tr class="row_old_25"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/coilcube/b/coilcube.jpg" rel="shadowbox">
+				<img src="content/pcb/coilcube/b/coilcube.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/coilcube/b/coilcube_pcb.png" rel="shadowbox">
+				<img src="content/pcb/coilcube/b/coilcube_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Sam DeBruin, Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2013-08-14
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/coilcube/b/coilcube.pdf">pdf</a> |
+		<a href="content/pcb/coilcube/b/coilcube_b_2013-08-14.zip">zip</a>
+		
+		| <a href="http://github.com/lab11/monjolo">github</a>
+		
+	</td>
+</tr>
+<tr class="row_old_25"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/coilcube/a/coilcube.jpg" rel="shadowbox">
+				<img src="content/pcb/coilcube/a/coilcube.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/coilcube/a/coilcube_pcb.png" rel="shadowbox">
+				<img src="content/pcb/coilcube/a/coilcube_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Sam DeBruin, Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2013-05-25
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/coilcube/a/coilcube.pdf">pdf</a> |
+		<a href="content/pcb/coilcube/a/coilcube_a_2013-05-25.zip">zip</a>
+		
+		| <a href="http://github.com/lab11/monjolo">github</a>
+		
+	</td>
+</tr>
+<tr id="epic_multi_prog" class="active">
+	<th colspan="6">
+	epic_multi_prog
+
+	<div id="pcb_rev_dropdown_26" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>USB programmer for the epic platforms. Supports the various programming headers used with epic.</p>
+	</td>
+</tr><tr class="row_new_26"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/epic_multi_prog/a/epic_multi_prog_a.jpg" rel="shadowbox">
+				<img src="content/pcb/epic_multi_prog/a/epic_multi_prog_a.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/epic_multi_prog/a/epic_multi_prog_a_pcb.png" rel="shadowbox">
+				<img src="content/pcb/epic_multi_prog/a/epic_multi_prog_a_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2013-10-02
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/epic_multi_prog/a/epic_multi_prog_a.pdf">pdf</a> |
+		<a href="content/pcb/epic_multi_prog/a/epic_multi_prog_a_2013-10-02.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="cc_power_supply" class="active">
+	<th colspan="6">
+	cc_power_supply
+
+	<div id="pcb_rev_dropdown_27" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Power supply for the coilcube board. Rectifies an AC signal from a current transformer and charges a bank of capacitors.</p>
+	</td>
+</tr><tr class="row_new_27"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/cc_power_supply/a/cc_power_supply.jpg" rel="shadowbox">
+				<img src="content/pcb/cc_power_supply/a/cc_power_supply.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/cc_power_supply/a/cc_power_supply_pcb.png" rel="shadowbox">
+				<img src="content/pcb/cc_power_supply/a/cc_power_supply_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2013-09-15
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/cc_power_supply/a/cc_power_supply.pdf">pdf</a> |
+		<a href="content/pcb/cc_power_supply/a/cc_power_supply_a_2013-09-15.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="sEHnsor" class="active">
+	<th colspan="6">
+	sEHnsor
+
+	<div id="pcb_rev_dropdown_28" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Microprocessor and radio (CC2538) for activating and transmitting a packet. Includes FRAM and a capacitor for keeping rough time.</p>
+	</td>
+</tr><tr class="row_new_28"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/sEHnsor/A/sEHnsor.jpg" rel="shadowbox">
+				<img src="content/pcb/sEHnsor/A/sEHnsor.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/sEHnsor/A/sEHnsor_pcb.png" rel="shadowbox">
+				<img src="content/pcb/sEHnsor/A/sEHnsor_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2013-08-14
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/sEHnsor/A/sEHnsor.pdf">pdf</a> |
+		<a href="content/pcb/sEHnsor/A/sEHnsor_a_2013-08-14.zip">zip</a>
+		
+		| <a href="http://github.com/lab11/monjolo">github</a>
+		
+	</td>
+</tr>
+<tr id="rpi-rgb-lights" class="active">
+	<th colspan="6">
+	rpi-rgb-lights
+
+	<div id="pcb_rev_dropdown_29" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Header for the Raspberry Pi to control LED light strips that use the WS2812 LED controller.</p>
+	</td>
+</tr><tr class="row_new_29"  >
+	<td  rowspan="2"  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/rpi-rgb-lights/a/lights_a_pcb.png" rel="shadowbox">
+				<img src="content/pcb/rpi-rgb-lights/a/lights_a_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2013-08-06
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/rpi-rgb-lights/a/lights_a.pdf">pdf</a> |
+		<a href="content/pcb/rpi-rgb-lights/a/rpi-rgb-lights_a_2013-08-06.zip">zip</a>
+		
+	</td>
+</tr>
+
+<tr class="row_new_29"  >
+	<td colspan="3">
+		<b>Notes:</b> Do not use this revision. The NFETs should be PFETs and the same power supply should not power the RPi and the lights. I think we have issues where voltage dips are reseting the RPi.
+	</td>
+</tr>
+ <tr id="rpi-cc2520" class="active">
+	<th colspan="6">
+	rpi-cc2520
+
+	<div id="pcb_rev_dropdown_30" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>CC2520 shield for the Raspberry Pi. Includes three LEDs and the DS2411 ID chip.</p>
+	</td>
+</tr><tr class="row_new_30"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/rpi-cc2520/a/rpi-cc2520_a.jpg" rel="shadowbox">
+				<img src="content/pcb/rpi-cc2520/a/rpi-cc2520_a.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/rpi-cc2520/a/rpi-cc2520_a_pcb.png" rel="shadowbox">
+				<img src="content/pcb/rpi-cc2520/a/rpi-cc2520_a_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2013-07-22
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/rpi-cc2520/a/rpi-cc2520_a.pdf">pdf</a> |
+		<a href="content/pcb/rpi-cc2520/a/rpi-cc2520_a_2013-07-22.zip">zip</a>
+		
+		| <a href="http://github.com/lab11/raspberrypi-cc2520">github</a>
+		
+	</td>
+</tr>
+<tr id="rpi-door-control" class="active">
+	<th colspan="6">
+	rpi-door-control
+
+	<div id="pcb_rev_dropdown_31" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Board for powering an RPi and activating a solenoid. A switching power supply regulates 24 V to 5 V and a relay switches the 24 V input. Also has terminals for an RFID reader.</p>
+	</td>
+</tr><tr class="row_new_31"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/rpi-door-control/b/door-control-rev-b.jpg" rel="shadowbox">
+				<img src="content/pcb/rpi-door-control/b/door-control-rev-b.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/rpi-door-control/b/door-control_pcb.png" rel="shadowbox">
+				<img src="content/pcb/rpi-door-control/b/door-control_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Pat Pannuto
+	</td>
+	<td><!--DATE-->
+	    2013-06-26
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/rpi-door-control/b/door-control.pdf">pdf</a> |
+		<a href="content/pcb/rpi-door-control/b/rpi-door-control_b_2013-06-26.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_31"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/rpi-door-control/a/door-control-rev-a.jpg" rel="shadowbox">
+				<img src="content/pcb/rpi-door-control/a/door-control-rev-a.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/rpi-door-control/a/door-control_pcb.png" rel="shadowbox">
+				<img src="content/pcb/rpi-door-control/a/door-control_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Pat Pannuto
+	</td>
+	<td><!--DATE-->
+	    2013-04-20
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/rpi-door-control/a/door-control.pdf">pdf</a> |
+		<a href="content/pcb/rpi-door-control/a/rpi-door-control_a_2013-04-20.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="sensye-insight-teensy" class="active">
+	<th colspan="6">
+	sensye-insight-teensy
+
+	<div id="pcb_rev_dropdown_32" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Bluetooth + camera interface board for the teensy.</p>
+	</td>
+</tr><tr class="row_new_32"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/sensye-insight-teensy/b/main.jpg" rel="shadowbox">
+				<img src="content/pcb/sensye-insight-teensy/b/main.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/sensye-insight-teensy/b/main_pcb.png" rel="shadowbox">
+				<img src="content/pcb/sensye-insight-teensy/b/main_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Russ Bielawski, Justin Paupore, Joe Romeo
+	</td>
+	<td><!--DATE-->
+	    2013-05-08
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/sensye-insight-teensy/b/main.pdf">pdf</a> |
+		<a href="content/pcb/sensye-insight-teensy/b/sensye-insight-teensy_b_2013-05-08.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="ac_load" class="active">
+	<th colspan="6">
+	ac_load
+
+	<div id="pcb_rev_dropdown_33" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Controllable AC load based on resistors and light bulbs. Uses an EPIC for control.</p>
+	</td>
+</tr><tr class="row_new_33"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/ac_load/a/ac_load.jpg" rel="shadowbox">
+				<img src="content/pcb/ac_load/a/ac_load.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/ac_load/a/ac_load_pcb.png" rel="shadowbox">
+				<img src="content/pcb/ac_load/a/ac_load_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Sam DeBruin
+	</td>
+	<td><!--DATE-->
+	    2013-03-18
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/ac_load/a/ac_load.pdf">pdf</a> |
+		<a href="content/pcb/ac_load/a/ac_load_a_2013-03-18.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="coilcube_test" class="active">
+	<th colspan="6">
+	coilcube_test
+
+	<div id="pcb_rev_dropdown_34" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Experimenting board for the coilcube platform.</p>
+	</td>
+</tr><tr class="row_new_34"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/coilcube_test/b/test_setup_2v0.jpg" rel="shadowbox">
+				<img src="content/pcb/coilcube_test/b/test_setup_2v0.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/coilcube_test/b/test_setup_2v0_pcb.png" rel="shadowbox">
+				<img src="content/pcb/coilcube_test/b/test_setup_2v0_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Sam Debruin
+	</td>
+	<td><!--DATE-->
+	    2013-03-11
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/coilcube_test/b/test_setup_2v0.pdf">pdf</a> |
+		<a href="content/pcb/coilcube_test/b/coilcube_test_b_2013-03-11.zip">zip</a>
+		
+		| <a href="http://github.com/lab11/monjolo">github</a>
+		
+	</td>
+</tr>
+<tr id="rpi-cc2520-interface" class="active">
+	<th colspan="6">
+	rpi-cc2520-interface
+
+	<div id="pcb_rev_dropdown_35" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Adapter board for connecting a TI CC2520 EVM to a Raspberry Pi.</p>
+	</td>
+</tr><tr class="row_new_35"  >
+	<td  rowspan="2"  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/rpi-cc2520-interface/b/interface_b.jpg" rel="shadowbox">
+				<img src="content/pcb/rpi-cc2520-interface/b/interface_b.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/rpi-cc2520-interface/b/interface_b_pcb.png" rel="shadowbox">
+				<img src="content/pcb/rpi-cc2520-interface/b/interface_b_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2013-02-11
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/rpi-cc2520-interface/b/interface_b.pdf">pdf</a> |
+		<a href="content/pcb/rpi-cc2520-interface/b/rpi-cc2520-interface_b_2013-02-11.zip">zip</a>
+		
+		| <a href="http://github.com/lab11/raspberrypi-cc2520">github</a>
+		
+	</td>
+</tr>
+
+<tr class="row_new_35"  >
+	<td colspan="3">
+		<b>Notes:</b> This is a simple but expensive way to add an 802.15.4 radio to an RPi. The rpi-cc2520 board should be used instead.
+	</td>
+</tr>
+ <tr class="row_old_35"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/rpi-cc2520-interface/a/interface_a_pcb.png" rel="shadowbox">
+				<img src="content/pcb/rpi-cc2520-interface/a/interface_a_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2012-10-29
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/rpi-cc2520-interface/a/interface_a.pdf">pdf</a> |
+		<a href="content/pcb/rpi-cc2520-interface/a/rpi-cc2520-interface_a_2012-10-29.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="smokealyzer" class="active">
+	<th colspan="6">
+	smokealyzer
+
+	<div id="pcb_rev_dropdown_36" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>HiJack shield for a CO sensor.</p>
+	</td>
+</tr><tr class="row_new_36"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/smokealyzer/a/main_pcb.png" rel="shadowbox">
+				<img src="content/pcb/smokealyzer/a/main_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Andrew Robinson
+	</td>
+	<td><!--DATE-->
+	    2012-10-30
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/smokealyzer/a/main.pdf">pdf</a> |
+		<a href="content/pcb/smokealyzer/a/smokealyzer_a_2012-10-30.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="nest_interface" class="active">
+	<th colspan="6">
+	nest_interface
+
+	<div id="pcb_rev_dropdown_37" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Interface board for the Nest thermostat and a Liebert airhandling unit. The Nest Interface Board (nib) acts like a home HVAC system (using the relays) in order to receive heating and cooling commands from the Nest. It then impersonates a human when pressing buttons on the Liebert device and reading the status display.</p>
+	</td>
+</tr><tr class="row_new_37"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/nest_interface/a/nest_interface_a.jpg" rel="shadowbox">
+				<img src="content/pcb/nest_interface/a/nest_interface_a.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/nest_interface/a/nest_interface_a_pcb.png" rel="shadowbox">
+				<img src="content/pcb/nest_interface/a/nest_interface_a_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2012-10-26
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/nest_interface/a/nest_interface_a.pdf">pdf</a> |
+		<a href="content/pcb/nest_interface/a/nest_interface_a_2012-10-26.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="vlc_lightsaber" class="active">
+	<th colspan="6">
+	vlc_lightsaber
+
+	<div id="pcb_rev_dropdown_38" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Prototype board for doing visible light communication.</p>
+	</td>
+</tr><tr class="row_new_38"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/vlc_lightsaber/b/Tx_circuit.jpg" rel="shadowbox">
+				<img src="content/pcb/vlc_lightsaber/b/Tx_circuit.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/vlc_lightsaber/b/Tx_circuit_pcb.png" rel="shadowbox">
+				<img src="content/pcb/vlc_lightsaber/b/Tx_circuit_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Ryan Keating, Pat Pannuto
+	</td>
+	<td><!--DATE-->
+	    2012-08-17
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/vlc_lightsaber/b/Tx_circuit.pdf">pdf</a> |
+		<a href="content/pcb/vlc_lightsaber/b/vlc_lightsaber_b_2012-08-17.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="sdr" class="active">
+	<th colspan="6">
+	sdr
+
+	<div id="pcb_rev_dropdown_39" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>uSDR. A low-power, low-cost and compact SDR platform. It contains a Microsemi's SmartFusion, high-speed data converters, RF front-end, and other peripherals. Low-power draw (runs on AA batteries) and portable deisgn make it suitable for low-power wireless research.</p>
+	</td>
+</tr><tr class="row_new_39"  >
+	<td  rowspan="2"  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/sdr/b/sdr.png" rel="shadowbox">
+				<img src="content/pcb/sdr/b/sdr.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  rowspan="2"  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/sdr/b/sdr_pcb.png" rel="shadowbox">
+				<img src="content/pcb/sdr/b/sdr_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Ye-Sheng Kuo
+	</td>
+	<td><!--DATE-->
+	    2012-06-30
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/sdr/b/sdr.pdf">pdf</a> |
+		<a href="content/pcb/sdr/b/sdr_b_2012-06-30.zip">zip</a>
+		
+	</td>
+</tr>
+
+<tr class="row_new_39"  >
+	<td colspan="3">
+		<b>Notes:</b> TCXO is open drain, pull-up resistors are required. RESET and RESET_b are reversed.
+	</td>
+</tr>
+ <tr id="gecko" class="active">
+	<th colspan="6">
+	gecko
+
+	<div id="pcb_rev_dropdown_40" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Energy-harvesting sensor for indoor monitoring.</p>
+	</td>
+</tr><tr class="row_new_40"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev C</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/gecko/c/gecko_pcb.png" rel="shadowbox">
+				<img src="content/pcb/gecko/c/gecko_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Lohit Yerva, Apoorva Bansal
+	</td>
+	<td><!--DATE-->
+	    2012-04-28
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/gecko/c/gecko.pdf">pdf</a> |
+		<a href="content/pcb/gecko/c/gecko_c_2012-04-28.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_40"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/gecko/b/gecko_pcb.png" rel="shadowbox">
+				<img src="content/pcb/gecko/b/gecko_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Lohit Yerva, Apoorva Bansal
+	</td>
+	<td><!--DATE-->
+	    2011-10-05
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/gecko/b/gecko.pdf">pdf</a> |
+		<a href="content/pcb/gecko/b/gecko_b_2011-10-05.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_40"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/gecko/a/gecko_pcb.png" rel="shadowbox">
+				<img src="content/pcb/gecko/a/gecko_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Lohit Yerva, Apoorva Bansal
+	</td>
+	<td><!--DATE-->
+	    2011-03-24
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/gecko/a/gecko.pdf">pdf</a> |
+		<a href="content/pcb/gecko/a/gecko_a_2011-03-24.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="audiodaq" class="active">
+	<th colspan="6">
+	audiodaq
+
+	<div id="pcb_rev_dropdown_41" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Hardware to send analog signals from a sensor to a phone over the microphone line.</p>
+	</td>
+</tr><tr class="row_new_41"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/audiodaq/b/audiodaq_b_pcb.png" rel="shadowbox">
+				<img src="content/pcb/audiodaq/b/audiodaq_b_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Andrew Robinson, Sonal Verma
+	</td>
+	<td><!--DATE-->
+	    2012-02-18
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/audiodaq/b/audiodaq_b.pdf">pdf</a> |
+		<a href="content/pcb/audiodaq/b/audiodaq_b_2012-02-18.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="battor" class="active">
+	<th colspan="6">
+	battor
+
+	<div id="pcb_rev_dropdown_42" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>PCB for measuring the power draw of a cell phone.</p>
+	</td>
+</tr><tr class="row_new_42"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/battor/b/battor_v2_pcb.png" rel="shadowbox">
+				<img src="content/pcb/battor/b/battor_v2_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Aaron Schulman
+	</td>
+	<td><!--DATE-->
+	    2011-11-16
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/battor/b/battor_v2.pdf">pdf</a> |
+		<a href="content/pcb/battor/b/battor_b_2011-11-16.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_42"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/battor/a/phone_power_monitor_v10_pcb.png" rel="shadowbox">
+				<img src="content/pcb/battor/a/phone_power_monitor_v10_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Aaron Schulman
+	</td>
+	<td><!--DATE-->
+	    2011-07-25
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/battor/a/phone_power_monitor_v10.pdf">pdf</a> |
+		<a href="content/pcb/battor/a/battor_a_2011-07-25.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="ecg_sensor" class="active">
+	<th colspan="6">
+	ecg_sensor
+
+	<div id="pcb_rev_dropdown_43" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Low power PCB for sensing human body signals like ECG and EKG.</p>
+	</td>
+</tr><tr class="row_new_43"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev C</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/ecg_sensor/c/ecg_sensor_pcb.png" rel="shadowbox">
+				<img src="content/pcb/ecg_sensor/c/ecg_sensor_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Sonal Verma
+	</td>
+	<td><!--DATE-->
+	    2011-10-15
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/ecg_sensor/c/ecg_sensor.pdf">pdf</a> |
+		<a href="content/pcb/ecg_sensor/c/ecg_sensor_c_2011-10-15.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_43"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/ecg_sensor/b/ecg_sensor_pcb.png" rel="shadowbox">
+				<img src="content/pcb/ecg_sensor/b/ecg_sensor_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Sonal Verma
+	</td>
+	<td><!--DATE-->
+	    2010-10-24
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/ecg_sensor/b/ecg_sensor.pdf">pdf</a> |
+		<a href="content/pcb/ecg_sensor/b/ecg_sensor_b_2010-10-24.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_43"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/ecg_sensor/a/ecg_sensor_pcb.png" rel="shadowbox">
+				<img src="content/pcb/ecg_sensor/a/ecg_sensor_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Sonal Verma
+	</td>
+	<td><!--DATE-->
+	    2010-10-01
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/ecg_sensor/a/ecg_sensor.pdf">pdf</a> |
+		<a href="content/pcb/ecg_sensor/a/ecg_sensor_a_2010-10-01.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="aether" class="active">
+	<th colspan="6">
+	aether
+
+	<div id="pcb_rev_dropdown_44" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Wireless sensor node for monitoring air quality.</p>
+	</td>
+</tr><tr class="row_new_44"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/aether/a/aether_a_pcb.png" rel="shadowbox">
+				<img src="content/pcb/aether/a/aether_a_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Andrew Robinson
+	</td>
+	<td><!--DATE-->
+	    2011-10-05
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/aether/a/aether_A.pdf">pdf</a> |
+		<a href="content/pcb/aether/a/aether_a_2011-10-05.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="usb_debugger" class="active">
+	<th colspan="6">
+	usb_debugger
+
+	<div id="pcb_rev_dropdown_45" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>USB debugging board. Up to two USB channels can be actively re-written on the fly. Two channels can be passively monitored. Channels can be looped back onto on another mimic various types of hosts or devices including self-contained end-to-end interactions.</p>
+	</td>
+</tr><tr class="row_new_45"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/usb_debugger/a/usb_chips.jpg" rel="shadowbox">
+				<img src="content/pcb/usb_debugger/a/usb_chips.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/usb_debugger/a/usb_chips_pcb.png" rel="shadowbox">
+				<img src="content/pcb/usb_debugger/a/usb_chips_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Pat Pannuto, Eric Wustrow
+	</td>
+	<td><!--DATE-->
+	    2011-08-24
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/usb_debugger/a/usb_chips.pdf">pdf</a> |
+		<a href="content/pcb/usb_debugger/a/usb_debugger_a_2011-08-24.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="usb_proc" class="active">
+	<th colspan="6">
+	usb_proc
+
+	<div id="pcb_rev_dropdown_46" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Breakout for a processor designed to be used with the USB debugger board.</p>
+	</td>
+</tr><tr class="row_new_46"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/usb_proc/a/cpu_board.jpg" rel="shadowbox">
+				<img src="content/pcb/usb_proc/a/cpu_board.jpg" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/usb_proc/a/cpu_board_pcb.png" rel="shadowbox">
+				<img src="content/pcb/usb_proc/a/cpu_board_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Pat Pannuto, Eric Wustrow
+	</td>
+	<td><!--DATE-->
+	    2011-08-23
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/usb_proc/a/cpu_board.pdf">pdf</a> |
+		<a href="content/pcb/usb_proc/a/usb_proc_a_2011-08-23.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="sdr_rf" class="active">
+	<th colspan="6">
+	sdr_rf
+
+	<div id="pcb_rev_dropdown_47" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr class="row_new_47"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/sdr_rf/b/rf_pcb.png" rel="shadowbox">
+				<img src="content/pcb/sdr_rf/b/rf_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Ye-Sheng Kuo
+	</td>
+	<td><!--DATE-->
+	    2011-08-12
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/sdr_rf/b/rf.pdf">pdf</a> |
+		<a href="content/pcb/sdr_rf/b/sdr_rf_b_2011-08-12.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_47"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/sdr_rf/a/rf_pcb.png" rel="shadowbox">
+				<img src="content/pcb/sdr_rf/a/rf_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Ye-Sheng Kuo
+	</td>
+	<td><!--DATE-->
+	    2011-07-14
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/sdr_rf/a/rf.pdf">pdf</a> |
+		<a href="content/pcb/sdr_rf/a/sdr_rf_a_2011-07-14.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="hijack_sensor_board" class="active">
+	<th colspan="6">
+	hijack_sensor_board
+
+	<div id="pcb_rev_dropdown_48" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr class="row_new_48"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/hijack_sensor_board/a/main_pcb.png" rel="shadowbox">
+				<img src="content/pcb/hijack_sensor_board/a/main_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Andrew Robinson
+	</td>
+	<td><!--DATE-->
+	    2011-08-01
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/hijack_sensor_board/a/main.pdf">pdf</a> |
+		<a href="content/pcb/hijack_sensor_board/a/hijack_sensor_board_a_2011-08-01.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="smartfusion_breakout" class="active">
+	<th colspan="6">
+	smartfusion_breakout
+
+	<div id="pcb_rev_dropdown_49" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr class="row_new_49"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/smartfusion_breakout/a/schmatic_pcb.png" rel="shadowbox">
+				<img src="content/pcb/smartfusion_breakout/a/schmatic_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Ye-Sheng Kuo
+	</td>
+	<td><!--DATE-->
+	    2011-07-14
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/smartfusion_breakout/a/schmatic.pdf">pdf</a> |
+		<a href="content/pcb/smartfusion_breakout/a/smartfusion_breakout_a_2011-07-14.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="sdr_power" class="active">
+	<th colspan="6">
+	sdr_power
+
+	<div id="pcb_rev_dropdown_50" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr class="row_new_50"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/sdr_power/a/pwr_pcb.png" rel="shadowbox">
+				<img src="content/pcb/sdr_power/a/pwr_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Ye-Sheng Kuo
+	</td>
+	<td><!--DATE-->
+	    2011-06-27
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/sdr_power/a/pwr.pdf">pdf</a> |
+		<a href="content/pcb/sdr_power/a/sdr_power_a_2011-06-27.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="TSL230RD-BOB_A" class="active">
+	<th colspan="6">
+	TSL230RD-BOB_A
+
+	<div id="pcb_rev_dropdown_51" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Breakout board for the TSL230RD.</p>
+	</td>
+</tr><tr class="row_new_51"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/TSL230RD-BOB_A/a/TSL230RD-BOB_A_pcb.png" rel="shadowbox">
+				<img src="content/pcb/TSL230RD-BOB_A/a/TSL230RD-BOB_A_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Prabal Dutta
+	</td>
+	<td><!--DATE-->
+	    2011-03-21
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/TSL230RD-BOB_A/a/TSL230RD-BOB_A.pdf">pdf</a> |
+		<a href="content/pcb/TSL230RD-BOB_A/a/TSL230RD-BOB_A_a_2011-03-21.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="hemera" class="active">
+	<th colspan="6">
+	hemera
+
+	<div id="pcb_rev_dropdown_52" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Wireless sensor node for indoor monitoring. Includes temperature, humidity, light, and motion sensors.</p>
+	</td>
+</tr><tr class="row_new_52"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev C</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/hemera/c/hemera_c_pcb.png" rel="shadowbox">
+				<img src="content/pcb/hemera/c/hemera_c_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2011-03-16
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/hemera/c/hemera_C.pdf">pdf</a> |
+		<a href="content/pcb/hemera/c/hemera_c_2011-03-16.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_52"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/hemera/a/hemera_a_pcb.png" rel="shadowbox">
+				<img src="content/pcb/hemera/a/hemera_a_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Brad Campbell
+	</td>
+	<td><!--DATE-->
+	    2010-07-29
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/hemera/a/hemera_A.pdf">pdf</a> |
+		<a href="content/pcb/hemera/a/hemera_a_2010-07-29.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="parallel_dac" class="active">
+	<th colspan="6">
+	parallel_dac
+
+	<div id="pcb_rev_dropdown_53" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr class="row_new_53"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/parallel_dac/a/schematic1_pcb.png" rel="shadowbox">
+				<img src="content/pcb/parallel_dac/a/schematic1_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Ye-Sheng Kuo
+	</td>
+	<td><!--DATE-->
+	    2011-02-17
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/parallel_dac/a/schematic1.pdf">pdf</a> |
+		<a href="content/pcb/parallel_dac/a/parallel_dac_a_2011-02-17.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="hijack_protoboard" class="active">
+	<th colspan="6">
+	hijack_protoboard
+
+	<div id="pcb_rev_dropdown_54" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Development shield for HiJack.</p>
+	</td>
+</tr><tr class="row_new_54"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/hijack_protoboard/a/hijack_protoboard_pcb.png" rel="shadowbox">
+				<img src="content/pcb/hijack_protoboard/a/hijack_protoboard_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Thomas Schmid
+	</td>
+	<td><!--DATE-->
+	    2011-02-09
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/hijack_protoboard/a/hijack_protoboard.pdf">pdf</a> |
+		<a href="content/pcb/hijack_protoboard/a/hijack_protoboard_a_2011-02-09.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="hijack_programmer" class="active">
+	<th colspan="6">
+	hijack_programmer
+
+	<div id="pcb_rev_dropdown_55" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Programmer board for the HiJack.</p>
+	</td>
+</tr><tr class="row_new_55"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/hijack_programmer/a/hijack_programmer_pcb.png" rel="shadowbox">
+				<img src="content/pcb/hijack_programmer/a/hijack_programmer_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Thomas Schmid
+	</td>
+	<td><!--DATE-->
+	    2011-02-09
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/hijack_programmer/a/hijack_programmer.pdf">pdf</a> |
+		<a href="content/pcb/hijack_programmer/a/hijack_programmer_a_2011-02-09.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="Sam3s-ek-CC2520" class="active">
+	<th colspan="6">
+	Sam3s-ek-CC2520
+
+	<div id="pcb_rev_dropdown_56" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr class="row_new_56"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/Sam3s-ek-CC2520/a/Sam3s-ek-CC2520_pcb.png" rel="shadowbox">
+				<img src="content/pcb/Sam3s-ek-CC2520/a/Sam3s-ek-CC2520_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Thomas Schmid
+	</td>
+	<td><!--DATE-->
+	    2011-02-08
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/Sam3s-ek-CC2520/a/Sam3s-ek-CC2520.pdf">pdf</a> |
+		<a href="content/pcb/Sam3s-ek-CC2520/a/Sam3s-ek-CC2520_a_2011-02-08.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="ade7753_breakout" class="active">
+	<th colspan="6">
+	ade7753_breakout
+
+	<div id="pcb_rev_dropdown_57" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr class="row_new_57"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/ade7753_breakout/a/ade7753_breakout_pcb.png" rel="shadowbox">
+				<img src="content/pcb/ade7753_breakout/a/ade7753_breakout_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Prabal Dutta
+	</td>
+	<td><!--DATE-->
+	    2011-02-07
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/ade7753_breakout/a/ade7753_breakout.pdf">pdf</a> |
+		<a href="content/pcb/ade7753_breakout/a/ade7753_breakout_a_2011-02-07.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="parallel_adc" class="active">
+	<th colspan="6">
+	parallel_adc
+
+	<div id="pcb_rev_dropdown_58" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr class="row_new_58"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/parallel_adc/a/p_adc_pcb.png" rel="shadowbox">
+				<img src="content/pcb/parallel_adc/a/p_adc_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Ye-Sheng Kuo
+	</td>
+	<td><!--DATE-->
+	    2011-02-03
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/parallel_adc/a/p_adc.pdf">pdf</a> |
+		<a href="content/pcb/parallel_adc/a/parallel_adc_a_2011-02-03.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="hijack" class="active">
+	<th colspan="6">
+	hijack
+
+	<div id="pcb_rev_dropdown_59" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Device to hijack power and bandwidth from smartphones. Enables bi-directional data transfer between the microcontroller and the phone.</p>
+	</td>
+</tr><tr class="row_new_59"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev C</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/hijack/c/HIJACK_LQPF_C_pcb.png" rel="shadowbox">
+				<img src="content/pcb/hijack/c/HIJACK_LQPF_C_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Thomas Schmid
+	</td>
+	<td><!--DATE-->
+	    2010-09-09
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/hijack/c/HIJACK_LQPF_C.pdf">pdf</a> |
+		<a href="content/pcb/hijack/c/hijack_c_2010-09-09.zip">zip</a>
+		
+		| <a href="http://github.com/lab11/hijack">github</a>
+		
+	</td>
+</tr>
+<tr class="row_old_59"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/hijack/b/HIJACK_LQPF_B_pcb.png" rel="shadowbox">
+				<img src="content/pcb/hijack/b/HIJACK_LQPF_B_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Thomas Schmid and Prabal Dutta
+	</td>
+	<td><!--DATE-->
+	    2010-08-21
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/hijack/b/HIJACK_LQPF_B.pdf">pdf</a> |
+		<a href="content/pcb/hijack/b/hijack_b_2010-08-21.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_59"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/hijack/a/HIJACK_LQPF_A_pcb.png" rel="shadowbox">
+				<img src="content/pcb/hijack/a/HIJACK_LQPF_A_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Thomas Schmid, Prabal Dutta
+	</td>
+	<td><!--DATE-->
+	    2010-07-30
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/hijack/a/HIJACK_LQPF_A.pdf">pdf</a> |
+		<a href="content/pcb/hijack/a/hijack_a_2010-07-30.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="msp430_LQPF64_breakout" class="active">
+	<th colspan="6">
+	msp430_LQPF64_breakout
+
+	<div id="pcb_rev_dropdown_60" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Breakout board for the MSP430 with an LQFP64 package.</p>
+	</td>
+</tr><tr class="row_new_60"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/msp430_LQPF64_breakout/a/LQFP64AdapterMSP_pcb.png" rel="shadowbox">
+				<img src="content/pcb/msp430_LQPF64_breakout/a/LQFP64AdapterMSP_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Thomas Schmid, Prabal Dutta
+	</td>
+	<td><!--DATE-->
+	    2010-07-21
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/msp430_LQPF64_breakout/a/LQFP64AdapterMSP.pdf">pdf</a> |
+		<a href="content/pcb/msp430_LQPF64_breakout/a/msp430_LQPF64_breakout_a_2010-07-21.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="msp430_QFN64_breakout" class="active">
+	<th colspan="6">
+	msp430_QFN64_breakout
+
+	<div id="pcb_rev_dropdown_61" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Breakout board for the MSP430 with an QFN64 package.</p>
+	</td>
+</tr><tr class="row_new_61"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/msp430_QFN64_breakout/a/QFN64AdapterMSP_pcb.png" rel="shadowbox">
+				<img src="content/pcb/msp430_QFN64_breakout/a/QFN64AdapterMSP_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Thomas Schmid, Prabal Dutta
+	</td>
+	<td><!--DATE-->
+	    2010-07-03
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/msp430_QFN64_breakout/a/QFN64AdapterMSP.pdf">pdf</a> |
+		<a href="content/pcb/msp430_QFN64_breakout/a/msp430_QFN64_breakout_a_2010-07-03.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="hijack_qfn" class="active">
+	<th colspan="6">
+	hijack_qfn
+
+	<div id="pcb_rev_dropdown_62" class="pcb_rev_dropdown pull-right hiding ">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Older version of Hijack that used a QFN MSP430.</p>
+	</td>
+</tr><tr class="row_new_62"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev B</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/hijack_qfn/b/HIJACK_C_pcb.png" rel="shadowbox">
+				<img src="content/pcb/hijack_qfn/b/HIJACK_C_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Thomas Schmid, Prabal Dutta
+	</td>
+	<td><!--DATE-->
+	    2010-06-23
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/hijack_qfn/b/HIJACK_C.pdf">pdf</a> |
+		<a href="content/pcb/hijack_qfn/b/hijack_qfn_b_2010-06-23.zip">zip</a>
+		
+	</td>
+</tr>
+<tr class="row_old_62"   style="display:none;" >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/hijack_qfn/a/HIJACK_B_pcb.png" rel="shadowbox">
+				<img src="content/pcb/hijack_qfn/a/HIJACK_B_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Thomas Schmid, Prabal Dutta
+	</td>
+	<td><!--DATE-->
+	    2010-06-21
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/hijack_qfn/a/HIJACK_B.pdf">pdf</a> |
+		<a href="content/pcb/hijack_qfn/a/hijack_qfn_a_2010-06-21.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="VoltMultiplier" class="active">
+	<th colspan="6">
+	VoltMultiplier
+
+	<div id="pcb_rev_dropdown_63" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr class="row_new_63"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/VoltMultiplier/a/sch1_pcb.png" rel="shadowbox">
+				<img src="content/pcb/VoltMultiplier/a/sch1_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Ye-Sheng Kuo
+	</td>
+	<td><!--DATE-->
+	    2010-06-23
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/VoltMultiplier/a/sch1.pdf">pdf</a> |
+		<a href="content/pcb/VoltMultiplier/a/VoltMultiplier_a_2010-06-23.zip">zip</a>
+		
+	</td>
+</tr>
+<tr id="hijack_power_supply" class="active">
+	<th colspan="6">
+	hijack_power_supply
+
+	<div id="pcb_rev_dropdown_64" class="pcb_rev_dropdown pull-right hiding hidden">
+		<span class="pcb_rev_text hiding">Show Older Revisions</span> <span class="caret hiding"></span>
+		<span class="pcb_rev_text showing" style="display:none;">Hide Older Revisions</span> <span class="caret_up showing" style="display:none;"></span>
+	</div>
+
+	</th>
+</tr><tr>
+	<td colspan="6">
+		<p>Power supply for the HiJack peripheral.</p>
+	</td>
+</tr><tr class="row_new_64"  >
+	<td  style="text-align: center;"><!--REVISION-->
+		<span class="badge">Rev A</span>
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE CAM-->
+		
+	</td>
+	<td  style=" vertical-align: middle;" ><!--IMAGE BRD-->
+		
+		<div style="text-align: center;">
+			<a href="content/pcb/hijack_power_supply/a/HIJACK_A_pcb.png" rel="shadowbox">
+				<img src="content/pcb/hijack_power_supply/a/HIJACK_A_pcb.png" width="150px" />
+			</a>
+		</div>
+		
+	</td>
+	<td><!--AUTHOR-->
+		Thomas Schmid and Prabal Dutta
+	</td>
+	<td><!--DATE-->
+	    2010-05-20
+	</td>
+	<td style="white-space: nowrap"><!--LINKS-->
+		<a href="content/pcb/hijack_power_supply/a/HIJACK_A.pdf">pdf</a> |
+		<a href="content/pcb/hijack_power_supply/a/hijack_power_supply_a_2010-05-20.zip">zip</a>
+		
+	</td>
+</tr>
+
+	</table>
+</div>
+
+<script>
+$( "button" ).click(function() {
+		var button_id = $(this).attr("id");
+		var board_class = button_id.replace(/show$/,"old")
+		console.log(button_id)
+		console.log(board_class)
+		$( "#" + button_id + "_row" ).hide();
+		$( "." + board_class ).show( "slow" );
+		});
+</script>
+
+
+		</div>
+
+		
+<div id="footer" style="margin-top:20px">
+	<div class="container">
+		<h3>Support</h3>
+	</div>
+	<div class="container">
+		<table class="table">
+			<tbody>
+				<tr>
+					<td class="hidden-xs">
+						<img src="/images/nsf.jpg" class="img-thumbnail" width="150px" />
+					</td>
+					<td>
+						This material is based upon work supported by the National Science Foundation under grant #0964120 (&ldquo;CNS-NeTS&rdquo;), #1059372 (&ldquo;CI-ADDO-NEW&rdquo;), and #1111541 (&ldquo;CNS-CSR&rdquo;). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the sponsoring organizations.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container well well-sm">&copy; Copyright 2013-2021 Lab11.</div>
+</div>
+
+	</div>
+
+	<script src="/js/onload.js"></script>
+	<script>
+	  /* Google Analytics */
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-54289873-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>

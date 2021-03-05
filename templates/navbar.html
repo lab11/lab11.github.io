@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="visible-xs" style="margin:8px 20px 0 20px;">
+			<img src="/images/cal.png" height="35px" />
+		</div>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li {% if active_page == 'index' %}class="active"{% endif %}><a href="/index.html">Home</a></li>
+			<li {% if active_page == 'publications' %}class="active"{% endif %}><a href="/publications.html">Publications</a></li>
+			<li {% if active_page == 'projects' %}class="active"{% endif %}><a href="/projects.html">Projects</a></li>
+			<li {% if active_page == 'people' %}class="active"{% endif %}><a href="/people.html">People</a></li>
+			<li {% if active_page == 'pcb' %}class="active"{% endif %}><a href="/pcb.html">PCBs</a></li>
+			<li {% if active_page == 'grants' %}class="active"{% endif %}><a href="/grants.html">Grants</a></li>
+            <!--<li><a href="http://gatd.eecs.umich.edu/" target="_blank">Demos <i class="fa fa-external-link"></i></a></li>-->
+		</ul>
+		<div class="navbar-right hidden-sm hidden-xs" style="margin:8px 0 0 20px;">
+			<a href="https://www.eecs.berkeley.edu/" target="_blank">
+				<img src="/images/cal.png" height="35px" />
+			</a>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="https://github.com/lab11" target="_blank" class="github hidden-sm">Github <i class="fa fa-external-link"></i></a></li>
+			<li><a href="https://github.com/lab11" target="_blank" class="github hidden-lg hidden-md hidden-xs"><i class="fa fa-external-link"></i></a></li>
+			<li><a href="https://lab11.eecs.berkeley.edu/wiki" target="_blank">Wiki <i class="fa fa-external-link"></i></a></li>
+		</ul>
+
+	</div>
+</div>
+</nav>

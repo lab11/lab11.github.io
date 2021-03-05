@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon-cal.ico" />
+	
+	<!--<link rel="stylesheet" href="css/table.css" />-->
+	<link rel="stylesheet" href="/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/css/bootstrap-select.min.css" />
+	<link rel="stylesheet" href="/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/css/timeline.css" />
+	<link rel="stylesheet" href="/css/lab11.css" />
+
+	<script src="/js/jquery-1.10.2.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/bootstrap-select.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/css/shadowbox.css">
+	<script type="text/javascript" src="/js/shadowbox.js"></script>
+	<script type="text/javascript">
+	Shadowbox.init({
+		animate: false,
+		animateFade: false,
+		animSequence: false,
+		overlayOpacity: 0.0,
+		displayNav: false,
+	});
+	</script>
+
+	<title> powerblade  | Lab11</title>
+	
+</head>
+<body>
+
+	<div id="wrap">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="visible-xs" style="margin:8px 20px 0 20px;">
+			<img src="/images/cal.png" height="35px" />
+		</div>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li ><a href="/index.html">Home</a></li>
+			<li ><a href="/publications.html">Publications</a></li>
+			<li class="active"><a href="/projects.html">Projects</a></li>
+			<li ><a href="/people.html">People</a></li>
+			<li ><a href="/pcb.html">PCBs</a></li>
+			<li ><a href="/grants.html">Grants</a></li>
+            <!--<li><a href="http://gatd.eecs.umich.edu/" target="_blank">Demos <i class="fa fa-external-link"></i></a></li>-->
+		</ul>
+		<div class="navbar-right hidden-sm hidden-xs" style="margin:8px 0 0 20px;">
+			<a href="https://www.eecs.berkeley.edu/" target="_blank">
+				<img src="/images/cal.png" height="35px" />
+			</a>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="https://github.com/lab11" target="_blank" class="github hidden-sm">Github <i class="fa fa-external-link"></i></a></li>
+			<li><a href="https://github.com/lab11" target="_blank" class="github hidden-lg hidden-md hidden-xs"><i class="fa fa-external-link"></i></a></li>
+			<li><a href="https://lab11.eecs.berkeley.edu/wiki" target="_blank">Wiki <i class="fa fa-external-link"></i></a></li>
+		</ul>
+
+	</div>
+</div>
+</nav>
+
+		
+
+		<div id="content" class="container">
+			
+
+<div class="row row-offcanvas row-offcanvas-right">
+
+	<div class="col-xs-12 col-sm-8">
+		<div class="page-header"><h1>PowerBlade. <span class="small">Low Profile True Power Meter.</span></h1>
+</div><p>Although the information provided by large-scale plug load power metering can be
+used to reduce individual power consumption, current implementations of these
+plug load devices are often too large to be realistic for extremely dense
+deployments. In this work, we attempt to push the limits of ultra-miniature true
+power meters, and wireless sensors in general, so as to make them applicable on
+a broader scale. </p>
+<p>PowerBlade is a single PCB that sandwiches in between the plug and the wall
+outlet. There are slots on the PCB face through which the AC prongs slide before
+plugging into the outlet, and flexible tabs in the slots make contact with the
+prongs. This allows PowerBlade to both acquire some power and monitor the power
+supplied to the AC load.</p>
+<p>An overview of the system purpose and design can be viewed <a href="https://youtu.be/oNUXhCDnHoE">here</a>.</p>
+<p>Due to the direct relationship between power supply size and output current,
+miniaturization requires also reducing the power consumed in the device itself.
+If the volume is reduced to an extreme (as it is in this case in order to fit
+between the plug and the wall), power must also be extremely reduced as well.
+PowerBlade operates on a budget of less than 1mA, and still achieves a usable
+bandwidth for our application.</p>
+<p>This extreme reduction in power available requires that the radio, the primary
+consumer of power in a typical wireless sensor system, be re-thought entirely.
+In PowerBlade we first successfully implemented the form factor using
+backscatter communicating with an Impinj Speedway R420 reader, but this
+technique requires the expense and setup of the RFID reader. Currently
+PowerBlade operates using Bluetooth Low Energy (BLE), which can be read by 
+commodity smartphones.</p>
+	</div>
+
+	<div class="col-xs-6 col-sm-4 sidebar-offcanvas" id="sidebar" style="margin-top:10px;">
+		<div class="well">
+			
+			
+			
+			<h4>Publications</h4>
+			<div class="list-group">
+				<a href="/publications.html#debruin15powerblade" class="list-group-item">
+	<h4 class="list-group-item-heading">PowerBlade: A Low-Profile, True-Power, Plug-Through Energy Meter</h4>
+	<p class="list-group-item-text">
+		
+		<span class="conference">Proceedings of the 13th ACM Conference on Embedded Networked Sensor Systems (<span class="venue venue-sensys">SenSys&rsquo;15</span>)</span>
+		
+	</p>
+</a><a href="/publications.html#debruin15powerblade-demo" class="list-group-item">
+	<h4 class="list-group-item-heading">Demo: PowerBlade A Low-Profile, True-Power, Plug-Through Energy Meter</h4>
+	<p class="list-group-item-text">
+		
+		<span class="conference">Proceedings of the 13th ACM Conference on Embedded Networked Sensor Systems (<span class="venue venue-sensys">SenSys&rsquo;15</span>)</span>
+		
+	</p>
+</a>
+			</div>
+			
+			
+			
+			<h4>Github</h4>
+			<div class="list-group">
+				<a href="https://github.com/lab11/powerblade" id="lab11||powerblade||github" class="list-group-item github-repo">
+	<h4 class="list-group-item-heading">lab11/powerblade</h4>
+</a>
+			</div>
+			
+			
+			<h4>People</h4>
+			<div class="list-group">
+				<a href="/people.html#sdebruin" class="list-group-item" style="vertical-align:middle;">
+	<table>
+		<tr>
+			<td style="width:20%">
+				<img src="/content/people/images/sdebruin.png" class="img-thumbnail" style="padding: 5px;" width="50px" />
+			</td>
+			<td style="width:80%">
+				<h4 class="list-group-item-heading">Sam DeBruin</h4>
+			<td>
+		</tr>
+	</table>
+</a>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+
+
+		</div>
+
+		
+<div id="footer" style="margin-top:20px">
+	<div class="container">
+		<h3>Support</h3>
+	</div>
+	<div class="container">
+		<table class="table">
+			<tbody>
+				<tr>
+					<td class="hidden-xs">
+						<img src="/images/nsf.jpg" class="img-thumbnail" width="150px" />
+					</td>
+					<td>
+						This material is based upon work supported by the National Science Foundation under grant #0964120 (&ldquo;CNS-NeTS&rdquo;), #1059372 (&ldquo;CI-ADDO-NEW&rdquo;), and #1111541 (&ldquo;CNS-CSR&rdquo;). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the sponsoring organizations.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container well well-sm">&copy; Copyright 2013-2021 Lab11.</div>
+</div>
+
+	</div>
+
+	<script src="/js/onload.js"></script>
+	<script>
+	  /* Google Analytics */
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-54289873-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>

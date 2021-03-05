@@ -1,0 +1,20 @@
+<select class="selectpicker" id="pub_filter_author">
+	<optgroup label="Default">
+		<option value="all" selected="selected">All Authors</option>
+	</optgroup>
+	<optgroup label="Lab11 Members">
+		{% for s in members %}
+		<option value="{{ s[1] }}">{{ s[0] }}</option>
+		{% endfor %}
+	</optgroup>
+	<optgroup label="Lab11 Alumni">
+		{% for s in alumni %}
+		<option value="{{ s[1] }}">{{ s[0] }}</option>
+		{% endfor %}
+	</optgroup>
+	<optgroup label="Collaborators">
+		{% for s in others %}
+		<option value="{{ s[1] }}">{{ s[0] }}</option>
+		{% endfor %}
+	</optgroup>
+</select>

@@ -1,0 +1,315 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon-cal.ico" />
+	
+	<!--<link rel="stylesheet" href="css/table.css" />-->
+	<link rel="stylesheet" href="/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/css/bootstrap-select.min.css" />
+	<link rel="stylesheet" href="/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/css/timeline.css" />
+	<link rel="stylesheet" href="/css/lab11.css" />
+
+	<script src="/js/jquery-1.10.2.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/bootstrap-select.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/css/shadowbox.css">
+	<script type="text/javascript" src="/js/shadowbox.js"></script>
+	<script type="text/javascript">
+	Shadowbox.init({
+		animate: false,
+		animateFade: false,
+		animSequence: false,
+		overlayOpacity: 0.0,
+		displayNav: false,
+	});
+	</script>
+
+	<title> ekg_sensor  | Lab11</title>
+	
+</head>
+<body>
+
+	<div id="wrap">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="visible-xs" style="margin:8px 20px 0 20px;">
+			<img src="/images/cal.png" height="35px" />
+		</div>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li ><a href="/index.html">Home</a></li>
+			<li ><a href="/publications.html">Publications</a></li>
+			<li class="active"><a href="/projects.html">Projects</a></li>
+			<li ><a href="/people.html">People</a></li>
+			<li ><a href="/pcb.html">PCBs</a></li>
+			<li ><a href="/grants.html">Grants</a></li>
+            <!--<li><a href="http://gatd.eecs.umich.edu/" target="_blank">Demos <i class="fa fa-external-link"></i></a></li>-->
+		</ul>
+		<div class="navbar-right hidden-sm hidden-xs" style="margin:8px 0 0 20px;">
+			<a href="https://www.eecs.berkeley.edu/" target="_blank">
+				<img src="/images/cal.png" height="35px" />
+			</a>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="https://github.com/lab11" target="_blank" class="github hidden-sm">Github <i class="fa fa-external-link"></i></a></li>
+			<li><a href="https://github.com/lab11" target="_blank" class="github hidden-lg hidden-md hidden-xs"><i class="fa fa-external-link"></i></a></li>
+			<li><a href="https://lab11.eecs.berkeley.edu/wiki" target="_blank">Wiki <i class="fa fa-external-link"></i></a></li>
+		</ul>
+
+	</div>
+</div>
+</nav>
+
+		
+
+		<div id="content" class="container">
+			
+
+<div class="row row-offcanvas row-offcanvas-right">
+
+	<div class="col-xs-12 col-sm-8">
+		<div class="page-header"><h1>EKG Sensor. <span class="small">The mobile phone as a medical instrument.</span></h1>
+</div><p>We believe that any hospital,
+village clinic, or doctor can have access to advanced health care instruments
+like an EKG monitor for little more than the cost of a mobile phone.</p>
+<p>Health care facilities in developed countries have access to a large number of
+medical instruments unavailable to health care professionals in the developing
+world. One example of such an instrument is the EKG monitor. EKG signals are
+used to diagnose a wide range of medical conditions but they are often
+unavailable in all but the most advanced hospitals in developing countries like
+India, Ghana etc.  We aim to
+design a low-power, low-cost EKG monitor that uses the "HiJack" platform for
+interfacing between the EKG sensor peripheral and the mobile phone, and the
+mobile phone for visualizing the ECG waveform.</p>
+<h3>POTENTIAL IMPACT</h3>
+<p>This simple, plug-and-play, power+data over the audio interface of the mobile
+phone to monitor the EKG is just the first step towards a broader personal and
+participatory sensing applications like blood glucose monitor, blood pressure
+monitor and body temperature monitor. Such a monitoring device, costing just a
+few dollars, can enable village clinics throughout the developing world to gain
+access to modern medical equipment at a fraction of the cost. Mobile devices
+have the potential to seamlessly blend health care into our daily lives.
+Evolving mobile health technology will empower individuals to better monitor
+and manage their own health, encouraging them to live healthier lifestyles and
+prevent many health problems before they begin. In addition, mobile health can
+help professional care-givers to better monitor their patients, detect problems
+earlier, and reduce the need for hospital visits that are expensive and
+inconvenient to patients.</p>
+<h3>DESCRIPTION</h3>
+<p>At the heart of the EKG sensor is a low power CMOS instrumentation amplifier
+and filtering circuitry to minimize the drawn current and noise effect on the
+EKG signal. It is a 3 lead monitoring system, where the red and white leads
+receive signals from patient's wrists, and the black lead is connected to the
+right leg to reduce the baseline drift. The sensor module is interfaced with
+the HiJack platform to deliver the resulting EKG trace on the smartphone
+screen. The entire module is implemented in a square-inch area footprint and
+consumes only 130 µA (0.35 mW). The following figure shows the EKG signal of an
+individual on the oscilloscope.</p>
+<p><img alt="EKG signal captured by our module" src="ekg_thomas.jpg" /></p>
+<h3>FUTURE DIRECTIONS</h3>
+<p>Implement a few algorithms on the EKG data collected to predict any heart
+abnormality like arrhythmia.  Integrating the EKG data from the smartphone with
+a social networking website like Facebook where a person's EKG will complement
+his virtual persona online. The doctor would just have to log into Facebook and
+have access to his patient's medical information. He can notice any abnormal
+activity in real-time and take fast preventive action.  Design a dedicated
+ultra-low power (&lt; 1 µW) EKG sensing chip to perform continuous heart
+monitoring for enabling battery free EKG measurements powered by energy
+harvesting.</p>
+<h3>RELEVANT READINGS</h3>
+<p>"Micropower Electrocardiogram Amplifier" L. Fay, V. Misra, R. Sarpeshkar, IEEE Transactions on Biomedical Circuits and Systems, Vol. 3, No. 5, pp. 312-320, October, 2009.</p>
+<p>"A Portable, Low-Power, Wireless Two-Lead EKG System" Thaddeus Fulford-Jones, Gu-Yeon Wei, Matt Welsh, 26th IEEE EMBS Annual International Conference, September, 2004.</p>
+	</div>
+
+	<div class="col-xs-6 col-sm-4 sidebar-offcanvas" id="sidebar" style="margin-top:10px;">
+		<div class="well">
+			
+			
+			<h4>PCBs</h4>
+			<div class="list-group">
+			<a href="/pcb.html#ecg_sensor" class="list-group-item">
+	<span class="badge">Rev C</span>
+	<h4 class="list-group-item-heading">ecg_sensor</h4>
+	<p class="list-group-item-text">
+		<img src="/content/pcb/ecg_sensor/c/ecg_sensor_pcb.png" class="pull-left" style="padding: 5px;" width="50px" />
+		<small style="line-height:70%;">Low power PCB for sensing human body signals like ECG and EKG.</small>
+	</p>
+	<div class="clearfix"></div>
+</a>
+			</div>
+			
+			
+			<h4>Publications</h4>
+			<div class="list-group">
+				<a href="/publications.html#verma12audiodaq" class="list-group-item">
+	<h4 class="list-group-item-heading">AudioDAQ: Turning the Mobile Phone&rsquo;s Ubiquitous Headset Port into a Universal Data Acquisition Interface</h4>
+	<p class="list-group-item-text">
+		
+		<span class="conference">Proceedings of the 10th ACM Conference on Embedded Network Sensor Systems (<span class="venue venue-sensys">SenSys&rsquo;12</span>)</span>
+		
+	</p>
+</a><a href="/publications.html#kuo10hijack" class="list-group-item">
+	<h4 class="list-group-item-heading">Hijacking Power and Bandwidth from the Mobile Phone&rsquo;s Audio Interface</h4>
+	<p class="list-group-item-text">
+		
+		<span class="conference">Proceedings of the First ACM Symposium on Computing for Development (<span class="venue venue-dev">DEV&rsquo;10</span>)</span>
+		
+	</p>
+</a><a href="/publications.html#kuo10hijack-demo" class="list-group-item">
+	<h4 class="list-group-item-heading">Demo: Hijacking Power and Bandwidth from the Mobile Phone&rsquo;s Audio Interface</h4>
+	<p class="list-group-item-text">
+		
+		<span class="conference">Proceedings of the 8th ACM Conference on Embedded Networked Sensor Systems (<span class="venue venue-sensys">SenSys&rsquo;10</span>)</span>
+		
+	</p>
+</a>
+			</div>
+			
+			
+			
+			
+			<h4>People</h4>
+			<div class="list-group">
+				<a href="/people.html#sonalv" class="list-group-item" style="vertical-align:middle;">
+	<table>
+		<tr>
+			<td style="width:20%">
+				<img src="/content/people/images/sonalv.jpg" class="img-thumbnail" style="padding: 5px;" width="50px" />
+			</td>
+			<td style="width:80%">
+				<h4 class="list-group-item-heading">Sonal Verma</h4>
+			<td>
+		</tr>
+	</table>
+</a><a href="/people.html#androbin" class="list-group-item" style="vertical-align:middle;">
+	<table>
+		<tr>
+			<td style="width:20%">
+				<img src="/content/people/images/androbin.jpg" class="img-thumbnail" style="padding: 5px;" width="50px" />
+			</td>
+			<td style="width:80%">
+				<h4 class="list-group-item-heading">Andrew Robinson</h4>
+			<td>
+		</tr>
+	</table>
+</a><a href="/people.html#samkuo" class="list-group-item" style="vertical-align:middle;">
+	<table>
+		<tr>
+			<td style="width:20%">
+				<img src="/content/people/images/samkuo.jpg" class="img-thumbnail" style="padding: 5px;" width="50px" />
+			</td>
+			<td style="width:80%">
+				<h4 class="list-group-item-heading">Ye-Sheng Kuo</h4>
+			<td>
+		</tr>
+	</table>
+</a><a href="/people.html#prabal" class="list-group-item" style="vertical-align:middle;">
+	<table>
+		<tr>
+			<td style="width:20%">
+				<img src="/content/people/images/prabal.jpg" class="img-thumbnail" style="padding: 5px;" width="50px" />
+			</td>
+			<td style="width:80%">
+				<h4 class="list-group-item-heading">Prabal Dutta</h4>
+			<td>
+		</tr>
+	</table>
+</a><a href="/people.html#tschmid" class="list-group-item" style="vertical-align:middle;">
+	<table>
+		<tr>
+			<td style="width:20%">
+				<img src="/content/people/images/tschmid.jpg" class="img-thumbnail" style="padding: 5px;" width="50px" />
+			</td>
+			<td style="width:80%">
+				<h4 class="list-group-item-heading">Thomas Schmid</h4>
+			<td>
+		</tr>
+	</table>
+</a>
+			</div>
+			
+			
+			<h4>Grants</h4>
+			<div class="list-group">
+				<a href="/grants.html#nsf-nets" class="list-group-item" style="vertical-align:middle;">
+	<h4 class="list-group-item-heading">NeTS: Medium: Collaborative Research: Experimental Platform for Low-Power Wireless Networking Research</h4>
+	<p class="list-group-item-text">
+		<span>National Science Foundation</span>
+	</p>
+</a><a href="/grants.html#nsf-grafting" class="list-group-item" style="vertical-align:middle;">
+	<h4 class="list-group-item-heading">CIFellows Project: Grafting Energy-Harvesting Leaves onto the Battery-Powered Sensornet Tree</h4>
+	<p class="list-group-item-text">
+		<span>National Science Foundation/Computing Research Association</span>
+	</p>
+</a><a href="/grants.html#nsf-mobilab" class="list-group-item" style="vertical-align:middle;">
+	<h4 class="list-group-item-heading">CI-ADDO-NEW: MobiLab -- A Global-Scale Live Laboratory to Support Mobile Computing Science</h4>
+	<p class="list-group-item-text">
+		<span>National Science Foundation</span>
+	</p>
+</a><a href="/grants.html#nsf-csr-cubicmm" class="list-group-item" style="vertical-align:middle;">
+	<h4 class="list-group-item-heading">CSR: Large: Collaborative Research: Integrating Circuits, Sensing, and Software to Realize the Cubic-mm Computing Class</h4>
+	<p class="list-group-item-text">
+		<span>National Science Foundation</span>
+	</p>
+</a>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+		</div>
+
+		
+<div id="footer" style="margin-top:20px">
+	<div class="container">
+		<h3>Support</h3>
+	</div>
+	<div class="container">
+		<table class="table">
+			<tbody>
+				<tr>
+					<td class="hidden-xs">
+						<img src="/images/nsf.jpg" class="img-thumbnail" width="150px" />
+					</td>
+					<td>
+						This material is based upon work supported by the National Science Foundation under grant #0964120 (&ldquo;CNS-NeTS&rdquo;), #1059372 (&ldquo;CI-ADDO-NEW&rdquo;), and #1111541 (&ldquo;CNS-CSR&rdquo;). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the sponsoring organizations.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container well well-sm">&copy; Copyright 2013-2021 Lab11.</div>
+</div>
+
+	</div>
+
+	<script src="/js/onload.js"></script>
+	<script>
+	  /* Google Analytics */
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-54289873-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>

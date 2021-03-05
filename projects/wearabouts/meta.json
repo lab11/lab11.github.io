@@ -1,0 +1,9 @@
+{
+	"sort-date": "2013-04-01",
+	"start-date": "2014-04-01",
+	"github": ["https://github.com/lab11/whereabouts"],
+	"people": ["brghena"],
+	"grants": ["marco-terraswarm", "nsf-grfp-ghena"],
+	"images": [""],
+	"brief": "Room-level indoor localization based on wearable devices."
+}

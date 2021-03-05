@@ -1,0 +1,631 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon-cal.ico" />
+	
+	<!--<link rel="stylesheet" href="css/table.css" />-->
+	<link rel="stylesheet" href="/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/css/bootstrap-select.min.css" />
+	<link rel="stylesheet" href="/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="/css/timeline.css" />
+	<link rel="stylesheet" href="/css/lab11.css" />
+
+	<script src="/js/jquery-1.10.2.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/bootstrap-select.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="/css/shadowbox.css">
+	<script type="text/javascript" src="/js/shadowbox.js"></script>
+	<script type="text/javascript">
+	Shadowbox.init({
+		animate: false,
+		animateFade: false,
+		animSequence: false,
+		overlayOpacity: 0.0,
+		displayNav: false,
+	});
+	</script>
+
+	<title>Home | Lab11</title>
+	
+</head>
+<body>
+
+	<div id="wrap">
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="container">
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="visible-xs" style="margin:8px 20px 0 20px;">
+			<img src="/images/cal.png" height="35px" />
+		</div>
+	</div>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="/index.html">Home</a></li>
+			<li ><a href="/publications.html">Publications</a></li>
+			<li ><a href="/projects.html">Projects</a></li>
+			<li ><a href="/people.html">People</a></li>
+			<li ><a href="/pcb.html">PCBs</a></li>
+			<li ><a href="/grants.html">Grants</a></li>
+            <!--<li><a href="http://gatd.eecs.umich.edu/" target="_blank">Demos <i class="fa fa-external-link"></i></a></li>-->
+		</ul>
+		<div class="navbar-right hidden-sm hidden-xs" style="margin:8px 0 0 20px;">
+			<a href="https://www.eecs.berkeley.edu/" target="_blank">
+				<img src="/images/cal.png" height="35px" />
+			</a>
+		</div>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="https://github.com/lab11" target="_blank" class="github hidden-sm">Github <i class="fa fa-external-link"></i></a></li>
+			<li><a href="https://github.com/lab11" target="_blank" class="github hidden-lg hidden-md hidden-xs"><i class="fa fa-external-link"></i></a></li>
+			<li><a href="https://lab11.eecs.berkeley.edu/wiki" target="_blank">Wiki <i class="fa fa-external-link"></i></a></li>
+		</ul>
+
+	</div>
+</div>
+</nav>
+
+		
+
+<div class="jumbotron" style="background: url('images/lab-cal.jpg') center / cover;">
+	<div class="container">
+		<img class="img-thumbnail img-responsive pull-right hidden-xs" src="images/lab11-cal_1000px.png" style="height: 150px;" />
+		<div class="img-rounded" style="width: 45%; padding: 15px; background-color:rgba(255,255,255,0.9)">
+			<h1 class="michigan_blue">Lab11</h1>
+			<p style="font-weight:bold;">Embedded Systems Research at UC Berkeley</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+		<div id="content" class="container">
+			
+
+<p class="lead">
+	The Internet of Everyday Things will bring a trillion new wireless,
+	embedded, and networked systems online within a decade or two. Our
+	work explores how these systems should be built to survive and thrive in
+	this not-too-distant future, and how they can be prototyped today to enable
+	breakthrough applications.
+</p>
+
+
+<ul class="nav nav-pills larger">
+	<li><a href="#permamote">Permamote</a></li>
+	<li><a href="#signpost">Signpost</a></li>
+	<li><a href="#edg">EDG</a></li>
+	<li><a href="#slocalization">Slocalization</a></li>
+	<li><a href="#powerblade">Powerblade</a></li>
+	<li><a href="#monoxalyze">Monoxalyze</a></li>
+	<li><a href="#summon">Summon</a></li>
+	<li><a href="#polypoint">Polypoint</a></li>
+	<li><a href="#harmonia">Harmonia</a></li>
+	<li><a href="#zigbeag">GAP</a></li>
+	<li><a href="#vlc_localization">VLC Localization</a></li>
+	<li><a href="#gridwatch">GridWatch</a></li>
+	<li><a href="#opo">Opo</a></li>
+	<li><a href="#monjolo">Monjolo</a></li>
+	<li><a href="#wearabouts">Wearabouts</a></li>
+	<li><a href="#m3">M3</a></li>
+	<li><a href="#usdr">μSDR</a></li>
+	<li><a href="#ekg_sensor">EKG Sensor</a></li>
+</ul>
+
+
+
+
+<hr class="featurette-divider">
+
+<div id="permamote" class="row featurette">
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">Permamote. <span class="small">Exploring reliable, low-power motes.</span></h2>
+<p class="lead">Permamote combines energy-harvesting, a backing primary store battery,
+and the newest, lowest power components
+to achieve consistent operation over a greater than 10 year lifetime with
+common sensor mote workloads.
+Currently it performs ambient environmental sensing and reports data over
+BLE and 802.15.4, however we hope the energy storage and harvesting system can
+be reused and serve as a base for all future indoor sensor deployments.</p>
+		<a class="btn btn-default" href="projects/permamote" role="button">View project page</a>
+	</div>
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/permamote/permamote.jpg" width="400px" height="400px">
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="signpost" class="row featurette">
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/signpost/signpost.jpg" width="400px" height="400px">
+	</div>
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">Signpost. <span class="small">Deployable, Modular, City-Scale Sensing</span></h2>
+<p class="lead">The Signpost platform enables easily-deployable city-scale sensing. Signposts
+can be mounted to any sign post, harvest solar energy, and provide the 
+key services for their pluggable sensor modules to perform sensing tasks.
+To enable multiple non-aligned sensor modules to operate within the resource
+constraints of the system, Signposts meter resource utilization and
+isolate sensor modules that use over their fair share. We have
+created sensor modules for audio volume, rf spectrum, radar-based motion, and
+ambient environmental sensing.
+The platform is currently being deploying on UC Berkeley's campus, and
+we hope to use it as a platform to test distributed, resource
+constrained, software and hardware systems.</p>
+		<a class="btn btn-default" href="projects/signpost" role="button">View project page</a>
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="edg" class="row featurette">
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">EDG. <span class="small">Generate hardware designs from (annotated) software.</span></h2>
+<p class="lead">Embedded Device Generation(EDG) can generate complete hardware designs from high-level specifications (like
+annotated software). This level of abstraction can enable a new generation
+of coders to take advantage of the increasingly accessible and popular fabrication
+techniques without requiring them to learn the skills associated with traditional
+hardware design. The system starts from the user-specified requirements and 
+a library of available components and produces a block diagram containing
+sufficient information to generate the finalized device firmware, bill of
+materials, and circuit netlist.</p>
+		<a class="btn btn-default" href="projects/edg" role="button">View project page</a>
+	</div>
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/edg/edg.jpg" width="400px" height="400px">
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="slocalization" class="row featurette">
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/slocalization/slocalization.png" width="400px" height="400px">
+	</div>
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">Slocalization. <span class="small">Low-power RF backscatter localization.</span></h2>
+<p class="lead">Slocalization is a system for indoor localization using UWB, backscatter,
+RF time-of-flight ranging. The system allows ultra low-power
+backscatter tags to be localized slowly (minutes-hours depending on distance)
+at decimeter accuracy. While the UWB backscatter signal would usually be
+well below the noise floor, the signal is integrated over time to enable
+its recovery.</p>
+		<a class="btn btn-default" href="projects/slocalization" role="button">View project page</a>
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="powerblade" class="row featurette">
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">PowerBlade. <span class="small">Low Profile True Power Meter.</span></h2>
+<p class="lead">Although the information provided by large-scale plug load power metering can be
+used to reduce individual power consumption, current implementations of these
+plug load devices are often too large to be realistic for extremely dense
+deployments. In this work, we attempt to push the limits of ultra-miniature true
+power meters, and wireless sensors in general, so as to make them applicable on
+a broader scale. </p>
+<p>PowerBlade is a single PCB that sandwiches in between the plug and the wall
+outlet. There are slots on the PCB face through which the AC prongs slide before
+plugging into the outlet, and flexible tabs in the slots make contact with the
+prongs. This allows PowerBlade to both acquire some power and monitor the power
+supplied to the AC load.</p>
+<p>An overview of the system purpose and design can be viewed <a href="https://youtu.be/oNUXhCDnHoE">here</a>.</p>
+		<a class="btn btn-default" href="projects/powerblade" role="button">View project page</a>
+	</div>
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/powerblade/powerblade.jpg" width="400px" height="400px">
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="monoxalyze" class="row featurette">
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/monoxalyze/monoxalyze.jpg" width="400px" height="400px">
+	</div>
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">Monoxalyze <span class="small">Verifiable smoking cessation.</span></h2>
+<p class="lead">Monoxalyze is a carbon monoxide breathalyzer that works with a user's smartphone
+to verify smoking cessation. Monoxalyze verifies cessation by creating
+transitive trust between the user, the smartphone, and the Monoxalyze device;
+the links in this chain are created through facial recognition, visible light
+authentication, and exhalation verification respectively. These links of
+trust ensure that the correct user is exhaling sufficiently through the
+expected Monoxalyze device.</p>
+		<a class="btn btn-default" href="projects/monoxalyze" role="button">View project page</a>
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="summon" class="row featurette">
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">Summon. <span class="small">Casually browsing the web of things.</span></h2>
+<p class="lead">Summon enables users to find and directly interact with IoT devices from
+their smartphone. Devices can beacon out pointers to web resources over
+Bluetooth, mDNS, or uPnP, and summon well fetch the websites and provide
+APIs through which the websites can interact directly with the device.
+This removes the need to download a new app for every smart devices and 
+instead extends the notion of web browsing into our physical spaces.</p>
+		<a class="btn btn-default" href="projects/summon" role="button">View project page</a>
+	</div>
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/summon/summon.png" width="400px" height="400px">
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="polypoint" class="row featurette">
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/polypoint/polypoint.jpg" width="400px" height="400px">
+	</div>
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">PolyPoint. <span class="small">Accurate RF indoor localization.</span></h2>
+<p class="lead">PolyPoint is a system for indoor localization using UWB RF time-of-flight
+ranging. The system uses the DecaWave DW1000 as the UWB radio which provides
+accurate timestamping of packet transmission and reception times. The key to
+its accuracy is its ranging diversity: it uses three antennas on the tag,
+three antennas on the anchor, and three UWB antennas to obtain 27 measurements
+for each ranging event.</p>
+		<a class="btn btn-default" href="projects/polypoint" role="button">View project page</a>
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="harmonia" class="row featurette">
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">Harmonia. <span class="small">Cheap, accurate indoor localization with RF.</span></h2>
+<p class="lead">Ultra-wideband has been shown to achieve order-cm RF-localization
+accuracy, yet it is prohibitively expensive to implement in practice.</p>
+<p>Harmonia seeks the best of both worlds, leveraging affordable, low-energy
+narrowband frontends with a novel mixing scheme to generate ultra-wideband
+(UWB) signals. These signals are captured using a tunable narrowband receiver
+that sweeps the spectrum, stitching together a complete UWB picture.</p>
+<p>Harmonia is designed as an assymetric <em>tag</em> and <em>anchor</em> system. Lightweight,
+low-cost, low-energy, low-complexity tags are distributed in free space.
+These tags mix the output of a narrowband radio with a square wave to generate
+a UWB signal. Anchor nodes with a highly tunable narrowband frontend quickly
+sweep the spectrum and stitch together samples to form one, unified UWB
+capture.</p>
+<p>Our Harmonia prototype captures 56&nbsp;location samples/second, enabling
+location tracking with both high temporal fidelity and high resolution in 3D
+space.</p>
+		<a class="btn btn-default" href="projects/harmonia" role="button">View project page</a>
+	</div>
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/harmonia/harmonia.png" width="400px" height="400px">
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="zigbeag" class="row featurette">
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/zigbeag/zigbeag.jpg" width="400px" height="400px">
+	</div>
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">GAP. <span class="small">A 802.15.4/BLE cape for the Beaglebone Black.</span></h2>
+<p class="lead">Low-power sensor networks operating on 802.15.4 and BLE require a reliable and flexible border router. The GAP cape aims to allow the Beaglebone Black to replace the Raspberry Pi as the most suitable embedded linux platform for 802.15.4/BLE routing.</p>
+<p>The Beaglebone Black's internal eMMC storage is more reliable than the often-corrupted SD cards used with the Raspberry Pi.
+As of revision A, the GAP features two CC2520 radios, one of which is amplified with a CC2591 range-extender. A kernel driver is in development to control both radios.
+Revision B will improve upon the design and include a BLE radio.</p>
+		<a class="btn btn-default" href="projects/zigbeag" role="button">View project page</a>
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="vlc_localization" class="row featurette">
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">VLC Localization. <span class="small">Positioning with LED lights and smartphones.</span></h2>
+<p class="lead">Consumer GPS changed the world. Knowing one's location and the ability to
+locate objects enabled whole fields of technologies. Yet there is no effective
+system for accurate indoor localization.</p>
+<p>Most state-of-the-art indoor localization systems provide <em>semantic
+localization</em>, answering "Where Am I?" by telling the user what room or area of
+a room they are in. We aim to provide true localization, in practice this
+amounts to <em>order 1&nbsp;decimeter accuracy in 3D-space</em>.</p>
+<p>To achieve this, we exploit the
+<a href="http://www.red.com/learn/red-101/global-rolling-shutter"
+target="_blank" title="Rolling Shutter Explanation by RED Digital Cinema">
+rolling shutter <i class="fa fa-external-link"></i></a> of the CMOS imager in
+modern smartphones. By modulating (blinking) LED lights at high frequency
+(1-7&nbsp;kHz) each light appears solidly on to any people in the room while
+communicating data to any smartphone in the room.</p>
+		<a class="btn btn-default" href="projects/vlc_localization" role="button">View project page</a>
+	</div>
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/vlc_localization/vlc_localization.png" width="400px" height="400px">
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="gridwatch" class="row featurette">
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/gridwatch/gridwatch.png" width="400px" height="400px">
+	</div>
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">GridWatch. <span class="small">Monitor the grid.</span></h2>
+<p class="lead">The power grid is one of humanity's most significant engineering undertakings
+and is essential in developed and developing nations alike.</p>
+<p>Currently, transparency into the power grid relies on utilities and
+more fine- grained insight is provided by costly smart meter
+deployments. We claim that greater visibility into power grids can
+be provided in an inexpensive, crowdsourced manner independent of
+utilities by leveraging existing smartphones. Our key insight is
+that an unmodified smartphone can  detect power outages by
+monitoring changes to its own power state, locally verifying these
+outages using a variety of sensors, and corroborating with other
+phones through cloud services.</p>
+		<a class="btn btn-default" href="projects/gridwatch" role="button">View project page</a>
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="opo" class="row featurette">
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">Opo. <span class="small">Sensing face to face interactions.</span></h2>
+<p class="lead">Face to face interactions and the distances they occur at are thought to be 
+important in a number of fields, such as epidemiology, psychology, and 
+robot usability. However, past smartphone and smart badge technologies are unable 
+to provide the right combination of high resolution data and usability.</p>
+<p>Smart badges have offered the highest quality data so far. However, the difficulty in 
+synchronizing unpredictable mobile node has resulted in either bulky, high powered
+nodes or infrastructure heavy systems. To overcome this challenge, Opo uses a 
+novel ultra low power ultrasonic wake up circuit to synchronize nodes, bypassing 
+the time synchronization / scheduling challenges faced by traditional RF synchronization.</p>
+<p>Opo is able to provide 2 s time resolution and 5 cm spatial resolution, while running 
+for 4 days on a battery the size of a dime. Opo tags are around 3 cm in diameter and 
+weigh 8 grams, making them easily wearable using a lanyard, lapel pin, or magnetic clips.</p>
+		<a class="btn btn-default" href="projects/opo" role="button">View project page</a>
+	</div>
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/opo/opo.png" width="400px" height="400px">
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="monjolo" class="row featurette">
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/monjolo/monjolo.jpg" width="400px" height="400px">
+	</div>
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">Monjolo. <span class="small">Energy-harvesting energy meters.</span></h2>
+<p class="lead">Conventional AC power meters perform at least two distinct functions:
+power conversion, to supply the meter itself, and energy metering, to
+measure the load consumption.  This paper presents Monjolo, a new
+energy-metering architecture that combines these two functions to
+yield a new design point in the metering space.</p>
+<p>The key insight
+underlying this work is that the output of a current transformer --
+nominally used to measure a load current -- can be harvested and used
+to <em>intermittently</em> power a wireless sensor node.  The hypothesis
+is that the node's activation frequency increases monotonically with
+the primary load's draw, making it possible to estimate load power
+from the interval between activations, assuming the node consumes a
+fixed energy quanta during each activation.  This paper explores this
+thesis by designing, implementing, and evaluating the Monjolo
+metering architecture.</p>
+		<a class="btn btn-default" href="projects/monjolo" role="button">View project page</a>
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="wearabouts" class="row featurette">
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">Wearabouts. <span class="small">Localization through wearables.</span></h2>
+<p class="lead">Wearabouts is a system for indoor room-level localization of people. It detects
+individuals via Bluetooth Low-Energy communications from the devices they carry
+and determines their current location in a building. Wearabouts provides
+location information as a service to other systems, enabling new smart
+applications.</p>
+<p>People and their devices are becoming intrinsically tied together. Smartphones
+already accompany their owner for the majority of the day. Wearable devices
+both continue and enhance this trend. The use of Bluetooth Low-Energy
+communications on these devices means that they all continuously broadcast
+their presence with advertisement packets. This allows them to serve a
+secondary purpose as a proxy for localizing people. We propose that
+non-intrusive room-level localization is possible by detecting devices that
+people already carry and wear.</p>
+		<a class="btn btn-default" href="projects/wearabouts" role="button">View project page</a>
+	</div>
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/wearabouts/wearabouts.png" width="400px" height="400px">
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="m3" class="row featurette">
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/m3/m3.jpg" width="400px" height="400px">
+	</div>
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">M3. <span class="small">Millimeter-scale computing.</span></h2>
+<p class="lead">Pushing the leading edge of technology, M3 seeks to build a modular,
+composible, general-purpose sensing and computation platform at
+millimeter-scale.</p>
+<p>The goal of the Michigan Micro Mote (M3) project is to finally realize the
+Smart Dust vision: networks of integrated, autonomous, energy-harvesting nodes that
+can sense the environment and deliver their data over a wireless mesh network. The
+concrete goal of the project is to: (1) create sensor nodes that are cubic-mm in
+size, (2) draw ~10 nW, and (3) deliver data every few minutes over a multihop
+network. This requires advances in every layer of the system stack -- circuits to
+memory to processor to timers to radios to interconnects to packaging to software to
+protocols to programming models. If successful, this represents a 1,000-10,000 fold
+improvement over the state-of-the-art in size and power.</p>
+		<a class="btn btn-default" href="projects/m3" role="button">View project page</a>
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="usdr" class="row featurette">
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">μSDR <span class="small">A low power, low cost, low area software-defined radio</span></h2>
+<p class="lead">"By about 2020 software radios will have become the standard technology for
+commercial, as well as military, radios, employed in a range of devices, from
+battery-powered sensors and hand-held devices to plugged-in devices (such as
+base stations)," claims BBN's Craig Partridge in the September 2011 issue of
+CACM. However, one of the chief impediments to realizing this future is that
+today's software radios are large, expensive, and power-hungry, and so they're
+poorly-suited to battery-power and hand-held devices. This project explores
+clean-slate system architectures for software-defined radios, ranging from
+highly-programmble radios to RF front-ends with reconfigurable hardware
+baseband processing to simple RF front-ends with pure software baseband
+processing. The key challenge is how to define, describe, and partition the
+computations that occur across electronics (e.g. filters), hardware (e.g.
+verilog), and software (e.g. C/C++) to maximize efficiency and resource
+utilization. Our chief aim is to make software radios small, inexpensive, and
+low-power. Today, we have an 802.15.4-compatible SDR platform that's just 3"x5"
+and costs around $100. It will soon be an open platform for other researchers,
+and it will allow us to explore the range of architectural tradeoffs necessary
+to economically and efficiently realize pervasive SDR systems.</p>
+		<a class="btn btn-default" href="projects/usdr" role="button">View project page</a>
+	</div>
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/usdr/usdr.jpg" width="400px" height="400px">
+	</div>
+	
+</div>
+
+<hr class="featurette-divider">
+
+<div id="ekg_sensor" class="row featurette">
+	
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive" src="projects/ekg_sensor/ekg_sensor.jpg" width="400px" height="400px">
+	</div>
+	
+	<div class="col-md-7">
+		<h2 class="featurette-heading">EKG Sensor. <span class="small">The mobile phone as a medical instrument.</span></h2>
+<p class="lead">We believe that any hospital,
+village clinic, or doctor can have access to advanced health care instruments
+like an EKG monitor for little more than the cost of a mobile phone.</p>
+<p>Health care facilities in developed countries have access to a large number of
+medical instruments unavailable to health care professionals in the developing
+world. One example of such an instrument is the EKG monitor. EKG signals are
+used to diagnose a wide range of medical conditions but they are often
+unavailable in all but the most advanced hospitals in developing countries like
+India, Ghana etc.  We aim to
+design a low-power, low-cost EKG monitor that uses the "HiJack" platform for
+interfacing between the EKG sensor peripheral and the mobile phone, and the
+mobile phone for visualizing the ECG waveform.</p>
+		<a class="btn btn-default" href="projects/ekg_sensor" role="button">View project page</a>
+	</div>
+	
+</div>
+
+<div class="well well-sm" style="text-align:center;margin-top:25px;">
+	<a class="btn btn-default btn-lg" href="/projects.html">View More Projects</a>
+</div>
+
+
+		</div>
+
+		
+<div id="footer" style="margin-top:20px">
+	<div class="container">
+		<h3>Support</h3>
+	</div>
+	<div class="container">
+		<table class="table">
+			<tbody>
+				<tr>
+					<td class="hidden-xs">
+						<img src="/images/nsf.jpg" class="img-thumbnail" width="150px" />
+					</td>
+					<td>
+						This material is based upon work supported by the National Science Foundation under grant #0964120 (&ldquo;CNS-NeTS&rdquo;), #1059372 (&ldquo;CI-ADDO-NEW&rdquo;), and #1111541 (&ldquo;CNS-CSR&rdquo;). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the sponsoring organizations.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container well well-sm">&copy; Copyright 2013-2021 Lab11.</div>
+</div>
+
+	</div>
+
+	<script src="/js/onload.js"></script>
+	<script>
+	  /* Google Analytics */
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-54289873-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</body>

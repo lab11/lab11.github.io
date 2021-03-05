@@ -1,0 +1,136 @@
+body {
+  padding-top: 50px;
+}
+
+.larger {
+  font-size: 120%;
+}
+
+.github {
+  padding-left: 45px !important;
+  background: url('/images/github.png') no-repeat 10px center;
+  background-size: 35px 35px;
+}
+.michigan_blue {
+  color: #002E5E /* #00274C */ !important;
+}
+
+
+.caret_up {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-bottom: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+
+
+.pcb_rev_dropdown {
+	margin-right:5px;
+	cursor:pointer;
+}
+.pcb_rev_dropdown span {
+	font-weight: normal;
+}
+
+
+.pub_entry {
+  margin-bottom:15px;
+}
+
+.bib_title {
+	font-weight: bold;
+}
+
+.bib_conference {
+	font-style: italic;
+}
+
+.bib_extra {
+	font-weight: bold;
+	color: red;
+}
+
+.author-highlight {
+	background-color: #ffff00;
+}
+
+.author-not-selected {
+	display: none;
+}
+
+.venue-highlight {
+	background-color: #ffff00;
+}
+
+.venue-not-selected {
+	display: none;
+}
+
+.pub-type-not-selected {
+	display: none;
+}
+
+/* Extra bootstrap CSS that they use on their website */
+.bs-callout {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #eee;
+    border-image: none;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px 1px 1px 5px;
+    margin: 5px 0;
+    padding: 5px 20px 5px 20px;
+    border-bottom: none;
+    border-right: none;
+}
+.bs-callout h4 {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+.bs-callout code {
+    border-radius: 3px;
+}
+.bs-callout + .bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-danger {
+    border-left-color: #d9534f;
+}
+.bs-callout-danger h4 {
+    color: #d9534f;
+}
+.bs-callout-warning {
+    border-left-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+    color: #f0ad4e;
+}
+.bs-callout-info {
+    border-left-color: #5bc0de;
+}
+.bs-callout-info h4 {
+    color: #333;
+}
+.bs-callout .funding-org {
+    color: #999;
+    font-size: 110%;
+}
+
+.pub_abstract {
+  cursor: pointer;
+}
+
+.pub_bibtex {
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+{
+	"sort-date": "2013-11-15",
+	"start-date": "2013-03-01",
+	"pcbs": ["coilcube", "impulse", "gecko_power_supply", "cc_power_supply"],
+	"pubs": ["debruin13monjolo", "clark14deltaflow", "campbell14thermes"],
+	"github": ["https://github.com/lab11/monjolo"],
+	"people": ["bradjc", "sdebruin", "mclarkk", "brghena", "prabal"],
+	"grants": ["marco-terraswarm", "usaid-dil", "nsf-grfp-debruin", "intel-2012", "qinf-bradjc-ppannuto", "ti-2013"],
+	"images": [""],
+	"brief": "Energy-harvesting energy meters that use side-channel activations to sense."
+}

@@ -1,0 +1,12 @@
+{
+	"name": "EKG Sensor",
+	"sort-date": "2012-05-01",
+	"start-date": "2011-12-12",
+	"end-date": "2012-11-15",
+	"pcbs": ["ecg_sensor"],
+	"pubs": ["verma12audiodaq", "kuo10hijack", "kuo10hijack-demo"],
+	"people": ["sonalv", "androbin", "samkuo", "prabal", "tschmid"],
+	"grants": ["nsf-nets", "nsf-grafting", "nsf-mobilab", "nsf-csr-cubicmm"],
+	"images": [""],
+	"brief": "Low power smartphone based sensing for medical applications."
+}

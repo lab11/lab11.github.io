@@ -1,0 +1,11 @@
+{
+	"name": "Harmonia",
+	"sort-date": "2014-09-11",
+	"start-date": "2014-05-01",
+	"pubs": ["kempke16harmonium", "kempke14harmonia"],
+	"github": ["https://github.com/lab11/fast-square"],
+	"people": ["bpkempke", "ppannuto", "prabal"],
+	"grants": ["marco-terraswarm", "ndseg-ppannuto", "intel-2012", "ti-2014"],
+	"_images": [""],
+	"brief": "Ultra-wideband localization using narrowband radios, square waves, and band stitching."
+}

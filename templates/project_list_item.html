@@ -1,0 +1,45 @@
+<div class="col-sm-6" style="margin-bottom:10px;">
+	<table>
+		<tr>
+			<td>
+				<a href="{{ paths['project'] }}">
+					<img class="media-object img-thumbnail img-square" src="{{ paths['image'] }}" width="100px">
+				</a>
+			</td>
+			<td style="vertical-align:middle;padding-left:10px;">
+				<h4>
+					{{ project['name'] }}
+					{% if 'start-date' in project %}
+					<small>
+					{{ project['start-date'] }}
+						{% if 'end-date' in project %}
+						- {{ project['end-date'] }}
+						{% else %}
+						- Present
+						{% endif %}
+					</small>
+					{% endif %}
+
+					{% if 'tags' in project %}
+						<small>
+						{% for t in project['tags'] %}
+							{% if t == "supported" %}
+								<span class='label label-success metatag'> supported </span>
+							{% elif t == "devel" %}
+								<span class='label label-warning metatag'> development </span>
+							{% elif t == "stable" %}
+								<span class='label label-primary metatag'> stable </span>
+							{% elif t == 'unsupported' %}
+								<span class='label label-danger metatag'>unsupported</span>
+							{% endif %} 
+						{% endfor %}
+						</small>
+					{% endif %}
+				</h4>
+				<span>
+					{{ project['brief'] }}
+				</span>
+			</td>
+		</tr>
+	</table>
+</div>

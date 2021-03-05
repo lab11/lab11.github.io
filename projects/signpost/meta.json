@@ -1,0 +1,10 @@
+{
+	"sort-date": "2017-1-12",
+	"start-date": "2016-1-6",
+	"people": ["adkinsjd","brghena","nealjack","ppannuto","rohrer","bradjc"],
+	"pubs": ["adkins18signpost","adkins18signpostdemo","adkins17signpost-ts","adkins16signpost-demo"],
+	"tags": [],
+	"images": [""],
+	"brief": "Deployable, Modular, City-Scale Sensing",
+	"github": ["https://github.com/lab11/signpost"]
+}

@@ -1,0 +1,17 @@
+<div id="{{ person['uniqname'] }}" class="col-lg-{{ colspan }}">
+	<img class="img-circle" src="{{ paths['image'] }}" height="140px">
+	<h3>{{ person['name'] }}</h3>
+	<p>{{ person['description'] }}</p>
+	<p>
+		{% if person['email'] != '?' %}
+		<a class="btn btn-default" href="mailto:{{ person['email'] }}" role="button">
+			<span class="glyphicon glyphicon-envelope"></span> Email
+		</a>
+		{% endif %}
+		{% if person['website'] != '?' %}
+		<a class="btn btn-default" href="{{ person['website'] }}" role="button">
+			<span class="glyphicon glyphicon-home"></span> Website
+		</a>
+		{% endif %}
+	</p>
+</div>

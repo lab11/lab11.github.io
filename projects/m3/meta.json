@@ -1,0 +1,10 @@
+{
+	"sort-date": "2013-01-01",
+	"start-date": "2012-01-01",
+	"pubs": ["kuo14mbus"],
+	"github": ["https://github.com/lab11/M-ulator"],
+	"people": ["ppannuto", "bpkempke", "samkuo", "prabal"],
+	"grants": ["marco-terraswarm", "ndseg-ppannuto", "nsf-csr-cubicmm"],
+	"images": [""],
+	"brief": "Full sensor node in a millimeter scale package."
+}

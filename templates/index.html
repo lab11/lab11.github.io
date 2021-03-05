@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% set active_page = 'index' %}
+{% block title %}Home{% endblock %}
+
+
+{% block top %}
+
+<div class="jumbotron" style="background: url('images/lab-cal.jpg') center / cover;">
+	<div class="container">
+		<img class="img-thumbnail img-responsive pull-right hidden-xs" src="images/lab11-cal_1000px.png" style="height: 150px;" />
+		<div class="img-rounded" style="width: 45%; padding: 15px; background-color:rgba(255,255,255,0.9)">
+			<h1 class="michigan_blue">Lab11</h1>
+			<p style="font-weight:bold;">Embedded Systems Research at UC Berkeley</p>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}
+
+{% block content %}
+
+<p class="lead">
+	The Internet of Everyday Things will bring a trillion new wireless,
+	embedded, and networked systems online within a decade or two. Our
+	work explores how these systems should be built to survive and thrive in
+	this not-too-distant future, and how they can be prototyped today to enable
+	breakthrough applications.
+</p>
+
+
+<ul class="nav nav-pills larger">
+	{%- for proj in proj_list %}
+	<li><a href="#{{ proj['id'] }}">{{ proj['name'] }}</a></li>
+	{%- endfor %}
+</ul>
+
+
+{{ projects }}
+
+<div class="well well-sm" style="text-align:center;margin-top:25px;">
+	<a class="btn btn-default btn-lg" href="/projects.html">View More Projects</a>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+{{ footer }}
+{% endblock %}
