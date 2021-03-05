@@ -11,7 +11,6 @@ Requires some python packages:
 
     pip3 install jinja2 sh pybtex markdown colorlog
 
-
 Build the Website
 -----------------
 
