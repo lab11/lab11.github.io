@@ -48,3 +48,10 @@ jobs:
       # Build site
       - name: Build website --> /docs
         run: ./website.py
+      - name: Commit results
+        # You may pin to the exact commit or the version.
+        # uses: stefanzweifel/git-auto-commit-action@be7095c202abcf573b09f20541e0ee2f6a3a9d9b
+        uses: stefanzweifel/git-auto-commit-action@v4.9.2
+        with:
+          # Commit message
+          commit_message: Apply website build
