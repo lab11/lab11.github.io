@@ -41,9 +41,8 @@ jobs:
             ${{ runner.os }}-
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: testing
-        run: |
-          ls /etc
+      - name: Allow ImageMagick to convert PDFs to images
+        run: sudo sed -i 's/^.*policy.*coder.*none.*PDF.*//' /etc/ImageMagick-6/policy.xml
       # Build site
       - name: Build website --> /docs
         run: ./website.py
