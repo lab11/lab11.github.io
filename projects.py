@@ -19,8 +19,8 @@ ftext = markdown_fixtitle.makeExtension()
 
 IMAGE_EXTS = ['*.jpg', '*.png', '*.mp4']
 
-LOCAL_HTML_DIR    = os.path.join('html', 'projects')
-LOCAL_PCBS_SL_DIR = os.path.join('html', 'content', 'pcb', '__spotlight')
+LOCAL_HTML_DIR    = os.path.join('docs', 'projects')
+LOCAL_PCBS_SL_DIR = os.path.join('docs', 'content', 'pcb', '__spotlight')
 
 
 def sort_projects (p):
@@ -201,6 +201,6 @@ def make_project_page (projects, people, pubs, posters, grants, jinja_env):
 
 	html = project_tmpl.render(projects=ps, footer=footer_tmpl.render(curr_year=datetime.datetime.now().year))
 
-	with open('html/projects.html', 'w') as f:
+	with open('docs/projects.html', 'w') as f:
 		f.write(html)
 

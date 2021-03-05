@@ -21,8 +21,8 @@ MONTH_CONV = {'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6,
               'jul': 7, 'aug': 8, 'sep': 9, 'oct':10, 'nov':11, 'dec':12}
 
 CONTENT_DIR         = os.path.join('content', 'pubs')
-LOCAL_CONTENT_DIR   = os.path.join('html', CONTENT_DIR)
-LOCAL_SPOTLIGHT_DIR = os.path.join('html', CONTENT_DIR, '__spotlight')
+LOCAL_CONTENT_DIR   = os.path.join('docs', CONTENT_DIR)
+LOCAL_SPOTLIGHT_DIR = os.path.join('docs', CONTENT_DIR, '__spotlight')
 
 AUTHOR_LIST = dict()
 SERIES_LIST = dict()
@@ -749,7 +749,7 @@ def generate_publications_page (pubs, jinja_env):
 			filters=filters,
 			footer=footer_tmpl.render(curr_year=datetime.datetime.now().year),
 			)
-	with open('html/publications.html', 'w') as f:
+	with open('docs/publications.html', 'w') as f:
 		f.write(html)
 
 

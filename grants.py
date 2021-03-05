@@ -19,8 +19,8 @@ ftext = markdown_fixtitle.makeExtension()
 
 IMAGE_EXTS = ['*.jpg', '*.png']
 
-LOCAL_HTML_DIR    = os.path.join('html', 'grants')
-LOCAL_PCBS_SL_DIR = os.path.join('html', 'content', 'pcb', '__spotlight')
+LOCAL_HTML_DIR    = os.path.join('docs', 'grants')
+LOCAL_PCBS_SL_DIR = os.path.join('docs', 'content', 'pcb', '__spotlight')
 
 
 def sort_grants (g):
@@ -118,6 +118,6 @@ def make_grant_page (grants, projects, jinja_env):
 		projects=projects.getList(),
 		footer=footer_tmpl.render(curr_year=datetime.datetime.now().year))
 
-	with open('html/grants.html', 'w') as f:
+	with open('docs/grants.html', 'w') as f:
 		f.write(html)
 

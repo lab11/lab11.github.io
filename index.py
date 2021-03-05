@@ -34,5 +34,5 @@ def generate_index (projects, jinja_env):
 
 	html = index_tmpl.render(projects=projects_html, proj_list=proj_list, footer=footer_tmpl.render(curr_year=datetime.datetime.now().year))
 
-	with open('html/index.html', 'w') as f:
+	with open('docs/index.html', 'w') as f:
 		f.write(html)

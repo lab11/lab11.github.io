@@ -21,7 +21,7 @@ BRD_IMAGE_NAMES = ['{name}_pcb.png', '{name}_pcb.jpg', '{name}_{revision}_pcb.pn
 PCB_ZIP_DIR = 'pcb'
 
 PCB_BUILD_DIR = os.path.join('content', 'pcb')
-LOCAL_BUILD_DIR = os.path.join('html', PCB_BUILD_DIR)
+LOCAL_BUILD_DIR = os.path.join('docs', PCB_BUILD_DIR)
 
 LOCAL_SPOTLIGHT_DIR = os.path.join(LOCAL_BUILD_DIR, '__spotlight')
 

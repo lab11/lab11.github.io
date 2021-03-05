@@ -17,8 +17,8 @@ DEFAULT_IMAGE = 'person-placeholder.jpg'
 
 CONTENT_DIR = os.path.join('content', 'people')
 IMAGES_DIR = os.path.join(CONTENT_DIR, 'images')
-LOCAL_CONTENT_DIR = os.path.join('html', CONTENT_DIR)
-LOCAL_IMAGES_DIR = os.path.join('html', IMAGES_DIR)
+LOCAL_CONTENT_DIR = os.path.join('docs', CONTENT_DIR)
+LOCAL_IMAGES_DIR = os.path.join('docs', IMAGES_DIR)
 
 
 class Person ():
@@ -164,7 +164,7 @@ def generate_people_page (people, jinja_env):
 
 	people_html = people.generatePeoplePageHTML()
 	html = people_tmpl.render(people=people_html, footer=footer_tmpl.render(curr_year=datetime.datetime.now().year))
-	with open('html/people.html', 'w') as f:
+	with open('docs/people.html', 'w') as f:
 		f.write(html)
 
 

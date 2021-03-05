@@ -19,8 +19,8 @@ class pushd(object):
 import logger
 
 CONTENT_DIR         = os.path.join('content', 'posters')
-LOCAL_CONTENT_DIR   = os.path.join('html', CONTENT_DIR)
-LOCAL_SPOTLIGHT_DIR = os.path.join('html', CONTENT_DIR, '__spotlight')
+LOCAL_CONTENT_DIR   = os.path.join('docs', CONTENT_DIR)
+LOCAL_SPOTLIGHT_DIR = os.path.join('docs', CONTENT_DIR, '__spotlight')
 
 class Poster ():
 	def __init__ (self, key):

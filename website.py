@@ -100,7 +100,7 @@ jinja_env = jinja.Environment(loader=jinja.FileSystemLoader('templates'))
 pcb_tmpl     = jinja_env.get_template('pcb.html')
 footer_tmpl  = jinja_env.get_template('footer.html')
 
-mkdir('-p', 'html')
+mkdir('-p', 'docs')
 
 logger.info('Initializing projects')
 projects_list = projects.init()
@@ -123,7 +123,7 @@ if build_pcb:
     logger.info('Building PCB tables...')
     pcb_table = pcb_table.run(jinja_env)
     pcb = pcb_tmpl.render(pcb_table=pcb_table, footer=footer_tmpl.render(curr_year=datetime.datetime.now().year))
-    with open('html/pcb.html', 'w') as f:
+    with open('docs/pcb.html', 'w') as f:
         f.write(pcb)
 
 if build_people:
@@ -153,7 +153,7 @@ if build_grants:
 	grants.make_grant_page(grants_all, projects_list, jinja_env)
 
 
-# Put all static content in the html folder
+# Put all static content in the docs folder
 logger.info('Copying static content...')
 for dirpath,dirnames,filenames in os.walk('static'):
 
@@ -161,7 +161,7 @@ for dirpath,dirnames,filenames in os.walk('static'):
 	if len(dirnames) > 0:
 		for dirname in dirnames:
 			path = os.path.join(dirpath, dirname)
-			path = 'html' + path[6:] # now that there is a hack
+			path = 'docs' + path[6:] # now that there is a hack
 			mkdir('-p', path)
 
 
@@ -173,24 +173,24 @@ for dirpath,dirnames,filenames in os.walk('static'):
 				# These do not need to be compiled in any way
 				# Just copy them
 				spath = os.path.join(dirpath, filename)
-				dpath = 'html' + spath[6:]
+				dpath = 'docs' + spath[6:]
 				cp(spath, dpath)
 
 # Put all the images in the html folder
 logger.info('Copying HTML image content...')
-mkdir('-p', os.path.join('html', 'images'))
+mkdir('-p', os.path.join('docs', 'images'))
 for dirpath,dirnames,filenames in os.walk('images'):
 
 	# Create the mirrored folders in the html directory
 	if len(dirnames) > 0:
 		for dirname in dirnames:
-			path = os.path.join('html', dirpath, dirname)
+			path = os.path.join('docs', dirpath, dirname)
 			mkdir('-p', path)
 
 
 	for filename in filenames:
 		spath = os.path.join(dirpath, filename)
-		dpath = os.path.join('html', spath)
+		dpath = os.path.join('docs', spath)
 		cp(spath, dpath)
 
 logger.info('Site Built.')
