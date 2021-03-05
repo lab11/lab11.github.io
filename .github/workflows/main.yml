@@ -43,8 +43,7 @@ jobs:
         run: pip install -r requirements.txt
       - name: testing
         run: |
-          ls /etc/Image*
-          ls /usr/Image*
+          ls /etc
       # Build site
       - name: Build website --> /docs
         run: ./website.py
