@@ -42,7 +42,9 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: testing
-        run: find /usr | grep "policy.xml"
+        run: |
+          ls /etc/Image*
+          ls /usr/Image*
       # Build site
       - name: Build website --> /docs
         run: ./website.py
