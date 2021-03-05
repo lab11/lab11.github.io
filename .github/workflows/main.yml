@@ -42,7 +42,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: testing
-        run: ls /etc/ImageMagick-7/policy.xml
+        run: find /usr | grep "policy.xml"
       # Build site
       - name: Build website --> /docs
         run: ./website.py
