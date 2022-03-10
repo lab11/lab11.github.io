@@ -1,3 +1,41 @@
+@inproceedings{lin21weaving,
+  author = {Lin, Richard and Ramesh, Rohit and Jain, Nikhil and Koe, Josephine and Nuqui, Ryan and Dutta, Prabal and Hartmann, Bjoern},
+  title = {Weaving Schematics and Code: Interactive Visual Editing for Hardware Description Languages},
+  year = {2021},
+  isbn = {9781450386357},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3472749.3474804},
+  doi = {10.1145/3472749.3474804},
+  abstract = {In many engineering disciplines such as circuit board, chip, and mechanical design, a hardware description language (HDL) approach provides important benefits over direct manipulation interfaces by supporting concepts like abstraction and generator meta-programming. While several such HDLs have emerged recently and promised power and flexibility, they also present challenges – especially to designers familiar with current graphical workflows. In this work, we investigate an IDE approach to provide a graphical editor for a board-level circuit design HDL. Unlike GUI builders which convert an entire diagram to code, we instead propose generating equivalent HDL from individual graphical edit actions. By keeping code as the primary design input, we preserve the full power of the underlying HDL, while remaining useful even to advanced users. We discuss our concept, design considerations such as performance, system implementation, and report on the results of an exploratory remote user study with four experienced hardware designers. },
+  booktitle = {The 34th Annual ACM Symposium on User Interface Software and Technology},
+  pages = {1039–1049},
+  numpages = {11},
+  keywords = {printed circuit board (PCB) design, integrated development environment (IDE), hardware description language (HDL)},
+  location = {Virtual Event, USA},
+  series = {UIST '21},
+  conference-url={\url{https://uist.acm.org/uist2021/}},
+}
+
+@inproceedings{klugman21watching,
+  author = {Klugman, Noah and Adkins, Joshua and Paszkiewicz, Emily and Hickman, Molly G. and Podolsky, Matthew and Taneja, Jay and Dutta, Prabal},
+  title = {Watching the Grid: Utility-Independent Measurements of Electricity Reliability in Accra, Ghana},
+  year = {2021},
+  isbn = {9781450380980},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3412382.3458276},
+  doi = {10.1145/3412382.3458276},
+  abstract = {In much of the world, electricity grids are not instrumented at the customer level, limiting insights into the power quality experienced by utility customers. Moreover, to understand grid performance, regulators and investors must depend on utilities to self-report reliability data. To address these challenges, we introduce PowerWatch, an agile methodology to directly measure customer experience and aggregated grid performance without relying on the utility for deployment or management. PowerWatch employs a system of distributed sensors coupled with cloud-based analytics. We evaluate the PowerWatch methodology by deploying 462 sensors in homes and businesses in Accra, Ghana for over a year, yielding the largest open-source data set on electricity reliability at the customer-level in the region. We describe the architecture, design, and performance of PowerWatch, as well as the data that are collected, explaining how we determine the accuracy and coverage of our methodology without ground truth. Finally, we report on grid performance issues, finding nearly twice as many outages as the utility observed, suggesting a need for better grid performance monitoring.},
+  booktitle = {Proceedings of the 20th International Conference on Information Processing in Sensor Networks (Co-Located with CPS-IoT Week 2021)},
+  pages = {341–356},
+  numpages = {16},
+  keywords = {Sensor deployments, Grid reliability metering},
+  location = {Nashville, TN, USA},
+  series = {IPSN '21},
+  conference-url={\url{https://ipsn.acm.org/2021/}},
+}
+
 @inproceedings{lin20polymorphic,
   author = {Lin, Richard and Ramesh, Rohit and Chi, Connie and Jain, Nikhil and Nuqui, Ryan and Dutta, Prabal and Hartmann, Björn},
   title = {Polymorphic Blocks: Unifying High-Level Specification and Low-Level Control for Circuit Board Design},
@@ -36,6 +74,25 @@
   series = {MobiCom '20},
   conference-url={\url{https://sigmobile.org/mobicom/2020/}},
   abstract = {Social scientists, psychologists, and epidemiologists use empirical human interaction data to research human behaviour, social bonding, and disease spread. Historically, systems measuring interactions have been forced to choose between deployability and measurement fidelity---they operate only in instrumented spaces, under line-of-sight conditions, or provide coarse-grained proximity data. We introduce SociTrack, a platform for autonomous social interaction tracking via wireless distance measurements. Deployments require no supporting infrastructure and provide sub-second, decimeter-accurate ranging information over multiple days. The key insight that enables both deployability and fidelity in one system is to decouple node mobility and network management from range measurement, which results in a novel dual-radio architecture. SociTrack leverages an energy-efficient and scalable ranging protocol that is accurate to 14.8 cm (99th percentile) in complex indoor environments and allows our prototype to operate for 12 days on a 2000 mAh battery. Finally, to validate its deployability and efficacy, SociTrack is used by early childhood development researchers to capture caregiver-infant interactions.},
+}
+
+@inproceedings{lin20generator,
+  author = {Lin, Richard and Ramesh, Rohit and Chi, Connie and Jain, Nikhil and Dutta, Prabal and Hartmann, Bj\"{o}rn},
+  title = {Supporting Circuit Design with a Block-Based, Generator Language},
+  year = {2020},
+  isbn = {9781450368193},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3334480.3382887},
+  doi = {10.1145/3334480.3382887},
+  abstract = {Modern electronic design automation (EDA) tooling tends to focus on either the system-level design or the low-level electrical connectivity between physical components on a printed circuit board (PCB). We believe that a usable and functional system for circuit design needs to be able to interleave both levels of abstraction seamlessly and allow designers to transition between them freely. Existing work has experimented with approaches like circuit synthesis, functional characterization, or fine grained physical modeling. Each of these approaches augment the design process as it exists today, with its fundamental split between various levels of abstraction. We notice that hierarchical block diagrams can capture both high-level system structure as well as fine grained physical connectivity, and use that symmetry to construct a model for electronic circuits that can span the entire design process. Additionally, we construct user interfaces for our model that can support users of different skill levels throughout a design task. We discuss the design of our system, detailing both fundamental abstractions and usability trade-offs, and demonstrate its current capabilities through the design of example electronics projects.},
+  booktitle = {Extended Abstracts of the 2020 CHI Conference on Human Factors in Computing Systems},
+  pages = {1–8},
+  numpages = {8},
+  keywords = {circuit design, printed circuit board (PCB) design, hardware description language (HDL)},
+  location = {Honolulu, HI, USA},
+  series = {CHI EA '20},
+  conference-url={\url{https://chi2020.acm.org/}},
 }
 
 @inproceedings{zachariah20summon,
@@ -78,7 +135,6 @@
     while remaining natural, intuitive, and secure for users.
   },
 }
-
 
 @inproceedings{ghena19lpwans,
   author = {Ghena, Branden and Adkins, Joshua and Shangguan, Longfei and Jamieson, Kyle and Levis, Phil and Dutta, Prabal},
