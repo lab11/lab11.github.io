@@ -1,7 +1,11 @@
 Lab11 Website
 =============
 
-This is the website for our lab.
+This is the website for our lab. These domains all bring you here:
+* [lab11.github.io](https://lab11.github.io)
+* [lab11.eecs.berkeley.edu](https://lab11.eecs.berkeley.edu)
+* [lab11.eecs.umich.edu](https://lab11.eecs.umich.edu)
+* [lab11.org](https://lab11.org)
 
 Making Changes
 --------------
