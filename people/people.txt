@@ -12,29 +12,30 @@ prabal      "Prabal Dutta"   prabal@eecs.umich.edu  http://web.eecs.umich.edu/~p
 
 "Staff Researchers"
 podolsky    "Matt Podolsky"  podolsky@berkeley.edu  ?					                                 "Voice of reason (?)"
+goto  "Albert Goto" goto@berkeley.edu ? "Ham hero"
 
 
-#Post-Docs
-# None
-
+"Post-Docs"
+mclarkk     "Meghan Clark"   mclarkk@berkeley.edu      https://meghanclark.us                                "Currently under surveillance"
 
 
 "Ph.D. Students"
 
-mclarkk     "Meghan Clark"   mclarkk@berkeley.edu      https://meghanclark.us                                "Currently under surveillance"
 tzachari    "Thomas Zachariah" tzachari@berkeley.edu   https://thomaszachariah.com                           "Obligatory Caption"
-nklugman    "Noah Klugman"   nklugman@berkeley.edu     http://noahklugman.com                               "Working on my #1 single"
 rohitram    "Rohit Ramesh"   rkr@berkeley.edu     	   https://www.cs.umd.edu/~rohit/                        "Software Defined EVERYTHING"
 adkinsjd    "Josh Adkins"    adkins@berkeley.edu       https://joshuaadkins.com                              "Perfecting the art of the coffee bean"
-nealjack    "Neal Jackson"   neal.jackson@berkeley.edu https://nealsjackson.com                         		"Has a website now"
-jlwatson    "Jean-Luc Watson" jeanluc.watson@berkeley.edu https://jeanluc.io "Making it so"
-shishirpatil	"Shishir Patil"	shishirpatil@berkeley.edu	http://people.eecs.berkeley.edu/~shishirpatil/	"Graduate Student"
+nealjack    "Neal Jackson"   neal.jackson@berkeley.edu https://nealsjackson.com                         	 "Has a website now"
+jlwatson    "Jean-Luc Watson" jlw@berkeley.edu         https://jeanluc.io                                    "Making it so"
+shishirpatil	"Shishir Patil"	shishirpatil@berkeley.edu	http://people.eecs.berkeley.edu/~shishirpatil/	 "The burrito whisperer"
+alverino    "Alvin Tan"     alverino@berkeley.edu      ?                                                     "Pumpkin spice and everything nice"
+tdespres "Tess Despres" tdespres@berkeley.edu          https://tessdespres.com                               "Still in Rennes"
+person-placeholder "Nivedha Krishnakumar" nivedha@berkeley.edu   ?                                           "San Marino wants their enclave back"
 
-#"Visitors"
+# "Visitors"
 # None
 
-"Masters Students"
-timbarat    "Tim Barat"       tbarat@berkeley.edu      http://hasthelargehadroncolliderdestroyedtheworldyet.com/                            "Vegetarian"
+# "Masters Students"
+# None
 
 #"Undergraduate Research Assistants"
 # None
@@ -73,4 +74,6 @@ bernhard    "Bernhard Großwindhager"   grosswindhager@tugraz.at https://grosswi
 ppannuto    "Pat Pannuto"    ppannuto@berkeley.edu     https://patpannuto.com					            "Professor at UCSD"
 brghena     "Branden Ghena"  brghena@berkeley.edu      https://brandenghena.com                   			"Professor at Northwestern"
 wwhuang     "Will Huang"     wwhuang@berkeley.edu      http://wwhuang.com                                   "Now at Blue Iris Labs"
+timbarat    "Tim Barat"       tbarat@berkeley.edu      http://hasthelargehadroncolliderdestroyedtheworldyet.com/                            "Now at Gridware"
+nklugman    "Noah Klugman"   nklugman@berkeley.edu     http://noahklugman.com                               "Now at nLine"
 
