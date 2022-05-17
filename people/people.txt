@@ -29,7 +29,7 @@ jlwatson    "Jean-Luc Watson" jlw@berkeley.edu         https://jeanluc.io       
 shishirpatil	"Shishir Patil"	shishirpatil@berkeley.edu	http://people.eecs.berkeley.edu/~shishirpatil/	 "The burrito whisperer"
 alverino    "Alvin Tan"     alverino@berkeley.edu      ?                                                     "Pumpkin spice and everything nice"
 tdespres "Tess Despres" tdespres@berkeley.edu          https://tessdespres.com                               "Still in Rennes"
-person-placeholder "Nivedha Krishnakumar" nivedha@berkeley.edu   ?                                           "San Marino wants their enclave back"
+nivedha "Nivedha Krishnakumar" nivedha@berkeley.edu   ?                                           "San Marino wants their enclave back"
 
 # "Visitors"
 # None
