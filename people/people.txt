@@ -76,4 +76,5 @@ brghena     "Branden Ghena"  brghena@berkeley.edu      https://brandenghena.com 
 wwhuang     "Will Huang"     wwhuang@berkeley.edu      http://wwhuang.com                                   "Now at Blue Iris Labs"
 timbarat    "Tim Barat"       tbarat@berkeley.edu      http://hasthelargehadroncolliderdestroyedtheworldyet.com/                            "Now at Gridware"
 nklugman    "Noah Klugman"   nklugman@berkeley.edu     http://noahklugman.com                               "Now at nLine"
+ambujv      "Ambuj Varshney" ambujv@berkeley.edu         https://ambuj.se/                                     "Professor at NU Singapore"
 
