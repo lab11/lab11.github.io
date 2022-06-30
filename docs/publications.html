@@ -97,11 +97,11 @@
 				<label class="col-sm-2 control-label">Publication Type</label>
 				<div class="col-sm-10">
 					<label class="checkbox-inline">
+<input type="checkbox" checked="checked" class="type_chk" value="conferences"> Conferences
+</label><label class="checkbox-inline">
 <input type="checkbox" checked="checked" class="type_chk" value="workshops"> Workshops
 </label><label class="checkbox-inline">
 <input type="checkbox" checked="checked" class="type_chk" value="journals"> Journals
-</label><label class="checkbox-inline">
-<input type="checkbox" checked="checked" class="type_chk" value="conferences"> Conferences
 </label><label class="checkbox-inline">
 <input type="checkbox" checked="checked" class="type_chk" value="magazines"> Magazines
 </label><label class="checkbox-inline">
@@ -195,6 +195,8 @@
 		<option value="alvin-wan">Alvin&nbsp;Wan</option>
 		
 		<option value="amanda-prorok">Amanda&nbsp;Prorok</option>
+		
+		<option value="ambuj-varshney">Ambuj&nbsp;Varshney</option>
 		
 		<option value="amit-levy">Amit&nbsp;Levy</option>
 		
@@ -356,6 +358,8 @@
 		
 		<option value="wenpeng-wang">Wenpeng&nbsp;Wang</option>
 		
+		<option value="wenqing-yan">Wenqing&nbsp;Yan</option>
+		
 		<option value="will-huang">Will&nbsp;Huang</option>
 		
 		<option value="william-beyer">William&nbsp;Beyer</option>
@@ -420,6 +424,8 @@
 		<option value="mobicom">MobiCom</option>
 		
 		<option value="mobicom-">MobiCom </option>
+		
+		<option value="mobisys-">MobiSys </option>
 		
 		<option value="rtss">RTSS</option>
 		
@@ -531,11 +537,95 @@
 <h2>2022</h2>
 
 <ul class="timeline">
-	<li class="pub_type_workshops">
-<div class="timeline-badge timeline-badge-W">W</div>
-<div id="ayers22tiered" class="timeline-panel pub_entry">
+	<li class="pub_type_conferences">
+<div class="timeline-badge timeline-badge-C">C</div>
+<div id="varshney22judo" class="timeline-panel pub_entry">
 	
 	<span class="label label-success">New</span>
+	
+	<span class="bib_title">
+		
+		<a id="varshney22judo-title" href="content/pubs/varshney22judo.pdf">Judo: Addressing the Energy Asymmetry of Wireless Embedded Systems through Tunnel Diode Based Wireless Transmitters</a>
+		
+	</span> <br />
+	
+	<span class="bib_authors"><span class="author author-ambuj-varshney">Ambuj&nbsp;Varshney</span>, <span class="author author-wenqing-yan">Wenqing&nbsp;Yan</span>, and <span class="author author-prabal-dutta">Prabal&nbsp;Dutta</span></span><br />
+	
+	<span class="bib_conference">Proceedings of the 20th Annual International Conference on Mobile Systems, Applications and Services (<span class="venue venue-mobisys-">MobiSys&nbsp;&rsquo;22</span>)</span><br />
+	
+	
+	<span class="pubs_links">
+		
+		<a id="varshney22judo-link" href="content/pubs/varshney22judo.pdf">[paper]</a>
+		
+		
+		
+		
+		<a id="bib_XXXatag_varshney22judo" class="pub_bibtex">[bibtex]</a>
+		
+		
+		<a id="abstract_XXXatag_varshney22judo" class="pub_abstract">[abstract]</a>
+		
+		
+		
+		
+		<a href="https://www.sigmobile.org/mobisys/2022/">[conference]</a>
+		
+		
+		
+		<a href="https://doi.org/10.1145/3498361.3538923">[doi]</a>
+		
+	</span>
+	
+	<br />
+
+	
+	<div id="bib_varshney22judo" style="display: none;">
+		<pre>@inproceedings{varshney22judo,
+	title = {Judo: Addressing the Energy Asymmetry of Wireless Embedded Systems through Tunnel Diode Based Wireless Transmitters},
+	year = {2022},
+	month = {June},
+	isbn = {9781450391856},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3498361.3538923},
+	doi = {10.1145/3498361.3538923},
+	booktitle = {Proceedings of the 20th Annual International Conference on Mobile Systems, Applications and Services},
+	pages = {273–286},
+	numpages = {14},
+	location = {Portland, Oregon},
+	series = {MobiSys '22},
+	conference-url = {https://www.sigmobile.org/mobisys/2022/},
+	author = {Varshney, Ambuj and Yan, Wenqing and Dutta, Prabal},
+}</pre>
+	</div>
+	
+	
+	<div id="abstract_varshney22judo" class="panel panel-default" style="display: none;">
+		<div class="panel-body">
+		<div id="abstract_varshney22judo_raw" style="display: none;">
+			<pre>The radio transmitter is the most power-consuming component of a wireless embedded system. We present Judo, a radio transmitter that enables power balance between the wireless transmission, sensing, and processing tasks of a wireless embedded system. Judo transmitters leverage the fact that modern radio transceivers offer high receive sensitivity at low power. Therefore, even if the radio transmitter emits a weak signal, the link budget and transmission range will often remain high. With this key insight, we revisit the radio transmitter architecture by dramatically reducing the radiated power and hence the overall power draws. Specifically, Judo transmitter uses a tunnel diode oscillator to integrate the stages of a radio transmitter into a single energy-efficient step. In this step, baseband signals are generated and mixed using peak power below 100 μW. However, we sacrifice stability of tunnel diode oscillator for low-power consumption. We use the injection-locking phenomenon to stabilise the tunnel diode oscillator with an external carrier signal. Based on this novel architecture, we implement a transmitter that supports frequency-shift keying as a modulation scheme. Judo transmits over distances greater than 100 m at a bit rate of 100 kbps. It does so with an emitter device providing the carrier signal, and located at a distance of more than 100 m from Judo transmitter. In terms of critical link metrics, it outperforms the radio transmitters commonly used in wireless embedded systems.</pre>
+			<p style="font-style: italic;">
+				<a id="abstract_varshney22judo_raw_a" class="pub_abstract_raw">
+					Content has been formatted as TeX source. Click to format for web.
+				</a>
+			</p>
+		</div>
+		<div id="abstract_varshney22judo_html">
+			<p>The radio transmitter is the most power-consuming component of a wireless embedded system. We present Judo, a radio transmitter that enables power balance between the wireless transmission, sensing, and processing tasks of a wireless embedded system. Judo transmitters leverage the fact that modern radio transceivers offer high receive sensitivity at low power. Therefore, even if the radio transmitter emits a weak signal, the link budget and transmission range will often remain high. With this key insight, we revisit the radio transmitter architecture by dramatically reducing the radiated power and hence the overall power draws. Specifically, Judo transmitter uses a tunnel diode oscillator to integrate the stages of a radio transmitter into a single energy-efficient step. In this step, baseband signals are generated and mixed using peak power below 100 μW. However, we sacrifice stability of tunnel diode oscillator for low-power consumption. We use the injection-locking phenomenon to stabilise the tunnel diode oscillator with an external carrier signal. Based on this novel architecture, we implement a transmitter that supports frequency-shift keying as a modulation scheme. Judo transmits over distances greater than 100 m at a bit rate of 100 kbps. It does so with an emitter device providing the carrier signal, and located at a distance of more than 100 m from Judo transmitter. In terms of critical link metrics, it outperforms the radio transmitters commonly used in wireless embedded systems.</p>
+			<p style="font-style: italic;">
+				<a id="abstract_varshney22judo_html_a" class="pub_abstract_html">
+					Content has been formatted for web. Click to view raw TeX
+				</a>
+			</p>
+		</div>
+		</div>
+	</div>
+	
+</div>
+</li><li class="pub_type_workshops">
+<div class="timeline-badge timeline-badge-W">W</div>
+<div id="ayers22tiered" class="timeline-panel pub_entry">
 	
 	<span class="bib_title">
 		
@@ -620,8 +710,6 @@
 </li><li class="pub_type_workshops">
 <div class="timeline-badge timeline-badge-W">W</div>
 <div id="despres22sidewalk" class="timeline-panel pub_entry">
-	
-	<span class="label label-success">New</span>
 	
 	<span class="bib_title">
 		
