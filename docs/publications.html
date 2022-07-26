@@ -250,6 +250,8 @@
 		
 		<option value="inhee-lee">Inhee&nbsp;Lee</option>
 		
+		<option value="ion-stoica">Ion&nbsp;Stoica</option>
+		
 		<option value="ivan-bobashev">Ivan&nbsp;Bobashev</option>
 		
 		<option value="j.-alex-halderman">J.&nbsp;Alex&nbsp;Halderman</option>
@@ -269,6 +271,8 @@
 		<option value="jonathan-pevarnek">Jonathan&nbsp;Pevarnek</option>
 		
 		<option value="joseph-e.-gonzalez">Joseph&nbsp;E.&nbsp;Gonzalez</option>
+		
+		<option value="joseph-gonzalez">Joseph&nbsp;Gonzalez</option>
 		
 		<option value="josephine-koe">Josephine&nbsp;Koe</option>
 		
@@ -310,6 +314,8 @@
 		
 		<option value="nikolay-atanasov">Nikolay&nbsp;Atanasov</option>
 		
+		<option value="paras-jain">Paras&nbsp;Jain</option>
+		
 		<option value="paul-n.-zivich">Paul&nbsp;N.&nbsp;Zivich</option>
 		
 		<option value="peter-volgyesi">Peter&nbsp;Volgyesi</option>
@@ -337,6 +343,8 @@
 		<option value="sechang-oh">Sechang&nbsp;Oh</option>
 		
 		<option value="seokhyeon-jeong">Seokhyeon&nbsp;Jeong</option>
+		
+		<option value="shishir-g.-patil">Shishir&nbsp;G.&nbsp;Patil</option>
 		
 		<option value="shishir-patil">Shishir&nbsp;Patil</option>
 		
@@ -408,6 +416,8 @@
 		<option value="ewsn">EWSN</option>
 		
 		<option value="icii">ICII</option>
+		
+		<option value="icml-">ICML </option>
 		
 		<option value="ictd">ICTD</option>
 		
@@ -539,6 +549,89 @@
 <ul class="timeline">
 	<li class="pub_type_conferences">
 <div class="timeline-badge timeline-badge-C">C</div>
+<div id="patil22poet" class="timeline-panel pub_entry">
+	
+	<span class="label label-success">New</span>
+	
+	<span class="bib_title">
+		
+		<a id="patil22poet-title" href="content/pubs/patil22poet.pdf">POET: Training Neural Networks on Tiny Devices with Integrated Rematerialization and Paging</a>
+		
+	</span> <br />
+	
+	<span class="bib_authors"><span class="author author-shishir-g.-patil">Shishir&nbsp;G.&nbsp;Patil</span>, <span class="author author-paras-jain">Paras&nbsp;Jain</span>, <span class="author author-prabal-dutta">Prabal&nbsp;Dutta</span>, <span class="author author-ion-stoica">Ion&nbsp;Stoica</span>, and <span class="author author-joseph-gonzalez">Joseph&nbsp;Gonzalez</span></span><br />
+	
+	<span class="bib_conference">Proceedings of the 39th International Conference on Machine Learning (<span class="venue venue-icml-">ICML&nbsp;&rsquo;22</span>)</span><br />
+	
+	
+	<span class="pubs_links">
+		
+		<a id="patil22poet-link" href="content/pubs/patil22poet.pdf">[paper]</a>
+		
+		
+		
+		
+		<a id="bib_XXXatag_patil22poet" class="pub_bibtex">[bibtex]</a>
+		
+		
+		<a id="abstract_XXXatag_patil22poet" class="pub_abstract">[abstract]</a>
+		
+		
+		
+		
+		<a href="https://icml.cc/Conferences/2022">[conference]</a>
+		
+		
+		
+		<a href="https://proceedings.mlr.press/v162/patil22b.html">[doi]</a>
+		
+	</span>
+	
+	<br />
+
+	
+	<div id="bib_patil22poet" style="display: none;">
+		<pre>@inproceedings{patil22poet,
+	title = {{POET}: Training Neural Networks on Tiny Devices with Integrated Rematerialization and Paging},
+	booktitle = {Proceedings of the 39th International Conference on Machine Learning},
+	pages = {17573--17583},
+	numpages = {11},
+	year = {2022},
+	series = {ICML '22},
+	month = {July},
+	publisher = {Proceedings of Machine Learning Research},
+	url = {https://proceedings.mlr.press/v162/patil22b.html},
+	location = {Baltimore, MD, USA},
+	conference-url = {https://icml.cc/Conferences/2022},
+	author = {Patil, Shishir G. and Jain, Paras and Dutta, Prabal and Stoica, Ion and Gonzalez, Joseph},
+}</pre>
+	</div>
+	
+	
+	<div id="abstract_patil22poet" class="panel panel-default" style="display: none;">
+		<div class="panel-body">
+		<div id="abstract_patil22poet_raw" style="display: none;">
+			<pre>Fine-tuning models on edge devices like mobile phones would enable privacy-preserving personalization over sensitive data. However, edge training has historically been limited to relatively small models with simple architectures because training is both memory and energy intensive. We present POET, an algorithm to enable training large neural networks on memory-scarce battery-operated edge devices. POET jointly optimizes the integrated search search spaces of rematerialization and paging, two algorithms to reduce the memory consumption of backpropagation. Given a memory budget and a run-time constraint, we formulate a mixed-integer linear program (MILP) for energy-optimal training. Our approach enables training significantly larger models on embedded devices while reducing energy consumption while not modifying mathematical correctness of backpropagation. We demonstrate that it is possible to fine-tune both ResNet-18 and BERT within the memory constraints of a Cortex-M class embedded device while outperforming current edge training methods in energy efficiency. POET is an open-source project available at https://github.com/ShishirPatil/poet</pre>
+			<p style="font-style: italic;">
+				<a id="abstract_patil22poet_raw_a" class="pub_abstract_raw">
+					Content has been formatted as TeX source. Click to format for web.
+				</a>
+			</p>
+		</div>
+		<div id="abstract_patil22poet_html">
+			<p>Fine-tuning models on edge devices like mobile phones would enable privacy-preserving personalization over sensitive data. However, edge training has historically been limited to relatively small models with simple architectures because training is both memory and energy intensive. We present POET, an algorithm to enable training large neural networks on memory-scarce battery-operated edge devices. POET jointly optimizes the integrated search search spaces of rematerialization and paging, two algorithms to reduce the memory consumption of backpropagation. Given a memory budget and a run-time constraint, we formulate a mixed-integer linear program (MILP) for energy-optimal training. Our approach enables training significantly larger models on embedded devices while reducing energy consumption while not modifying mathematical correctness of backpropagation. We demonstrate that it is possible to fine-tune both ResNet-18 and BERT within the memory constraints of a Cortex-M class embedded device while outperforming current edge training methods in energy efficiency. POET is an open-source project available at https://github.com/ShishirPatil/poet</p>
+			<p style="font-style: italic;">
+				<a id="abstract_patil22poet_html_a" class="pub_abstract_html">
+					Content has been formatted for web. Click to view raw TeX
+				</a>
+			</p>
+		</div>
+		</div>
+	</div>
+	
+</div>
+</li><li class="pub_type_conferences">
+<div class="timeline-badge timeline-badge-C">C</div>
 <div id="varshney22judo" class="timeline-panel pub_entry">
 	
 	<span class="label label-success">New</span>
@@ -593,7 +686,7 @@
 	booktitle = {Proceedings of the 20th Annual International Conference on Mobile Systems, Applications and Services},
 	pages = {273–286},
 	numpages = {14},
-	location = {Portland, Oregon},
+	location = {Portland, OR, USA},
 	series = {MobiSys '22},
 	conference-url = {https://www.sigmobile.org/mobisys/2022/},
 	author = {Varshney, Ambuj and Yan, Wenqing and Dutta, Prabal},
