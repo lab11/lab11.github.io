@@ -43,7 +43,7 @@ class HomeBreakExtension(markdown.extensions.Extension):
 		for key, value in configs.items():
 			self.setConfig(key, value)
 
-	def extendMarkdown(self, md, md_globals):
+	def extendMarkdown(self, md):
 		hpbext = self.TreeProcessorClass(md)
 		hpbext.config = self.getConfigs()
 		# Headerid ext is set to '>prettify'. With this set to '_end',
