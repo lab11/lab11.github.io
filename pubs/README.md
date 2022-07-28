@@ -9,6 +9,7 @@ To add your paper (yay!) to the website:
  - In addition to the standard fields, be sure to include
    - `conference-url`: Link to the conference website
    - `abstract`: Abstract as copied from abstract.tex (e.g. leave in Latex form)
+   - `month` : For more accurate timeline (often not included in generated bibs)
    - `acceptance-accepted`, `acceptance-total`: Conference statistics (usually
       are sent with your acceptance notification e-mail, don't lose them!)
  - If in doubt, look at the existing examples

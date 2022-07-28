@@ -31,7 +31,7 @@ You can also rebuild only specific pages, see:
 
 While working, I recommend:
 
-    $ ./website.py -P && pushd html && python3 -m http.server 8000 ; popd
+    $ ./website.py -P && pushd docs && python3 -m http.server 8000 ; popd
 
 FYI, ImageMagick has some weird permissions issue with PDFs these days. If you
 get an error try editing the policy.xml file to add "read|write" permissions to
@@ -42,7 +42,7 @@ View the Website
 
 Now, run the server. Fortunately, this is really easy:
 
-    $ cd html
+    $ cd docs
     $ python3 -m http.server 8000
 
 You now have a web server running at localhost:8000, that is, in a browser type:
