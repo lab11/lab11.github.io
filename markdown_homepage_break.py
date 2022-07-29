@@ -43,16 +43,20 @@ class HomeBreakExtension(markdown.extensions.Extension):
 		for key, value in configs.items():
 			self.setConfig(key, value)
 
-	def extendMarkdown(self, md, md_globals):
+	def extendMarkdown(self, md):
 		hpbext = self.TreeProcessorClass(md)
 		hpbext.config = self.getConfigs()
-		# Headerid ext is set to '>prettify'. With this set to '_end',
-		# it should always come after headerid ext (and honor ids assinged
-		# by the header id extension) if both are used. Same goes for
-		# attr_list extension. This must come last because we don't want
-		# to redefine ids after toc is created. But we do want toc prettified.
-		md.treeprocessors.add("hpb", hpbext, "_end")
 
+		# Headerid ext is set to '>prettify'. With this set to the lowest
+		# priority, it should always come after headerid ext (and honor ids
+		# assigned by the header id extension) if both are used. Same goes for
+		# attr_list extension. This must come last because we don't want to
+		# redefine ids after toc is created. But we do want toc prettified.
+
+		# Get the last element registered to force a sort then sneak a look at
+		# its priority..
+		_ = md.treeprocessors[-1]
+		md.treeprocessors.register(hpbext, "hpb", md.treeprocessors._priority[-1].priority - 10)
 
 def makeExtension(configs={}):
 	return HomeBreakExtension(configs=configs)
