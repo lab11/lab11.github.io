@@ -11,13 +11,12 @@ from sh import mkdir
 
 import logger
 
-BIB_FILES = ['conferences', 'journals', 'workshops', 'demos', 'posters', 'magazines']
+BIB_FILES = ['conferences', 'journals', 'workshops', 'demos', 'posters']
 WORK_TYPES = {'conferences': 'paper',
               'journals':    'paper',
               'workshops':   'paper',
               'demos':       'demo',
-              'posters':     'poster',
-	      'magazines':   'magazine'}
+              'posters':     'poster'}
 MONTH_CONV = {'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6,
               'jul': 7, 'aug': 8, 'sep': 9, 'oct':10, 'nov':11, 'dec':12}
 
@@ -544,32 +543,38 @@ class Publications ():
 			p = person[0].replace('&nbsp;', ' ')
 			if p in [
 					'Joshua Adkins',
-					'Romil Bhardwaj',
 					'Meghan Clark',
+					'Tess Despres',
 					'Prabal Dutta',
-					'Branden Ghena',
-					'William Huang',
 					'Neal Jackson',
-					'Noah Klugman',
-					'Pat Pannuto',
+					'Nivedha Krishnakumar',
+					'Shishir Patil',
+					'Matthew Podolsky',
 					'Rohit Ramesh',
+					'Alvin Tan',
 					'Jean-Luc Watson',
 					'Thomas Zachariah',
 					]:
 				member_list.append(person)
 			elif p in [
 					'Apoorva Bansal',
+					'Andreas Biri',
 					'Bradford Campbell',
 					'Samuel DeBruin',
 					'Genevieve Flaspohler',
+					'Branden Ghena',
 					'Trey Grunnagle',
+					'William Huang',
 					'Benjamin Kempke',
+					'Noah Klugman',
 					'Ye-Sheng Kuo',
 					'Deepika Natarajan',
+					'Pat Pannuto',
 					'Andrew Robinson',
 					'Aaron Schulman',
 					'Thomas Schmid',
 					'Maya Spivak',
+					'Ambuj Varshney',
 					'Sonal Verma',
 					'Lohit Yerva',
 					'Alan Zhen',
